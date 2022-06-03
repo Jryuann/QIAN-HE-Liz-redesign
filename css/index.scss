@@ -1,11 +1,33 @@
 @import 'sheet';
-.nav{
-    @include wh(100%,90px);
+
+.nav {
+    @include wh(100%, 90px);
     @include t-inner();
     color: var(--color-liz);
     position: fixed;
     z-index: 1;
     background-color: var(--color-main-dark);
+
+    // 內部元件對齊
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+
+    logo {
+        display: flex;
+        align-items: center;
+        margin-right: 32px;
+    }
+    .nav_btns{
+        label{
+            // background-color: #fff;
+            padding:2px 4px;
+
+            border-radius: var(--radius-sm);
+        }
+    }
+   
+
 }
 
 // 你們看到了
