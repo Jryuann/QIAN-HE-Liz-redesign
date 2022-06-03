@@ -63,7 +63,7 @@
     font-family: 'Noto Serif TC';
     font-style: normal;
     font-weight: 700;
-    font-size: $fz-title;
+    font-size: var(--fz-title);
     line-height: 46px;
     /* identical to box height */
 
@@ -74,7 +74,7 @@
     font-family: 'Noto Serif TC';
     font-style: normal;
     font-weight: 600;
-    font-size: $fz-inner;
+    font-size: var(--fz-inner);
     line-height: 147.7%;
     /* identical to box height, or 27px */
     letter-spacing: 0.2em;

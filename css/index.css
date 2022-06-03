@@ -23,22 +23,19 @@ html {
   padding: 0px;
 }
 
-body {
+html body {
   margin: 0px;
   padding: 0px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .nav {
   width: 100%;
   height: 90px;
-  /* Title */
-  font-family: 'Noto Serif TC';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 69px;
-  /* identical to box height */
-  letter-spacing: 0.1em;
+  color: var(--color-liz);
   position: fixed;
   z-index: 1;
   background-color: var(--color-main-dark);
