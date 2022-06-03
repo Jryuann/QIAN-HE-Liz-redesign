@@ -1,6 +1,10 @@
 @import 'sheet';
 .nav{
-    width: 100%;
+    @include wh(100%,90px);
     @include t-title;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--color-main-dark);
 }
+
 // 你們看到了

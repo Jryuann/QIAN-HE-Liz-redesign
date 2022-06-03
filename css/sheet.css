@@ -18,8 +18,13 @@
   font-family: 'Noto Serif TC', serif;
 }
 
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
-  padding-left: 5%;
-  padding-right: 5%;
+  margin: 0px;
+  padding: 0px;
 }
 /*# sourceMappingURL=sheet.css.map */

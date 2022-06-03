@@ -95,7 +95,12 @@
     font-family: 'Noto Serif TC', serif;
 
 }
-    
+
+html{
+    @include reset;
+}
+
 body{
-    @include padding-x() ;
+    @include reset;
+
 }
