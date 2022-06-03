@@ -1,1 +1,52 @@
-/* No CSS *//*# sourceMappingURL=part6.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+:root {
+  --body-padding: 5%;
+  --section-height:100vh;
+  --radius: 24px;
+  --radius-sm: 8px;
+  --color-main: #F1CE56;
+  --color-main-dark: #333;
+  --color-white: #fff;
+  --color-liz: #C2724A;
+  --color-liz-dark: #B04B19;
+  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --fz-title: 48px;
+  --fz-inner: 18px;
+}
+
+* {
+  font-family: 'Noto Serif TC', serif;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+html body {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.part_7 {
+  background-color: var(--color-main-dark);
+  height: var(--section-height);
+  color: var(--color-white);
+  margin: auto;
+  text-align: center;
+}
+
+.part_7 h3 {
+  font-size: var(--fz-title);
+  font-weight: 700;
+}
+
+.part_7 p {
+  font-size: var(--fz-inner);
+  font-weight: 600;
+}
+/*# sourceMappingURL=part6.css.map */

@@ -1,0 +1,19 @@
+@import 'sheet';
+
+.part_7 {
+    background-color: var(--color-main-dark);
+    height: var(--section-height);
+    color: var(--color-white);
+    margin: auto;
+    text-align: center;
+
+    h3 {
+        font-size: var(--fz-title);
+        font-weight: 700;
+    }
+
+    p {
+        font-size: var(--fz-inner);
+        font-weight: 600;
+    }
+}
