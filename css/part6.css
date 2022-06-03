@@ -36,17 +36,80 @@ a {
   background-color: var(--color-main-dark);
   height: var(--section-height);
   color: var(--color-white);
-  margin: auto;
+  position: relative;
+  padding-top: 65px;
+}
+
+.part_7 .circle {
+  width: 104px;
+  height: 104px;
+  background-color: var(--color-liz);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: -5%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.part_7 h1 {
+  margin: 0px;
+  padding: 0px;
+  /* Title */
+  font-family: 'Noto Serif TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 69px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .part_7 h3 {
-  font-size: var(--fz-title);
+  margin: 0px;
+  padding: 0px;
+  /* Title */
+  font-family: 'Noto Serif TC';
+  font-style: normal;
   font-weight: 700;
+  font-size: 48px;
+  line-height: 69px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  width: 498px;
+  margin-bottom: 20px;
 }
 
 .part_7 p {
-  font-size: var(--fz-inner);
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Noto Serif TC';
+  font-style: normal;
   font-weight: 600;
+  font-size: var(--fz-inner);
+  line-height: 147.7%;
+  /* identical to box height, or 27px */
+  letter-spacing: 0.2em;
+  width: 443px;
+  margin-bottom: 20px;
+}
+
+.part_7 .low-cost,
+.part_7 .tec-transfer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.part_7 .circular {
+  border-radius: 50%;
 }
 /*# sourceMappingURL=part6.css.map */
