@@ -1,7 +1,8 @@
 @import 'sheet';
 .nav{
     @include wh(100%,90px);
-    @include t-title;
+    @include t-inner;
+    color: var(--color-liz);
     position: fixed;
     z-index: 1;
     background-color: var(--color-main-dark);

@@ -98,8 +98,12 @@
 
 html{
     @include reset;
+    body{
+        @include reset;
+    }
 }
 
-body{
-    @include reset;
+
+a{
+    text-decoration: none;
 }

@@ -23,8 +23,12 @@ html {
   padding: 0px;
 }
 
-body {
+html body {
   margin: 0px;
   padding: 0px;
+}
+
+a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=sheet.css.map */
