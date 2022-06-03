@@ -17,4 +17,9 @@
 * {
   font-family: 'Noto Serif TC', serif;
 }
+
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 /*# sourceMappingURL=sheet.css.map */

@@ -20,13 +20,13 @@
     --fz-title: 48px;
     --fz-inner: 18px
 }
-
+// 材質
 @mixin material {
     background-image: url("../img/metrila.svg");
     background-size: cover;
 }
-
-@mixin section {
+// 用法 @include material;
+@mixin padding-x {
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -36,7 +36,7 @@
     margin: 0px;
     padding: 0px;
 }
-
+// 陰影尺寸
 @mixin shadow {
     box-shadow: var(--shadow);
 }
@@ -88,4 +88,9 @@
 
 * {
     font-family: 'Noto Serif TC', serif;
+}
+
+body{
+    @include padding-x() ;
+
 }
