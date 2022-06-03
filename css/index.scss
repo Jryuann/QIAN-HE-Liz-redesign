@@ -1,0 +1,5 @@
+@import 'sheet';
+.nav{
+    width: 100%;
+    @include t-title;
+}
