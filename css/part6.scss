@@ -2,11 +2,11 @@
 
 .part_7 {
     background-color: var(--color-main-dark);
-    height: var(--section-height);
+    // height: var(--section-height);
     color: var(--color-white);
 
     position: relative;
-    padding-top: 65px;
+    padding: 65px 0px;
 
     .circle {
         width: 104px;
@@ -16,7 +16,7 @@
 
         position: absolute;
         left: 50%;
-        top: -5%;
+        top: -4%;
         transform: translate(-50%);
     }
 
@@ -25,7 +25,7 @@
         @include t-title();
         text-align: center;
         // margin-top: 58px;
-        margin-bottom: 40px
+        // margin-bottom: 40px
     }
 
     h3 {
@@ -44,13 +44,43 @@
 
     .low-cost,
     .tec-transfer {
+        width: 817px;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: auto;
+
+        padding-top: 72px;
     }
 
     .circular {
         border-radius: 50%;
-        // margin-left:20px;
+    }
+
+    .line{
+        width: 820px;
+        height: 1px;
+        background-color: white;
+
+        margin: auto;
+        margin-top: 24px;
+    }
+
+    .brand{
+        width: 817px;
+        margin: auto;
+        
+        padding-top: 72px;
+    }
+
+    .all-logo{
+        width: 817px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+
+        margin: auto;
+        padding-top: 52px;
+        
     }
 }

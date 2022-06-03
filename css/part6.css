@@ -34,10 +34,9 @@ a {
 
 .part_7 {
   background-color: var(--color-main-dark);
-  height: var(--section-height);
   color: var(--color-white);
   position: relative;
-  padding-top: 65px;
+  padding: 65px 0px;
 }
 
 .part_7 .circle {
@@ -47,7 +46,7 @@ a {
   border-radius: 50%;
   position: absolute;
   left: 50%;
-  top: -5%;
+  top: -4%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
@@ -64,7 +63,6 @@ a {
   /* identical to box height */
   letter-spacing: 0.1em;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .part_7 h3 {
@@ -98,6 +96,7 @@ a {
 
 .part_7 .low-cost,
 .part_7 .tec-transfer {
+  width: 817px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,9 +106,40 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: auto;
+  padding-top: 72px;
 }
 
 .part_7 .circular {
   border-radius: 50%;
+}
+
+.part_7 .line {
+  width: 820px;
+  height: 1px;
+  background-color: white;
+  margin: auto;
+  margin-top: 24px;
+}
+
+.part_7 .brand {
+  width: 817px;
+  margin: auto;
+  padding-top: 72px;
+}
+
+.part_7 .all-logo {
+  width: 817px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  padding-top: 52px;
 }
 /*# sourceMappingURL=part6.css.map */
