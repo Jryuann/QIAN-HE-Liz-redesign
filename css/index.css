@@ -1,5 +1,6 @@
 :root {
-  --section-padding: 5%;
+  --body-padding: 5%;
+  --section-height:100vh;
   --radius: 24px;
   --radius-sm: 8px;
   --color-main: #F1CE56;
@@ -15,11 +16,5 @@
 
 * {
   font-family: 'Noto Serif TC', serif;
-}
-
-body {
-  background-color: var(--color-main);
-  background-image: url("../img/metrila.svg");
-  background-size: cover;
 }
 /*# sourceMappingURL=index.css.map */

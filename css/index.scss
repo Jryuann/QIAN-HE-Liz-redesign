@@ -1,5 +1,8 @@
 :root {
-    --section-padding: 5%;
+
+    --body-padding: 5%;
+    --section-height:100vh;
+    
 
     --radius: 24px;
     --radius-sm: 8px;
@@ -85,10 +88,4 @@
 
 * {
     font-family: 'Noto Serif TC', serif;
-}
-
-body {
-    // background-color: var(--color-main);
-    @include material();
-    @include section();
 }
