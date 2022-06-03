@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,KAAK,CAAC;EAEF,cAAc,CAAA,GAAC;EACf,gBAAgB,CAAA,KAAC;EAGjB,QAAQ,CAAA,KAAC;EACT,WAAW,CAAA,IAAC;EAEZ,YAAY,CAAA,QAAC;EACb,iBAAiB,CAAA,KAAC;EAClB,aAAa,CAAA,KAAC;EAEd,WAAW,CAAA,QAAC;EACZ,gBAAgB,CAAA,QAAC;EAEjB,QAAQ,CAAA,gCAAC;EAGT,UAAU,CAAA,KAAC;EACX,UAAU,CAAA;AAAC;CACd;;AAmED,AAAA,CAAC,CAAC;EACE,WAAW,EAAE,sBAAsB;CACtC",
     "sources": [
-        "index.scss"
+        "sheet.scss"
     ],
     "names": [],
-    "file": "index.css"
+    "file": "sheet.css"
 }
