@@ -88,6 +88,7 @@
 }
 
 body {
-    background-color: var(--color-main);
+    // background-color: var(--color-main);
     @include material();
+    @include section();
 }
