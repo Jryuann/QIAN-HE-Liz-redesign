@@ -1,0 +1,38 @@
+@import 'sheet' ;
+.part3 {
+    background-color: var(--color-main-dark);
+    height: var(--section-height) ;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+
+
+    .partnerStorySwiper {
+        background-color: var(--color-white);
+        position: absolute;
+        display: flex;
+        top: 188px;
+        width: 100%;
+        height: 529px;
+    }
+    .partnerStoryTitle {
+        color: var(--color-white);
+        background-color: var(--color-main-dark);
+        @include t-title ;
+        opacity: 20%;
+        height: 90px;
+
+        position: absolute;
+        bottom: 300px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
