@@ -16,6 +16,8 @@
 
 * {
   font-family: 'Noto Serif TC', serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
