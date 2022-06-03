@@ -20,6 +20,13 @@
         transform: translate(-50%);
     }
 
+    .word {
+        position: absolute;
+        left: 90%;
+        top: 8%;
+        // transform: translate(-50%);
+    }
+
     h1 {
         @include reset();
         @include t-title();
@@ -81,6 +88,16 @@
 
         margin: auto;
         padding-top: 52px;
+        
+    }
+}
+
+footer{
+    background-color: var(--color-main-dark);
+    // height: var(--section-height);
+    color: var(--color-white);
+
+    p{
         
     }
 }

@@ -16,6 +16,8 @@
 
 * {
   font-family: 'Noto Serif TC', serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -49,6 +51,12 @@ a {
   top: -4%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+}
+
+.part_7 .word {
+  position: absolute;
+  left: 90%;
+  top: 8%;
 }
 
 .part_7 h1 {
@@ -141,5 +149,10 @@ a {
           align-items: center;
   margin: auto;
   padding-top: 52px;
+}
+
+footer {
+  background-color: var(--color-main-dark);
+  color: var(--color-white);
 }
 /*# sourceMappingURL=part6.css.map */
