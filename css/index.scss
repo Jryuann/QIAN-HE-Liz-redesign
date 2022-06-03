@@ -33,14 +33,16 @@
 
 header{
     @include wh(100%,100vh);
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
     @include material;
     background-color: var(--color-main);
 
     bottom{
-        @include wh(100%,30%);
-        position: absolute;
+        
+        grid-row-start: 11;
+        grid-row-end: 16;
         bottom: -30px;
         
         background-image: url("../img/index/index_under_pic.jpg");
@@ -50,8 +52,8 @@ header{
         background-color: #333;
 
         &.mask {
-            -webkit-mask: url("../img/index/index_under_mask.svg") no-repeat center bottom / cover;
-            mask: url("../img/index/index_under_mask.svg") no-repeat center bottom / cover;
+            -webkit-mask: url("../img/index/index_under_mask.svg") no-repeat center 100% / contain;
+            mask: url("../img/index/index_under_mask.svg") no-repeat center 100% / contain;
            }
     }
 
