@@ -46,15 +46,79 @@ header{
         bottom: -30px;
         
         background-image: url("../img/index/index_under_pic.jpg");
-        background-size: contain;
-        background-position:bottom;
+        background-size: cover;
+        background-position:top;
         background-repeat: no-repeat;
         background-color: #333;
-
+        @media (max-width: 480px){
+            background-image: url("../img/index/index_under_pic_sm.jpg");
+        }
         &.mask {
             -webkit-mask: url("../img/index/index_under_mask.svg") no-repeat center 100% / contain;
             mask: url("../img/index/index_under_mask.svg") no-repeat center 100% / contain;
-           }
+            @media (max-width: 780px){
+                -webkit-mask: url("../img/index/index_under_mask_md.svg") no-repeat center 100% / contain;
+                mask: url("../img/index/index_under_mask_md.svg") no-repeat center 100% / contain;
+            }
+        }
+
+
     }
+
+}
+section.part_2{
+    @include wh(100%,100vh);
+    @include material;
+    background-color: var(--color-main);
+
+    display: grid;
+    grid-template-columns:5% 11fr 5%;
+    grid-template-rows:4fr 7fr 4fr;
+    content{
+        grid-row: 2;
+        grid-column: 2;
+
+        display: flex;
+        align-items: center;
+        @media (max-width:900px) {
+            flex-direction: column;
+        }
+
+        .pic_area{
+            
+            @include wh(400px,400px);
+            min-width: 400px;
+            border-radius: 100%;
+            background-color: #333;
+
+            margin-right: 32px;
+            
+            background-image: url('../img/part2/part2_swiper_img\ \(1\).jpg');
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .text_area{
+            .title{
+                @include t-title;
+                color: var(--color-liz-dark);
+            }
+            .second{
+                @include t-inner;
+                font-weight: bold;
+                color: var(--color-main-dark);    
+            }
+            .inner{
+                @include t-inner;
+                color: var(--color-liz-dark)
+                ;
+            }
+        }
+    }
+    
+    
+
 
 }
