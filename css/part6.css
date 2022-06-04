@@ -154,5 +154,56 @@ a {
 footer {
   background-color: var(--color-main-dark);
   color: var(--color-white);
+  text-align: center;
+  padding: 40px 0px;
+}
+
+footer h3 {
+  margin: 0px;
+  padding: 0px;
+  /* Title */
+  font-family: 'Noto Serif TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 69px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  margin-left: 10px;
+}
+
+footer .brand-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Noto Serif TC';
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--fz-inner);
+  line-height: 147.7%;
+  /* identical to box height, or 27px */
+  letter-spacing: 0.2em;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+}
+
+footer .maker {
+  font-size: 8px;
+  margin-top: 60px;
 }
 /*# sourceMappingURL=part6.css.map */
