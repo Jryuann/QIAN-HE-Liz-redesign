@@ -1,0 +1,134 @@
+@import 'sheet';
+
+.part_7 {
+    background-color: var(--color-main-dark);
+    // height: var(--section-height);
+    color: var(--color-white);
+
+    position: relative;
+    padding: 65px 0px;
+
+    .circle {
+        width: 104px;
+        height: 104px;
+        background-color: var(--color-liz);
+        border-radius: 50%;
+
+        position: absolute;
+        left: 50%;
+        top: -4%;
+        transform: translate(-50%);
+    }
+
+    .word {
+        position: absolute;
+        left: 90%;
+        top: 8%;
+        // transform: translate(-50%);
+    }
+
+    h1 {
+        @include reset();
+        @include t-title();
+        text-align: center;
+        // margin-top: 58px;
+        // margin-bottom: 40px
+    }
+
+    h3 {
+        @include reset();
+        @include t-title();
+        width: 498px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        @include reset();
+        @include t-inner();
+        width: 443px;
+        margin-bottom: 20px;
+    }
+
+    .low-cost,
+    .tec-transfer {
+        width: 817px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        padding-top: 72px;
+    }
+
+    .circular {
+        border-radius: 50%;
+    }
+
+    .line {
+        width: 820px;
+        height: 1px;
+        background-color: white;
+
+        margin: auto;
+        margin-top: 24px;
+    }
+
+    .brand {
+        width: 817px;
+        margin: auto;
+
+        padding-top: 72px;
+    }
+
+    .all-logo {
+        width: 817px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: auto;
+        padding-top: 52px;
+
+    }
+}
+
+footer {
+    background-color: var(--color-main-dark);
+    // height: var(--section-height);
+    color: var(--color-white);
+
+    // margin: auto;
+    text-align: center;
+    padding: 40px 0px;
+
+    h3 {
+        @include reset();
+        @include t-title();
+        font-size: 18px;
+        letter-spacing: 0.2em;
+        
+        margin-left: 10px;
+    }
+
+    .brand-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 20px;
+    }
+
+    p {
+        @include reset();
+        @include t-inner();
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+    }
+
+    .maker{
+        font-size: 8px;
+        margin-top: 60px;
+    }
+   
+}

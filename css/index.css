@@ -16,6 +16,8 @@
 
 * {
   font-family: 'Noto Serif TC', serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -30,6 +32,10 @@ html body {
 
 a {
   text-decoration: none;
+}
+
+* {
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .nav {
@@ -68,5 +74,34 @@ a {
 .nav .nav_btns label {
   padding: 2px 4px;
   border-radius: var(--radius-sm);
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-image: url("../img/metrila.svg");
+  background-size: cover;
+  background-color: var(--color-main);
+}
+
+header bottom {
+  -ms-grid-row: 11;
+      grid-row-start: 11;
+  grid-row-end: 16;
+  bottom: -30px;
+  background-image: url("../img/index/index_under_pic.jpg");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #333;
+}
+
+header bottom.mask {
+  -webkit-mask: url("../img/index/index_under_mask.svg") no-repeat center 100%/contain;
+  mask: url("../img/index/index_under_mask.svg") no-repeat center 100%/contain;
 }
 /*# sourceMappingURL=index.css.map */
