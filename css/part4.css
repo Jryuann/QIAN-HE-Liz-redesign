@@ -16,6 +16,8 @@
 
 * {
   font-family: 'Noto Serif TC', serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -59,8 +61,8 @@ a {
 }
 
 .part_4 .brandInsist .brandInsist_card {
-  width: calc(450px - 126px);
-  height: calc(646px - 233px);
+  width: 450px;
+  height: 646px;
   background-color: var(--color-white);
   background-image: url("../img/metrila.svg");
   background-size: cover;
