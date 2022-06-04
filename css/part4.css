@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+:root {
+  --body-padding: 5%;
+  --section-height:100vh;
+  --radius: 24px;
+  --radius-sm: 8px;
+  --color-main: #F1CE56;
+  --color-main-dark: #333;
+  --color-white: #fff;
+  --color-liz: #C2724A;
+  --color-liz-dark: #B04B19;
+  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --fz-title: 48px;
+  --fz-inner: 18px;
+}
+
+* {
+  font-family: 'Noto Serif TC', serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+html body {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.part_4 {
+  height: var(--section-height);
+  background-color: var(--color-main);
+  background-image: url("../img/metrila.svg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.part_4 .brandInsist {
+  width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.part_4 .brandInsist .brandInsist_card {
+  width: 450px;
+  height: 646px;
+  background-color: var(--color-white);
+  background-image: url("../img/metrila.svg");
+  background-size: cover;
+  border-radius: 24px;
+  padding: 90px 63px 143px 63px;
+}
+
+.part_4 .brandInsist .brandInsist_card .title {
+  width: 100%;
+  height: 160px;
+  position: relative;
+  margin-bottom: 73px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.part_4 .brandInsist .brandInsist_card .title .title_num {
+  margin-top: -30px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5), -2px -2px rgba(0, 0, 0, 0.5), 2px -2px rgba(0, 0, 0, 0.5), -2px 2px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: 'Noto Serif TC';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 200px;
+  opacity: 0.1;
+}
+
+.part_4 .brandInsist .brandInsist_card .title .title_name {
+  /* Title */
+  font-family: 'Noto Serif TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 69px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  color: var(--color-main-dark);
+  position: absolute;
+}
+
+.part_4 .brandInsist .brandInsist_card .content {
+  padding: 0px 5px;
+  width: 100%;
+  height: 180px;
+  font-family: 'Noto Serif TC';
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--fz-inner);
+  line-height: 147.7%;
+  /* identical to box height, or 27px */
+  letter-spacing: 0.2em;
+  color: var(--color-main-dark);
+  width: 313px;
+  height: 195px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+/*# sourceMappingURL=part4.css.map */

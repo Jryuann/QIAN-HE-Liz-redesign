@@ -1,0 +1,79 @@
+@import 'sheet';
+
+.part_4 {
+    height: var(--section-height);
+    background-color: var(--color-main);
+    @include material;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .brandInsist {
+        width: 1400px;
+
+        display: flex;
+        justify-content: space-between;
+
+        .brandInsist_card {
+            width: 450px;
+            height: 646px;
+            background-color: var(--color-white);
+            @include material;
+
+            border-radius: 24px;
+            padding: 90px 63px 143px 63px;
+
+            .title {
+                // background-color: aqua;
+                width: 100%;
+                height: 160px;
+
+                position: relative;
+                margin-bottom: 73px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .title_num {
+                    margin-top: -30px;
+
+                    text-shadow: 2px 2px rgba(0, 0, 0, 0.5), -2px -2px rgba(0, 0, 0, 0.5), 2px -2px rgba(0, 0, 0, 0.5), -2px 2px rgba(0, 0, 0, 0.5);
+                    color: white;
+                    font-family: 'Noto Serif TC';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 200px;
+                    opacity: 0.1;
+                }
+
+                .title_name {
+                    @include t-title;
+                    color: var(--color-main-dark);
+
+                    position: absolute;
+                }
+            }
+
+            .content {
+                padding: 0px 5px;
+
+                width: 100%;
+                height: 180px;
+
+                @include t-inner;
+                color: var(--color-main-dark);
+                width: 313px;
+                height: 195px;
+
+
+                font-weight: 700;
+                line-height: 30px;
+
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+
+}
