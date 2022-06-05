@@ -1,5 +1,7 @@
 @import 'sheet';
 
+// RWD都還要再調
+
 .part_5 {
 
     @media (max-width: 1062px) {
@@ -41,6 +43,7 @@
                 position: unset;
 
                 width: 100%;
+                height: 200px;
 
                 background-color: var(--color-main-dark);
 
@@ -65,6 +68,10 @@
 
                 @media (max-width: 1300px) {
                     font-size: var(--fz-inner-sm);
+                }
+
+                @media (max-width: 576px) {
+                    @include t-inner-sm;
                 }
             }
 
@@ -99,6 +106,11 @@
                     height: auto;
                     writing-mode: horizontal-tb;
                 }
+
+                @media (max-width: 576px) {
+                    width: 100%;
+                    @include t-title-sm;
+                }
             }
 
             .product_pic {
@@ -116,7 +128,8 @@
 
                 @media (max-width: 1062px) {
                     position: absolute;
-                    top: 40px;
+                    top: 30px;
+                    // 還要調整
                 }
             }
 
