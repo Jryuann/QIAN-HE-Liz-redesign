@@ -11,7 +11,9 @@
   --color-liz-dark: #B04B19;
   --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --fz-title: 48px;
+  --fz-title-sm:32px;
   --fz-inner: 18px;
+  --fz-inner-sm: 16px;
 }
 
 * {
@@ -39,6 +41,8 @@ a {
   background-color: var(--color-main);
   background-image: url("../img/metrila.svg");
   background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,6 +52,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 10%;
+}
+
+@media (max-width: 1200px) {
+  .part_4 {
+    height: 100%;
+  }
 }
 
 .part_4 .brandInsist {
@@ -60,9 +71,21 @@ a {
           justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+  .part_4 .brandInsist {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 40px 0 60px 0;
+  }
+}
+
 .part_4 .brandInsist .brandInsist_card {
-  width: 450px;
-  height: 646px;
+  width: calc(33.33% - 24px);
   background-color: var(--color-white);
   background-image: url("../img/metrila.svg");
   background-size: cover;
@@ -70,11 +93,28 @@ a {
   padding: 90px 63px 143px 63px;
 }
 
+@media (max-width: 1400px) {
+  .part_4 .brandInsist .brandInsist_card {
+    height: 0;
+    padding: 90px 40px 143px 40px;
+    padding-bottom: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .part_4 .brandInsist .brandInsist_card {
+    width: calc(450px - 40px);
+    height: 646px;
+    margin: 20px 36px 0 36px;
+    padding: 90px 63px 143px 63px;
+  }
+}
+
 .part_4 .brandInsist .brandInsist_card .title {
   width: 100%;
   height: 160px;
   position: relative;
-  margin-bottom: 73px;
+  margin-bottom: 72px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,6 +124,20 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1400px) {
+  .part_4 .brandInsist .brandInsist_card .title {
+    height: 120px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .part_4 .brandInsist .brandInsist_card .title {
+    height: 160px;
+    margin-bottom: 72px;
+  }
 }
 
 .part_4 .brandInsist .brandInsist_card .title .title_num {
@@ -102,12 +156,24 @@ a {
   font-family: 'Noto Serif TC';
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: var(--fz-title);
   line-height: 69px;
   /* identical to box height */
   letter-spacing: 0.1em;
   color: var(--color-main-dark);
   position: absolute;
+}
+
+@media (max-width: 1400px) {
+  .part_4 .brandInsist .brandInsist_card .title .title_name {
+    font-size: var(--fz-title-sm);
+  }
+}
+
+@media (max-width: 1200px) {
+  .part_4 .brandInsist .brandInsist_card .title .title_name {
+    font-size: var(--fz-title);
+  }
 }
 
 .part_4 .brandInsist .brandInsist_card .content {
@@ -122,10 +188,21 @@ a {
   /* identical to box height, or 27px */
   letter-spacing: 0.2em;
   color: var(--color-main-dark);
-  width: 313px;
-  height: 195px;
+  width: 100%;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.1em;
+}
+
+@media (max-width: 1400px) {
+  .part_4 .brandInsist .brandInsist_card .content {
+    font-size: var(--fz-inner-sm);
+  }
+}
+
+@media (max-width: 1400px) {
+  .part_4 .brandInsist .brandInsist_card .content {
+    font-size: var(--fz-inner);
+  }
 }
 /*# sourceMappingURL=part4.css.map */

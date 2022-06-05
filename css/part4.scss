@@ -1,13 +1,23 @@
+
+
+
 @import 'sheet';
 
 .part_4 {
     height: var(--section-height);
     background-color: var(--color-main);
     @include material;
+    @include padding-x;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 0 10% ;
+
+    @media (max-width: 1200px) {
+        height: 100%;
+    }
 
     .brandInsist {
         width: 1400px;
@@ -15,14 +25,37 @@
         display: flex;
         justify-content: space-between;
 
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+
+            margin: 40px 0 60px 0;
+        }
+
+
+
         .brandInsist_card {
-            width: 450px;
-            height: 646px;
+            width: calc(33.33% - 24px);
             background-color: var(--color-white);
             @include material;
 
             border-radius: 24px;
             padding: 90px 63px 143px 63px;
+
+            @media (max-width: 1400px) {
+                height: 0;
+
+                padding: 90px 40px 143px 40px;
+                padding-bottom: 50%;
+            }
+
+            @media (max-width: 1200px) {
+                width: calc(450px - 40px);
+                height: 646px;
+
+                margin: 20px 36px 0 36px;
+                padding: 90px 63px 143px 63px;
+            }
 
             .title {
                 // background-color: aqua;
@@ -30,11 +63,22 @@
                 height: 160px;
 
                 position: relative;
-                margin-bottom: 73px;
+                margin-bottom: 72px;
 
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @media (max-width: 1400px) {
+                    height: 120px;
+                    margin-bottom: 60px;
+                }
+
+                @media (max-width: 1200px) {
+                    height: 160px;
+                    margin-bottom: 72px;
+                }
+
 
                 .title_num {
                     margin-top: -30px;
@@ -46,6 +90,7 @@
                     font-weight: 900;
                     font-size: 200px;
                     opacity: 0.1;
+
                 }
 
                 .title_name {
@@ -53,6 +98,17 @@
                     color: var(--color-main-dark);
 
                     position: absolute;
+
+                    @media (max-width: 1400px) {
+                        font-size: var(--fz-title-sm);      
+                    }
+
+                    @media (max-width: 1200px) {
+
+                        font-size: var(--fz-title);      
+                
+                    }
+
                 }
             }
 
@@ -64,14 +120,19 @@
 
                 @include t-inner;
                 color: var(--color-main-dark);
-                width: 313px;
-                height: 195px;
-
+                width: 100%;
 
                 font-weight: 700;
                 line-height: 30px;
 
                 letter-spacing: 0.1em;
+                @media (max-width: 1400px) {
+                    font-size: var(--fz-inner-sm);
+                }
+
+                @media (max-width: 1400px) {
+                    font-size: var(--fz-inner);
+                }
             }
         }
     }
