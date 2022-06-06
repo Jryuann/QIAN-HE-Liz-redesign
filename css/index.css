@@ -90,11 +90,14 @@ header {
   background-image: url("../img/metrila.svg");
   background-size: cover;
   background-color: var(--color-main);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
 }
 
 header .inner {
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 30%;
   background-color: #e4a5a5;
   -ms-grid-row: 6;
   -ms-grid-row-span: 4;
@@ -102,6 +105,13 @@ header .inner {
   -ms-grid-column: 6;
   -ms-grid-column-span: 4;
   grid-column: 6/10;
+  z-index: 3;
+  background-color: #e4a5a5;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 3;
 }
 
@@ -139,16 +149,29 @@ header bottom.mask {
   }
 }
 
+header .decs {
+  width: 90%;
+  height: 90%;
+  background-color: #f7fa4a;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[15];
+      grid-template-rows: repeat(15, 1fr);
+  -ms-grid-columns: (1fr)[15];
+      grid-template-columns: repeat(15, 1fr);
+}
+
 header .liz_dec {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   background-color: #ce4a4a;
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 11;
-  grid-row: 5/16;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 11;
-  grid-column: 5/16;
+  position: absolute;
+  top: -10%;
+  left: -10%;
   z-index: 2;
 }
 
