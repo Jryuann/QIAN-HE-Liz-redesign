@@ -8,6 +8,10 @@
         position: relative;
     }
 
+    picture {
+        width: 100%;
+    }
+
     img {
         vertical-align: top;
     }
@@ -125,15 +129,12 @@
                     }
                 }
 
-
                 @media (max-width: 1062px) {
                     position: absolute;
                     top: 30px;
                     // 還要調整
                 }
             }
-
-
         }
     }
 }

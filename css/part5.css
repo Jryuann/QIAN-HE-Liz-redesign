@@ -42,6 +42,10 @@ a {
   }
 }
 
+.part_5 picture {
+  width: 100%;
+}
+
 .part_5 img {
   vertical-align: top;
 }
