@@ -7,7 +7,7 @@
     @include t-inner();
     color: var(--color-liz);
     position: fixed;
-    z-index: 1;
+    z-index: 4;
     background-color: var(--color-main-dark);
 
     // 內部元件對齊
@@ -34,16 +34,28 @@
 header{
     @include wh(100%,100vh);
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-columns:repeat(15, 1fr);
+    
     @include material;
     background-color: var(--color-main);
+
+    .inner{
+        @include wh(100%,100%);
+        background-color: rgb(228, 165, 165);
+        grid-row: 6/10;
+        grid-column: 6/10;
+        // 只是為了能看到 不然要改成1/16
+        z-index: 3;
+    }
 
     bottom{
         
         grid-row-start: 11;
         grid-row-end: 16;
+        grid-column: 1/16;
         bottom: -30px;
+        z-index: 3;
         
         background-image: url("../img/index/index_under_pic.jpg");
         background-size: cover;
@@ -64,7 +76,21 @@ header{
 
 
     }
-
+    .liz_dec{
+        @include wh(100%,100%);
+        background-color: rgb(206, 74, 74);
+        grid-row: 5/16;
+        grid-column: 5/16;
+        // 只是為了能看到 不然要改成1/16
+        z-index: 2;
+    }
+    .bg{
+        @include wh(100%,100%);
+        background-color: #333;
+        grid-row: 1/16;
+        grid-column: 1/16;
+        z-index: 1;
+    }
 }
 section.part_2{
     @include wh(100%,100vh);
@@ -90,14 +116,20 @@ section.part_2{
             min-width: 400px;
             border-radius: 100%;
             background-color: #333;
-
             margin-right: 32px;
             
             background-image: url('../img/part2/part2_swiper_img\ \(1\).jpg');
             background-size:cover;
             background-position: center;
             background-repeat: no-repeat;
+            @media (max-width :900px){
+                @include wh(250px,250px);
+                min-height: 250px;
+                min-width: 250px;
+                margin-right: 0px;
+                margin-bottom: 32px;
 
+            }
         }
 
         .text_area{
