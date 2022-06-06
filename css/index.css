@@ -53,7 +53,6 @@ a {
   color: var(--color-liz);
   position: fixed;
   z-index: 4;
-  background-color: var(--color-main-dark);
   padding-left: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,9 +149,8 @@ header bottom.mask {
 }
 
 header .decs {
-  width: 90%;
-  height: 90%;
-  background-color: #f7fa4a;
+  width: 120%;
+  height: 120%;
   position: absolute;
   top: -10%;
   left: -10%;
@@ -165,20 +163,57 @@ header .decs {
       grid-template-columns: repeat(15, 1fr);
 }
 
+header .decs .foodstand {
+  position: absolute;
+  left: 40%;
+  top: 20%;
+}
+
 header .liz_dec {
-  width: 80%;
-  height: 80%;
-  background-color: #ce4a4a;
+  width: 120%;
+  height: 120%;
   position: absolute;
   top: -10%;
   left: -10%;
   z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[15];
+      grid-template-rows: repeat(15, 1fr);
+  -ms-grid-columns: (1fr)[15];
+      grid-template-columns: repeat(15, 1fr);
+}
+
+header .liz_dec .liz_dec_1 {
+  position: absolute;
+  bottom: 10%;
+  left: 0px;
+  width: 24%;
+  -webkit-transform: rotate(0.03turn);
+          transform: rotate(0.03turn);
+}
+
+header .liz_dec .liz_dec_2 {
+  position: absolute;
+  top: 0px;
+  right: 10%;
+  width: 18%;
+  -webkit-transform: rotate(0.44turn);
+          transform: rotate(0.44turn);
+}
+
+header .liz_dec .liz_dec_3 {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width: 18%;
+  -webkit-transform: rotate(-0.1turn);
+          transform: rotate(-0.1turn);
 }
 
 header .bg {
   width: 100%;
   height: 100%;
-  background-color: #333;
   -ms-grid-row: 1;
   -ms-grid-row-span: 15;
   grid-row: 1/16;
