@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
 :root {
   --body-padding: 5%;
@@ -310,11 +311,12 @@ a {
   padding-top: 72px;
 }
 
-.part_7 .low-cost-circle, .part_7 .tec-transfer-circle {
+.part_7 .low-cost-circle,
+.part_7 .tec-transfer-circle {
   border-radius: 50%;
 }
 
-.part_7 .line {
+.part_7 .tec-transfer-line {
   width: 820px;
   height: 1px;
   background-color: white;
@@ -344,7 +346,7 @@ a {
 }
 
 @media (max-width: 1024px) {
-  .part_7 .word {
+  .word {
     display: none;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -352,9 +354,12 @@ a {
 }
 
 @media (max-width: 930px) {
+  .part_7 {
+    padding: 60px 20%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
   .part_7 h3 {
-    margin: 0px;
-    padding: 0px;
     font-family: 'Noto Serif TC';
     font-style: normal;
     font-weight: 700;
@@ -363,11 +368,8 @@ a {
     /* identical to box height */
     letter-spacing: 0.1em;
     width: 100%;
-    margin-bottom: 20px;
   }
   .part_7 p {
-    margin: 0px;
-    padding: 0px;
     font-family: 'Noto Serif TC';
     font-style: normal;
     font-weight: 600;
@@ -376,13 +378,10 @@ a {
     /* identical to box height, or 27px */
     letter-spacing: 0.2em;
     width: 100%;
-    margin-bottom: 20px;
   }
   .part_7 .circle,
   .part_7 h1 {
     display: none;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
   }
   .part_7 .low-cost,
   .part_7 .tec-transfer {
@@ -394,20 +393,86 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     padding-top: 0px;
   }
-  .part_7 .low-cost-circle, .part_7 .tec-transfer-circle {
+  .part_7 .low-cost-circle,
+  .part_7 .tec-transfer-circle {
     display: none;
   }
-  .part_7 .line {
+  .part_7 .low-cost-square {
+    width: 100%;
+    height: 160px;
+    border-radius: var(--radius-sm);
+    background-image: url(../img/part6/7/低成本-手機板.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .part_7 .tec-transfer-square {
+    width: 100%;
+    height: 160px;
+    border-radius: var(--radius-sm);
+    background-image: url(../img/part6/7/技術轉移-手機板.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .part_7 .low-cost-line {
     width: 100%;
     height: 1px;
     background-color: white;
-    margin: auto;
     margin-top: 24px;
+    margin-bottom: 40px;
+  }
+  .part_7 .tec-transfer-line,
+  .part_7 .brand-line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 24px;
+  }
+  .part_7 .brand {
+    width: 100%;
+    padding-top: 40px;
+  }
+  .part_7 .all-logo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px;
+  }
+  .part_7 .all-logo-square {
+    width: 100%;
+    height: 72px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: var(--radius-sm);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+  }
+  .part_7 .all-logo-image {
+    height: 60%;
+  }
+}
+
+@media (max-width: 650px) {
+  .part_7 {
+    padding: 60px 5%;
   }
 }
 
@@ -416,8 +481,9 @@ a {
   background-size: cover;
   background-color: var(--color-main);
   margin: auto;
-  text-align: center;
   padding: 70px 5%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .part_8 h3 {
@@ -432,7 +498,7 @@ a {
   /* identical to box height */
   letter-spacing: 0.1em;
   color: var(--color-liz-dark);
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 .part_8 p {
@@ -446,6 +512,104 @@ a {
   /* identical to box height, or 27px */
   letter-spacing: 0.2em;
   color: var(--color-liz-dark);
+  text-align: center;
+}
+
+.part_8 .text {
+  padding: 20px 0px;
+}
+
+.part_8 .icon {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .part_8 {
+    padding: 60px 5%;
+  }
+  .part_8 h3 {
+    width: 100%;
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--fz-title-sm);
+    line-height: 46px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+  }
+  .part_8 p {
+    width: 100%;
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--fz-inner-sm);
+    line-height: 147.7%;
+    /* identical to box height, or 27px */
+    letter-spacing: 0.2em;
+  }
+  .part_8 .square {
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: var(--radius-sm);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+    padding: 15px 0px;
+  }
+  .part_8 .square .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-liz);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .part_8 .square .icon-group {
+    margin-right: 30px;
+  }
+  .part_8 .square .icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+  .part_8 .square .content > h3,
+  .part_8 .square p {
+    text-align: left;
+  }
+  .part_8 .square .contact > h3 {
+    margin-bottom: 5px;
+  }
+  .part_8 .square .content-finish {
+    padding-right: 70px;
+  }
+  .part_8 .arrow {
+    width: 0px;
+    height: 0px;
+    border-style: solid solid solid solid;
+    border-width: 17px 50px 17px 50px;
+    border-color: var(--color-liz) transparent transparent transparent;
+    margin: auto;
+  }
+  .part_8 .line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-liz-dark);
+    margin-top: 40px;
+  }
 }
 
 .part_9 {
@@ -504,7 +668,7 @@ a {
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
   width: 826px;
-  background-color: #F8F8F8;
+  background-color: var(--color-white);
   border-radius: var(--radius);
   margin: auto;
   padding: 22px 0px;
