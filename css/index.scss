@@ -148,6 +148,37 @@ header {
             bottom: 32%;
             transform: scale(0.9)
         }
+
+        .liz_dec_4 {
+            grid-row: 5/6;
+            grid-column: 3/4;
+            transform: translate(-30%,12%);
+        }
+
+        .r1 {
+            grid-row: 7/8;
+            grid-column: 3/4;
+            transform: translate(-30%,0%);
+        }
+
+        .r2 {
+            grid-row: 8/9;
+            grid-column: 13/14;
+            transform: translate(-30%,0%);
+        }
+
+        .r3 {
+            grid-row: 6/7;
+            grid-column: 14/15;
+            transform: translate(-10%,-5%);
+        }
+        .r4 {
+            grid-row: 3/4;
+            grid-column: 13/14;
+            transform: translate(20%,10%);
+        }
+
+
     }
 
     .liz_dec {
