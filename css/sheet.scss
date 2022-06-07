@@ -19,7 +19,10 @@
 
     // text-size
     --fz-title: 48px;
+    --fz-title-sm:32px;
+
     --fz-inner: 18px;
+    --fz-inner-sm: 16px;
 }
 // 材質
 @mixin material {
@@ -51,19 +54,22 @@
     font-family: 'Noto Serif TC';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: var(--fz-title);
     line-height: 69px;
     /* identical to box height */
 
     letter-spacing: 0.1em;
-
+    // 能這樣做嗎?
+    // @media (max-width:700px) {
+    //     font-size: 10px;
+    // }
 }
 
 @mixin t-title-sm {
     font-family: 'Noto Serif TC';
     font-style: normal;
     font-weight: 700;
-    font-size: var(--fz-title);
+    font-size: var(--fz-title-sm);
     line-height: 46px;
     /* identical to box height */
 
@@ -84,7 +90,7 @@
     font-family: 'Noto Serif TC';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--fz-inner-sm);
     line-height: 147.7%;
     /* identical to box height, or 27px */
 
