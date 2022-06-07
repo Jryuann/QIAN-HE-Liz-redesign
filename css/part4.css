@@ -61,6 +61,12 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  .part_4 {
+    padding: 0 15px;
+  }
+}
+
 .part_4 .brandInsist {
   width: 1400px;
   display: -webkit-box;
@@ -80,6 +86,8 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
+    height: 100%;
     margin: 40px 0 60px 0;
   }
 }
@@ -90,13 +98,13 @@ a {
   background-image: url("../img/metrila.svg");
   background-size: cover;
   border-radius: 24px;
-  padding: 90px 63px 143px 63px;
+  padding: 90px 64px 143px 64px;
 }
 
 @media (max-width: 1400px) {
   .part_4 .brandInsist .brandInsist_card {
     height: 0;
-    padding: 90px 40px 143px 40px;
+    padding: 88px 40px 144px 40px;
     padding-bottom: 50%;
   }
 }
@@ -104,9 +112,32 @@ a {
 @media (max-width: 1200px) {
   .part_4 .brandInsist .brandInsist_card {
     width: calc(450px - 40px);
-    height: 646px;
+    height: auto;
     margin: 20px 36px 0 36px;
-    padding: 90px 63px 143px 63px;
+    padding: 88px 64px 144px 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .part_4 .brandInsist .brandInsist_card {
+    width: calc(450px - 40px);
+    margin: 20px 16px 0 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .part_4 .brandInsist .brandInsist_card {
+    width: calc(450px - 40px);
+    margin: 20px 16px 0 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .part_4 .brandInsist .brandInsist_card {
+    width: 100%;
+    max-height: 100%;
+    margin: 20px 16px 0 16px;
+    padding: 52px 52px 144px 52px;
   }
 }
 
@@ -137,6 +168,13 @@ a {
   .part_4 .brandInsist .brandInsist_card .title {
     height: 160px;
     margin-bottom: 72px;
+  }
+}
+
+@media (max-width: 450px) {
+  .part_4 .brandInsist .brandInsist_card .title {
+    height: 160px;
+    margin-bottom: 56px;
   }
 }
 
@@ -172,7 +210,7 @@ a {
 
 @media (max-width: 1200px) {
   .part_4 .brandInsist .brandInsist_card .title .title_name {
-    font-size: var(--fz-title);
+    font-size: var(--fz-title-sm);
   }
 }
 
@@ -200,9 +238,15 @@ a {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .part_4 .brandInsist .brandInsist_card .content {
-    font-size: var(--fz-inner);
+    font-size: var(--fz-inner-sm);
+  }
+}
+
+@media (max-width: 450px) {
+  .part_4 .brandInsist .brandInsist_card .content {
+    padding: 0px 0px;
   }
 }
 /*# sourceMappingURL=part4.css.map */

@@ -17,7 +17,14 @@
 
     @media (max-width: 1200px) {
         height: 100%;
+        
     }
+
+    @media (max-width: 768px) {
+        padding: 0 15px ;
+    }
+
+
 
     .brandInsist {
         width: 1400px;
@@ -28,6 +35,9 @@
         @media (max-width: 1200px) {
             flex-direction: column;
             align-items: center;
+
+            width: 100%;
+            height: 100%;
 
             margin: 40px 0 60px 0;
         }
@@ -40,21 +50,40 @@
             @include material;
 
             border-radius: 24px;
-            padding: 90px 63px 143px 63px;
+            padding: 90px 64px 143px 64px;
 
             @media (max-width: 1400px) {
                 height: 0;
 
-                padding: 90px 40px 143px 40px;
+                padding: 88px 40px 144px 40px;
                 padding-bottom: 50%;
             }
 
             @media (max-width: 1200px) {
                 width: calc(450px - 40px);
-                height: 646px;
+                height: auto;
 
                 margin: 20px 36px 0 36px;
-                padding: 90px 63px 143px 63px;
+                padding: 88px 64px 144px 64px;
+            }
+
+            @media (max-width: 768px) {
+                width: calc(450px - 40px);
+                margin: 20px 16px 0 16px;
+            }
+
+            @media (max-width: 576px) {
+                width: calc(450px - 40px);
+                margin: 20px 16px 0 16px;
+
+            }
+
+            @media (max-width: 450px) {
+                width: 100%;
+                max-height: 100%;
+                margin: 20px 16px 0 16px;
+                padding: 52px 52px 144px 52px;
+
             }
 
             .title {
@@ -77,6 +106,11 @@
                 @media (max-width: 1200px) {
                     height: 160px;
                     margin-bottom: 72px;
+                }
+
+                @media (max-width: 450px) {
+                    height: 160px;
+                    margin-bottom: 56px;
                 }
 
 
@@ -105,7 +139,7 @@
 
                     @media (max-width: 1200px) {
 
-                        font-size: var(--fz-title);      
+                        font-size: var(--fz-title-sm);      
                 
                     }
 
@@ -130,8 +164,12 @@
                     font-size: var(--fz-inner-sm);
                 }
 
-                @media (max-width: 1400px) {
-                    font-size: var(--fz-inner);
+                @media (max-width: 1200px) {
+                    font-size: var(--fz-inner-sm);
+                }
+
+                @media (max-width: 450px) {
+                    padding: 0px 0px;
                 }
             }
         }
