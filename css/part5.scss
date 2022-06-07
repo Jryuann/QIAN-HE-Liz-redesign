@@ -14,6 +14,7 @@
 
     img {
         vertical-align: top;
+        
     }
 
     .product_list {
@@ -31,6 +32,8 @@
 
         .product_content {
             // border: 1px solid black;
+            padding: 0 5%;
+
             width: 1045px;
             height: 100%;
             position: absolute;
@@ -42,9 +45,13 @@
             justify-content: center;
             align-items: center;
 
+            background-image: url(./);
 
             @media (max-width: 1062px) {
                 position: unset;
+
+                padding: 0 0;
+
 
                 width: 100%;
                 height: 200px;
@@ -54,7 +61,12 @@
                 display: flex;
                 flex-direction: column-reverse;
 
+                &.content2 {
+                    flex-direction: column;
+                }
             }
+
+
 
             .info {
                 width: 33.33%;
@@ -76,6 +88,7 @@
 
                 @media (max-width: 576px) {
                     @include t-inner-sm;
+                    text-shadow: var(--shadow);
                 }
             }
 
@@ -86,6 +99,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                
 
                 writing-mode: vertical-lr;
 
@@ -94,7 +108,7 @@
                 text-shadow: var(--shadow);
                 line-height: 69px;
                 font-weight: 700;
-                letter-spacing: 0.1em;
+                letter-spacing: 0.4em;
 
                 img {
                     position: absolute;
@@ -109,11 +123,13 @@
                 @media (max-width: 1062px) {
                     height: auto;
                     writing-mode: horizontal-tb;
+                    letter-spacing: 0.1em;
                 }
 
                 @media (max-width: 576px) {
                     width: 100%;
                     @include t-title-sm;
+
                 }
             }
 
@@ -133,8 +149,22 @@
                     position: absolute;
                     top: 30px;
                     // 還要調整
+                    &.pic3 {
+                        width: 30%;
+                        top: 5px;
+                    }
                 }
+
+                @media (max-width: 576px) {
+                    &.pic3 {
+                        width: 30%;
+                        top: 0px;
+                    }
+                }
+
             }
         }
+
+
     }
 }

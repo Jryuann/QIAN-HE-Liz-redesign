@@ -1,39 +1,169 @@
-@import 'sheet' ;
 .part_3 {
-    background-color: var(--color-main-dark);
-    height: var(--section-height) ;
-
-    position: relative;
-    display: flex;
-    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    background: red;
 
     overflow: hidden;
-
-    .partnerStorySwiper {
-        width: 100%;
-        height: 529px;
-        background-color: var(--color-white);
-        position: absolute;
-        display: flex;
-        top: 188px;
-
-    }
-    .partnerStoryTitle {
-        height: 90px;
-        background-color: var(--color-main-dark);
-        color: var(--color-white);
-        @include t-title ;
-
-        opacity: 20%;
-
-        position: absolute;
-        bottom: 300px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
 }
 
+.container {
+    margin: 0 auto;
+    height: 100vh;
+    padding-bottom: -15%;
 
+
+}
+
+.circle-carousel {
+    position: relative;
+    padding-top: 100%;
+    background: rgba(black, .3);
+
+    height: 100vh;
+
+    .slides {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 130vh;
+        z-index: 0;
+        opacity: 0;
+        background: rgba(red, .3);
+
+        &.active {
+            z-index: 1;
+            opacity: 1;
+
+        }
+    }
+
+    .flowHidden {
+        transform-origin: top;
+        position: absolute;
+        top: 1800px;
+        left: 50%;
+    }
+
+    .pagination {
+
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 3000px;
+        height: 3000px;
+        border-radius: 50%;
+        border: 3px solid white;
+        transition-property: transform;
+        transition-timing-function: ease-out;
+        // transition-timing-function: cubic-bezier(.5,-.5,.5,1.5);
+        pointer-events: none;
+        user-select: none;
+
+
+        .dot {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 303px;
+            height: 529px;
+            pointer-events: auto;
+            transition: .3s;
+            background: rgba(0, 0, 0, 0);
+            border: 1px solid black;
+
+            &:hover {
+                transform: translate(-50%, -50%) scale(1.05);
+                cursor: pointer;
+                background: white;
+                color: black;
+            }
+
+        }
+
+        .item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+
+            &.active {
+                .dot {
+                    background: white;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .next,
+    .prev {
+        position: absolute;
+        bottom: 6%;
+        z-index: 1;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: .3em;
+        transition: .3s;
+        user-select: none;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            border-style: solid;
+            border-color: transparent black;
+            transition: .3s;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: black;
+
+            &:before {
+                border-color: transparent white;
+                transform: translate(-50%, -50%) scale(1.05);
+            }
+        }
+    }
+
+    .next {
+        right: 5%;
+
+        &:before {
+            left: 65%;
+            border-width: 30px 0 30px 70px;
+        }
+    }
+
+    .prev {
+        left: 5%;
+
+        &:before {
+            left: 35%;
+            border-width: 30px 70px 30px 0;
+        }
+    }
+}
