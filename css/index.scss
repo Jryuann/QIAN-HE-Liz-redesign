@@ -179,6 +179,7 @@ header {
         }
 
 
+
     }
 
     .liz_dec {
@@ -255,6 +256,12 @@ header {
 
         }
 
+        .liz_dec_5{
+            grid-row: 6/7;
+            grid-column: 4/5;
+            width: 40px;
+            transform: rotate(-0.1turn);
+        }
     }
 
     .bg {
