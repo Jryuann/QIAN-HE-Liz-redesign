@@ -126,7 +126,7 @@ a {
   font-family: 'Noto Serif TC';
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: var(--fz-title);
   line-height: 69px;
   /* identical to box height */
   letter-spacing: 0.1em;
@@ -358,7 +358,7 @@ a {
     font-family: 'Noto Serif TC';
     font-style: normal;
     font-weight: 700;
-    font-size: var(--fz-title);
+    font-size: var(--fz-title-sm);
     line-height: 46px;
     /* identical to box height */
     letter-spacing: 0.1em;
@@ -371,7 +371,7 @@ a {
     font-family: 'Noto Serif TC';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--fz-inner-sm);
     line-height: 147.7%;
     /* identical to box height, or 27px */
     letter-spacing: 0.2em;
@@ -427,7 +427,7 @@ a {
   font-family: 'Noto Serif TC';
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: var(--fz-title);
   line-height: 69px;
   /* identical to box height */
   letter-spacing: 0.1em;
@@ -470,7 +470,7 @@ a {
   font-family: 'Noto Serif TC';
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: var(--fz-title);
   line-height: 69px;
   /* identical to box height */
   letter-spacing: 0.1em;
