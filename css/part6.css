@@ -48,6 +48,8 @@ a {
   position: relative;
   padding-top: 420px;
   padding-bottom: 70px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .part_6 .circle-behind {
@@ -225,6 +227,31 @@ a {
   top: 60%;
 }
 
+@media (max-width: 1620px) {
+  .chestnut-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1580px) {
+  .chestnut-3 {
+    display: none;
+  }
+}
+
+@media (max-width: 1315px) {
+  .chestnut-1 {
+    display: none;
+  }
+}
+
+@media (max-width: 930px) {
+  .part_6 {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
 .part_7 {
   padding-left: 5%;
   padding-right: 5%;
@@ -232,6 +259,8 @@ a {
   color: var(--color-white);
   position: relative;
   padding: 65px 5%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .part_7 .circle {
@@ -348,16 +377,12 @@ a {
 @media (max-width: 1024px) {
   .word {
     display: none;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
   }
 }
 
 @media (max-width: 930px) {
   .part_7 {
     padding: 60px 20%;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
   }
   .part_7 h3 {
     font-family: 'Noto Serif TC';
@@ -619,6 +644,8 @@ a {
   overflow: hidden;
   position: relative;
   padding: 90px 5%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .part_9 .word-1 {
@@ -708,27 +735,21 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 15px;
 }
 
-.part_9 form .age-area1 .age-area1-2 {
-  margin-left: 69px;
+.part_9 form .age-area1 .age-area1-1 {
+  margin-right: 69px;
 }
 
 .part_9 form .age-area2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.part_9 form .age-area2 .age-area1-2 {
-  margin-left: 50px;
+.part_9 form .age-area2 .age-area2-1 {
+  margin-right: 50px;
 }
 
 .part_9 form fieldset {
@@ -800,25 +821,7 @@ a {
   margin-top: 40px;
 }
 
-.part_9 .mail {
-  width: 826px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
-  margin-top: 25px;
-}
-
-.part_9 .mail p {
-  font-size: 36px;
-  border-bottom: 1px var(--color-liz-dark) solid;
-  padding-bottom: 3px;
-  margin-left: 20px;
-}
-
+.part_9 .mail,
 .part_9 .phone {
   width: 826px;
   display: -webkit-box;
@@ -831,11 +834,17 @@ a {
   margin-top: 25px;
 }
 
+.part_9 .mail a,
+.part_9 .phone a {
+  text-decoration: none;
+}
+
+.part_9 .mail p,
 .part_9 .phone p {
   font-size: 36px;
   border-bottom: 1px var(--color-liz-dark) solid;
   padding-bottom: 3px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .part_9 .word-2 {
@@ -844,7 +853,7 @@ a {
   bottom: 3%;
 }
 
-.part_9 .chestnut-1 {
+.part_9 .part9-chestnut-1 {
   width: 250px;
   opacity: 0.5;
   position: absolute;
@@ -852,7 +861,7 @@ a {
   top: 38%;
 }
 
-.part_9 .chestnut-2 {
+.part_9 .part9-chestnut-2 {
   width: 125px;
   opacity: 0.5;
   -webkit-transform: rotate(-15deg);
@@ -862,7 +871,7 @@ a {
   top: 67%;
 }
 
-.part_9 .chestnut-3 {
+.part_9 .part9-chestnut-3 {
   width: 250px;
   opacity: 0.5;
   -webkit-transform: rotate(-40deg);
@@ -870,6 +879,155 @@ a {
   position: absolute;
   left: 88%;
   top: 50%;
+}
+
+@media (max-width: 1315px) {
+  .part9-chestnut-1,
+  .part9-chestnut-2,
+  .part9-chestnut-3 {
+    display: none;
+  }
+}
+
+@media (max-width: 930px) {
+  .part_9 {
+    padding: 60px 20%;
+  }
+  .part_9 h3 {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--fz-title-sm);
+    line-height: 46px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+  }
+  .part_9 p {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--fz-inner-sm);
+    line-height: 147.7%;
+    /* identical to box height, or 27px */
+    letter-spacing: 0.2em;
+  }
+  .part_9 .word-1,
+  .part_9 .word-2 {
+    display: none;
+  }
+  .part_9 .title {
+    width: 100%;
+  }
+  .part_9 .title > h3 {
+    text-align: center;
+  }
+  .part_9 .square {
+    width: 100%;
+  }
+  .part_9 form {
+    width: 100%;
+    padding: 0px 60px;
+  }
+  .part_9 form .form-check-label {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--fz-inner-sm);
+    line-height: 147.7%;
+    /* identical to box height, or 27px */
+    letter-spacing: 0.2em;
+  }
+  .part_9 fieldset {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .part_9 fieldset .pure-control {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0px 10px;
+  }
+  .part_9 fieldset #myvad {
+    width: 100%;
+    margin-right: 10px;
+  }
+  .part_9 fieldset .pure-controls {
+    width: 50%;
+  }
+  .part_9 fieldset .pure-button {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--fz-inner-sm);
+    line-height: 147.7%;
+    /* identical to box height, or 27px */
+    letter-spacing: 0.2em;
+    width: 100%;
+    margin: 0px;
+  }
+  .part_9 .line-1 {
+    display: none;
+  }
+  .part_9 .contact {
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+  }
+  .part_9 .mail,
+  .part_9 .phone {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .part_9 .mail p,
+  .part_9 .phone p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  form .age-area1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-bottom: 15px;
+  }
+  form .age-area1 .age-area1-1 {
+    margin-bottom: 15px;
+  }
+  form .age-area2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-bottom: 15px;
+  }
+  form .age-area2 .age-area2-1 {
+    margin-bottom: 15px;
+  }
+  form .age-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(51, 51, 51, 0.5);
+  }
+}
+
+@media (max-width: 650px) {
+  .part_9 {
+    padding: 60px 5%;
+  }
+  .part_9 #mycanvas {
+    width: 50%;
+  }
 }
 
 footer {
