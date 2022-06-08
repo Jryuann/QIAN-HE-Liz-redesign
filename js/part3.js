@@ -119,3 +119,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+window.onresize = reportWindowSize;
+
+function reportWindowSize(){
+    console.log('you resize now!');
+    // window.innerHeight = ma;
+    let t = window.devicePixelRatio;
+    document.body.style.zoom = 1/t;
+}

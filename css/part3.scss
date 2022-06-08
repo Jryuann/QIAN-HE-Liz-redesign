@@ -1,10 +1,32 @@
+@import 'sheet';
+
 .part_3 {
     overflow: hidden;
     width: 100%;
     height: 50%;
-    background: red;
+    background: var(--color-main-dark);
 
     overflow: hidden;
+
+
+
+
+}
+
+.partner_title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 3%;
+
+    position: absolute;
+
+    @media (max-width: 600px) {
+        transform: scale(0.6);
+
+        margin-top: 4%;
+    }
 }
 
 .container {
@@ -12,13 +34,17 @@
     height: 100vh;
     padding-bottom: -15%;
 
+    transform: scale(1);
 
+    @media (max-width: 600px) {
+        transform: scale(0.8);
+    }
 }
 
 .circle-carousel {
     position: relative;
     padding-top: 100%;
-    background: rgba(black, .3);
+    // background: rgba(black, .3);
 
     height: 100vh;
 
@@ -35,18 +61,28 @@
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 130vh;
+        flex-direction: column;
+
+        width: 40%;
+
+        top: 668px;
+        left: 30%;
+
         z-index: 0;
         opacity: 0;
-        background: rgba(red, .3);
+        // background: rgba(red, .3);
+
+        color: var(--color-white);
 
         &.active {
             z-index: 1;
             opacity: 1;
 
+        }
+
+        p {
+            margin-top: -5px;
+            text-align: center;
         }
     }
 
@@ -60,12 +96,12 @@
     .pagination {
 
         position: absolute;
-        top: 67%;
+        top: 200px;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
-        width: 3000px;
-        height: 3000px;
+        width: 3200px;
+        height: 3200px;
         border-radius: 50%;
         border: 3px solid white;
         transition-property: transform;
@@ -91,7 +127,7 @@
             border: 1px solid black;
 
             &:hover {
-                transform: translate(-50%, -50%) scale(1.05);
+                transform: translate(-50%, -50%) scale(1.01);
                 cursor: pointer;
                 background: white;
                 color: black;
@@ -149,21 +185,21 @@
         }
     }
 
-    .next {
-        right: 5%;
+    // .next {
+    //     right: 5%;
 
-        &:before {
-            left: 65%;
-            border-width: 30px 0 30px 70px;
-        }
-    }
+    //     &:before {
+    //         left: 65%;
+    //         border-width: 30px 0 30px 70px;
+    //     }
+    // }
 
-    .prev {
-        left: 5%;
+    // .prev {
+    //     left: 5%;
 
-        &:before {
-            left: 35%;
-            border-width: 30px 70px 30px 0;
-        }
-    }
+    //     &:before {
+    //         left: 35%;
+    //         border-width: 30px 70px 30px 0;
+    //     }
+    // }
 }
