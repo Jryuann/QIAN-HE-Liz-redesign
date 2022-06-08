@@ -74,11 +74,23 @@ header {
                 width: 20rem;
                 
             }
+
+            &::before{
+                content: url('../img/index/index_QianHe_logoSeal.svg');
+                position: absolute;
+                left:-40px;
+                top: 0px;
+                transform: scale(0.9);
+            }
+
             @media (max-width:1400px){
                 margin-top: 4%;
                 & .text_img_liz{
                     width: 16rem;
                 }
+                &::before{
+                    left:-28px;
+                    transform: scale(0.7);}
             }
             @media (max-width:650px) {
                 margin-top: 20%;
@@ -87,12 +99,7 @@ header {
                 }
             }
 
-            &::before{
-                content: url('../img/index/index_QianHe_logoSeal.svg');
-                position: absolute;
-                left:-40px;
-                top: 0px;
-            }
+            
         }
         .second{
             @include t-inner;
@@ -101,7 +108,7 @@ header {
             padding-top: 28px;
 
             @media (max-width:650px){
-                @include t-inner-sm
+                @include t-inner-sm;
             }
         }
 
@@ -189,7 +196,8 @@ header {
             grid-column:10/11;
             transform: translate(0%,30%) rotate(0.05turn);
             @media (max-width:1340px) {
-                transform: translate(0%,30%) scale(0.8) rotate(0.05turn);
+                grid-column:11/12;
+                transform: translate(50%,30%) scale(0.8) rotate(0.05turn);
             }
         }
 
