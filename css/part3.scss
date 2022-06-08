@@ -1,15 +1,18 @@
 @import 'sheet';
 
+*{
+    transition: 0.4s;
+
+}
+
 .part_3 {
+
     overflow: hidden;
     width: 100%;
     height: 50%;
     background: var(--color-main-dark);
 
     overflow: hidden;
-
-
-
 
 }
 
@@ -21,6 +24,12 @@
     margin-top: 3%;
 
     position: absolute;
+
+    @media (max-width: 780px) {
+        transform: scale(0.8);
+
+        margin-top: 3.5%;
+    }
 
     @media (max-width: 600px) {
         transform: scale(0.6);

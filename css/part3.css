@@ -36,6 +36,11 @@ a {
   text-decoration: none;
 }
 
+* {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .part_3 {
   overflow: hidden;
   width: 100%;
@@ -54,6 +59,14 @@ a {
           justify-content: center;
   margin-top: 3%;
   position: absolute;
+}
+
+@media (max-width: 780px) {
+  .partner_title {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    margin-top: 3.5%;
+  }
 }
 
 @media (max-width: 600px) {
