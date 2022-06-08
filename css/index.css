@@ -46,7 +46,7 @@ a {
   height: 90px;
   font-family: 'Noto Serif TC';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--fz-inner);
   line-height: 147.7%;
   /* identical to box height, or 27px */
@@ -137,6 +137,24 @@ header .inner .main_title .text_img_liz {
   width: 20rem;
 }
 
+@media (max-width: 1400px) {
+  header .inner .main_title {
+    margin-top: 4%;
+  }
+  header .inner .main_title .text_img_liz {
+    width: 16rem;
+  }
+}
+
+@media (max-width: 650px) {
+  header .inner .main_title {
+    margin-top: 20%;
+  }
+  header .inner .main_title .text_img_liz {
+    width: 12rem;
+  }
+}
+
 header .inner .main_title::before {
   content: url("../img/index/index_QianHe_logoSeal.svg");
   position: absolute;
@@ -147,7 +165,7 @@ header .inner .main_title::before {
 header .inner .second {
   font-family: 'Noto Serif TC';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--fz-inner);
   line-height: 147.7%;
   /* identical to box height, or 27px */
@@ -155,6 +173,18 @@ header .inner .second {
   color: var(--color-liz-dark);
   text-align: center;
   padding-top: 28px;
+}
+
+@media (max-width: 650px) {
+  header .inner .second {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--fz-inner-sm);
+    line-height: 147.7%;
+    /* identical to box height, or 27px */
+    letter-spacing: 0.2em;
+  }
 }
 
 header .inner .main-liz {
@@ -215,12 +245,62 @@ header .decs {
       grid-template-columns: repeat(15, 1fr);
 }
 
-header .decs .foodstand {
+header .decs .img_foodstand {
   position: absolute;
   left: 26%;
   bottom: 32%;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+@media (max-width: 1340px) {
+  header .decs .img_foodstand {
+    left: 20%;
+    -webkit-transform: scale(0.7) rotate(-0.05turn);
+            transform: scale(0.7) rotate(-0.05turn);
+  }
+}
+
+@media (max-width: 850px) {
+  header .decs .img_foodstand {
+    left: 18%;
+    -webkit-transform: scale(0.7) rotate(-0.05turn);
+            transform: scale(0.7) rotate(-0.05turn);
+  }
+}
+
+@media (max-width: 650px) {
+  header .decs .img_foodstand {
+    left: -5%;
+    -webkit-transform: scale(0.6) rotate(0turn);
+            transform: scale(0.6) rotate(0turn);
+  }
+}
+
+@media (max-width: 400px) {
+  header .decs .img_foodstand {
+    bottom: 20%;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+}
+
+header .decs .img_machine {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 1;
+  grid-column: 10/11;
+  -webkit-transform: translate(0%, 30%) rotate(0.05turn);
+          transform: translate(0%, 30%) rotate(0.05turn);
+}
+
+@media (max-width: 1340px) {
+  header .decs .img_machine {
+    -webkit-transform: translate(0%, 30%) scale(0.8) rotate(0.05turn);
+            transform: translate(0%, 30%) scale(0.8) rotate(0.05turn);
+  }
 }
 
 header .decs .liz_dec_4 {
@@ -291,7 +371,6 @@ header .liz_dec {
       grid-template-rows: repeat(15, 1fr);
   -ms-grid-columns: (1fr)[15];
       grid-template-columns: repeat(15, 1fr);
-  opacity: 0.7;
 }
 
 header .liz_dec .liz_dec_1 {
@@ -318,7 +397,7 @@ header .liz_dec .liz_dec_1 {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   header .liz_dec .liz_dec_1 {
     -ms-grid-row: 11;
     -ms-grid-row-span: 5;
@@ -410,42 +489,55 @@ header .bg {
   width: 100%;
   height: 100%;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[15];
+      grid-template-rows: repeat(15, 1fr);
+  -ms-grid-columns: (1fr)[15];
+      grid-template-columns: repeat(15, 1fr);
   z-index: 1;
 }
 
-header .bg .index_bg_round {
+header .bg .img_insurance {
+  width: 100px;
+  border-radius: 12px;
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 1;
+  grid-row: 10/11;
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 1;
+  grid-column: 11/12;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+header .index_bg_round {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   -webkit-animation: index_bg_round 80s infinite linear;
           animation: index_bg_round 80s infinite linear;
 }
 
 @-webkit-keyframes index_bg_round {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
+    -webkit-transform: translate(-50%, -50%) rotate(359deg);
+            transform: translate(-50%, -50%) rotate(359deg);
   }
 }
 
 @keyframes index_bg_round {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
+    -webkit-transform: translate(-50%, -50%) rotate(359deg);
+            transform: translate(-50%, -50%) rotate(359deg);
   }
 }
 
@@ -524,7 +616,7 @@ section.part_2 content .text_area .title {
 section.part_2 content .text_area .second {
   font-family: 'Noto Serif TC';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--fz-inner);
   line-height: 147.7%;
   /* identical to box height, or 27px */
@@ -536,7 +628,7 @@ section.part_2 content .text_area .second {
 section.part_2 content .text_area .inner {
   font-family: 'Noto Serif TC';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--fz-inner);
   line-height: 147.7%;
   /* identical to box height, or 27px */

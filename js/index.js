@@ -19,6 +19,8 @@ function update() {
 
 TweenMax.to("#container dec", 1, {x:-tilty*30   , y:-tiltx*30  , rotation:0.01, ease:Power2.easeOut});
 TweenMax.to("#container liz", 1, {x:-tilty*-20, y:-tiltx*-20, rotation:0.01, ease:Power2.easeOut});
+TweenMax.to("#container bg", 1, {x:-tilty*-10, y:-tiltx*-10, rotation:0.01, ease:Power2.easeOut});
+
 }
 
 

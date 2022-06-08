@@ -69,10 +69,24 @@ header {
             align-items: center;
             padding-left: 16px;
             position: relative;
+            
             .text_img_liz{
                 width: 20rem;
                 
             }
+            @media (max-width:1400px){
+                margin-top: 4%;
+                & .text_img_liz{
+                    width: 16rem;
+                }
+            }
+            @media (max-width:650px) {
+                margin-top: 20%;
+                & .text_img_liz{
+                    width: 12rem;
+                }
+            }
+
             &::before{
                 content: url('../img/index/index_QianHe_logoSeal.svg');
                 position: absolute;
@@ -85,6 +99,10 @@ header {
             color: var(--color-liz-dark);
             text-align: center;
             padding-top: 28px;
+
+            @media (max-width:650px){
+                @include t-inner-sm
+            }
         }
 
         .main-liz{
@@ -142,11 +160,37 @@ header {
         grid-template-rows: repeat(15, 1fr);
         grid-template-columns: repeat(15, 1fr);
 
-        .foodstand {
+        .img_foodstand {
             position: absolute;
             left: 26%;
             bottom: 32%;
-            transform: scale(0.9)
+            transform: scale(0.9);
+            @media (max-width:1340px) {
+                left: 20%;
+                transform: scale(0.7) rotate(-0.05turn);
+            }
+            @media (max-width:850px) {
+                left: 18%;
+                transform: scale(0.7) rotate(-0.05turn);
+            }
+            @media (max-width:650px) {
+                left: -5%;
+                transform: scale(0.6) rotate(0.0turn);
+            }
+            @media (max-width:400px){
+                bottom: 20%;
+                transform: scale(0.4);
+            }
+        }
+
+        .img_machine{
+            
+            grid-row: 5/6;
+            grid-column:10/11;
+            transform: translate(0%,30%) rotate(0.05turn);
+            @media (max-width:1340px) {
+                transform: translate(0%,30%) scale(0.8) rotate(0.05turn);
+            }
         }
 
         .liz_dec_4 {
@@ -195,7 +239,6 @@ header {
         grid-template-rows: repeat(15, 1fr);
         grid-template-columns: repeat(15, 1fr);
 
-        opacity: 0.7;
 
         .liz_dec_1 {
             grid-row: 9/15;
@@ -208,7 +251,7 @@ header {
                 transform: rotate(0.01turn);
             }
 
-            @media (max-width:600px) {
+            @media (max-width:650px) {
                 grid-row: 11/16;
                 grid-column: 1/6;
             }
@@ -262,28 +305,50 @@ header {
             width: 40px;
             transform: rotate(-0.1turn);
         }
+
+        // .img_prize{
+        //     width: 100px;
+        //     border-radius: 12px;
+        //     grid-row: 10/11;
+        //     grid-column: 10/11;
+        //     transform: scale(0.8) translate(-20%,-10%);
+
+        // }
     }
 
     .bg {
         @include wh(100%, 100%);
         // background-color: #333;
         position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-rows: repeat(15, 1fr);
+        grid-template-columns: repeat(15, 1fr);
         z-index: 1;
-        .index_bg_round{
-            animation: index_bg_round 80s infinite linear;
+
+
+        .img_insurance{
+            width: 100px;
+            border-radius: 12px;
+            grid-row: 10/11;
+            grid-column: 11/12;
+            transform: scale(0.8);
         }
+    }
+    .index_bg_round{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        animation: index_bg_round 80s infinite linear;
     }
 // 動畫背景圓形旋轉
     @keyframes index_bg_round {
         from {
-            transform: rotate(0deg);
+            transform: translate(-50%,-50%) rotate(0deg);
         }
 
         to {
-            transform: rotate(359deg);
+            transform: translate(-50%,-50%) rotate(359deg);
         }
     }
 }
