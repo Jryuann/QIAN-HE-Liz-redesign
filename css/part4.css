@@ -30,6 +30,7 @@ html {
 html body {
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
 }
 
 a {
@@ -37,6 +38,7 @@ a {
 }
 
 .part_4 {
+  z-index: 1;
   height: var(--section-height);
   background-color: var(--color-main);
   background-image: url("../img/metrila.svg");
@@ -220,7 +222,7 @@ a {
   height: 180px;
   font-family: 'Noto Serif TC';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--fz-inner);
   line-height: 147.7%;
   /* identical to box height, or 27px */
