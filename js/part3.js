@@ -1,4 +1,5 @@
 
+
 /**
 * @module       Carousel with orbital pagination
 * @author       ATOM
@@ -121,9 +122,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.onresize = reportWindowSize;
 
-function reportWindowSize(){
+function reportWindowSize() {
     console.log('you resize now!');
     // window.innerHeight = ma;
     let t = window.devicePixelRatio;
-    document.body.style.zoom = 1/t;
+    document.body.style.zoom = 1 / t;
 }

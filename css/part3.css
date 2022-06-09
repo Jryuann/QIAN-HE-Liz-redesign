@@ -30,18 +30,71 @@ html {
 html body {
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
 }
 
-.part_3 {
-  overflow: hidden;
+* {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.spacer {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-main);
+  background-image: url("../img/metrila.svg");
+  background-size: cover;
+}
+
+.spacer2 {
   width: 100%;
-  height: 50%;
-  background: var(--color-main-dark);
+  height: 50vh;
+  background-color: var(--color-main);
+  background-image: url("../img/metrila.svg");
+  background-size: cover;
+}
+
+.wrapper {
+  height: 250vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: hidden;
+  color: var(--color-white);
+  background-color: var(--color-main);
+  background-image: url("../img/metrila.svg");
+  background-size: cover;
+}
+
+.wrapper.part_3 {
+  z-index: 1000;
+}
+
+.back {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: var(--color-main-dark);
+  border-radius: 500px;
+  z-index: 1;
+}
+
+.part_3 {
+  width: 100%;
+  height: 120vh;
   overflow: hidden;
+  position: absolute;
+  z-index: 3;
 }
 
 .partner_title {
@@ -54,6 +107,14 @@ a {
           justify-content: center;
   margin-top: 3%;
   position: absolute;
+}
+
+@media (max-width: 780px) {
+  .partner_title {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    margin-top: 3.5%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -245,5 +306,11 @@ a {
   border-color: transparent white;
   -webkit-transform: translate(-50%, -50%) scale(1.05);
           transform: translate(-50%, -50%) scale(1.05);
+}
+
+.no_content {
+  width: 100%;
+  height: 250vh;
+  background-color: aqua;
 }
 /*# sourceMappingURL=part3.css.map */
