@@ -7,14 +7,13 @@
 }
 
 .spacer {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: var(--color-main);
     @include material;
 }
 
 .spacer2 {
-
     width: 100%;
     height: 50vh;
     background-color: var(--color-main);
@@ -22,6 +21,7 @@
 }
 
 .wrapper {
+    width: 100%;
     height: 250vh;
     display: flex;
     justify-content: center;
