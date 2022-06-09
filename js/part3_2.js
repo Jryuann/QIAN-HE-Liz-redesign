@@ -14,7 +14,7 @@ arr.forEach((e) => {
     scrollTrigger: {
       trigger: e,
       scrub:0,
-      end: '+=2200',
+      end: '+=3800',
       start: "top bottom"
     }
   })
