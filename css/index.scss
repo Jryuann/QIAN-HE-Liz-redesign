@@ -5,41 +5,56 @@
     transition-duration: 0.5s;
 }
 
-// .nav {
-//     @include wh(100%, 90px);
-//     @include t-inner();
-//     color: var(--color-liz);
-//     position: fixed;
-//     z-index: 4;
-//     // background-color: var(--color-main-dark);
 
-//     // 內部元件對齊
-//     padding-left: 24px;
-//     display: flex;
-//     align-items: center;
+// 開頭動畫
 
-//     logo {
-//         display: flex;
-//         align-items: center;
-//         margin-right: 32px;
-//     }
+.index_start {
+    position: absolute;
+    // background-color: #333;
+    top: 40%;
+    left: 40%;
+    width: 40vh;
+    height: 40vh;
+    transform: scale(1) rotate(0deg);
+    z-index: 11;
+    // display: none;
+    /* animation: index_loadin 3s 1 linear; */
+}
 
-//     .nav_btns {
-//         label {
-//             // background-color: #fff;
-//             padding: 2px 4px;
+.o {
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -20%;
+    left: -20%;
 
-//             border-radius: var(--radius-sm);
-//         }
-//     }
-// }
+}
 
-// 以上nav
+.o1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    top: -10%;
+    right: -20%;
+}
 
-$blackColor: #020304;
+.o2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+// 開頭動畫
 
 body {
-    background: $blackColor;
 
     h1 {
         position: fixed;
@@ -85,7 +100,7 @@ body {
             margin-top: -1px;
             left: 0;
             display: block;
-            background: $blackColor;
+            background: var(--color-liz-dark);
             transition: .5s;
         }
 
@@ -149,7 +164,7 @@ body {
                 >a {
                     text-decoration: none;
                     text-transform: uppercase;
-                    color: $blackColor;
+                    color: var(--color-liz-dark);
                     font-weight: 700;
                     font-family: Noto Serif TC;
                     display: block;

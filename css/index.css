@@ -30,7 +30,9 @@ html {
 html body {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  background-image: url("../img/metrila.svg");
+  background-size: cover;
+  background-color: var(--color-main);
 }
 
 a {
@@ -42,8 +44,46 @@ a {
           transition-duration: 0.5s;
 }
 
-body {
-  background: #020304;
+.index_start {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 40vh;
+  height: 40vh;
+  -webkit-transform: scale(1) rotate(0deg);
+          transform: scale(1) rotate(0deg);
+  z-index: 11;
+  /* animation: index_loadin 3s 1 linear; */
+}
+
+.o {
+  width: 50%;
+  height: 50%;
+  background-color: red;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -20%;
+  left: -20%;
+}
+
+.o1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 100%;
+  position: absolute;
+  top: -10%;
+  right: -20%;
+}
+
+.o2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 body h1 {
@@ -94,7 +134,7 @@ body input + label span {
   margin-top: -1px;
   left: 0;
   display: block;
-  background: #020304;
+  background: var(--color-liz-dark);
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -163,7 +203,7 @@ body input ~ nav > ul > li {
 body input ~ nav > ul > li > a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #020304;
+  color: var(--color-liz-dark);
   font-weight: 700;
   font-family: Noto Serif TC;
   display: block;
