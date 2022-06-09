@@ -290,7 +290,7 @@ a {
   .part_6 p {
     font-family: 'Noto Serif TC';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: var(--fz-inner-sm);
     line-height: 147.7%;
     /* identical to box height, or 27px */
