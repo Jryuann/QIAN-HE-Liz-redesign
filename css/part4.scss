@@ -7,8 +7,8 @@
     z-index: 1;
 
     height: var(--section-height);
-    // background-color: var(--color-main);
-    // @include material;
+    background-color: var(--color-main);
+    @include material;
     @include padding-x;
 
     display: flex;
