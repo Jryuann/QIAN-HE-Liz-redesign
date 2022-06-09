@@ -106,6 +106,7 @@ html{
     @include reset;
     body{
         @include reset;
+        overflow-x: hidden;
     }
 }
 

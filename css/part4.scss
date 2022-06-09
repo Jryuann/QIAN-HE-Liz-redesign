@@ -4,6 +4,8 @@
 @import 'sheet';
 
 .part_4 {
+    z-index: 1;
+
     height: var(--section-height);
     background-color: var(--color-main);
     @include material;
