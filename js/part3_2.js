@@ -1,11 +1,3 @@
-        // let tl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".wrapper",
-//     scrub:0.1,
-//     start: "top center"
-//   }
-// })
-
 let arr = gsap.utils.toArray(".wrapper")
 
 arr.forEach((e) => {
@@ -29,12 +21,3 @@ arr.forEach((e) => {
 
     })
 })
-// tl.to("#back", {
-//   scale: 10,
-
-// })
-
-// tl.to("#back", {
-//   scale: 2,
-  
-// })
