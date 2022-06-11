@@ -80,11 +80,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 
-// document.querySelectorAll("nav li").forEach((btn, index) => {
-//     btn.addEventListener("click", () => {
-//       gsap.to(window, {duration: 1, scrollTo:{y:"#part_" + (index + 1), offsetY:70}});
-//     });
-//   });
+document.querySelectorAll("nav li").forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      gsap.to(window, {duration: 1, scrollTo:{y:".part_" + (index + 1), offsetY:70}});
+    });
+  });
 
 const main_liz = document.querySelector(".main_liz")
 
