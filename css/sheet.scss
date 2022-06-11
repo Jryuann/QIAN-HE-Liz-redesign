@@ -107,7 +107,7 @@ html{
     body{
         @include reset;
         // overflow: hidden;
-        @include material();
+        // @include material();
         background-color: var(--color-main) ;
     }
 }
