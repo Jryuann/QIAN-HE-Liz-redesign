@@ -150,6 +150,7 @@ body {
 
             top: -500px;
             .decorate {
+                
                 display: flex;
                 justify-content: start;
                 margin-left: -40px;
@@ -162,6 +163,11 @@ body {
                 &.ele_scale {
                     margin-top: 20px;
                     transform: rotate(5deg);
+                }
+
+                &.booth {
+                    margin-top: -50px;
+                    transform: rotate(-10deg);
                 }
 
             }
