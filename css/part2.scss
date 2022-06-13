@@ -1,0 +1,98 @@
+@import 'sheet';
+section.part_2 {
+    @include wh(100%, 100vh);
+    @include material;
+    background-color: var(--color-main);
+
+    display: grid;
+    grid-template-columns: 5% 11fr 5%;
+    grid-template-rows: 4fr 7fr 4fr;
+
+
+    content {
+        grid-row: 2;
+        grid-column: 2;
+
+        display: flex;
+        align-items: center;
+
+
+
+        @media (max-width:900px) {
+            flex-direction: column;
+            
+        }
+
+        .pic_area {
+
+            @include wh(400px, 400px);
+            min-width: 400px;
+            border-radius: 100%;
+            background-color: #333;
+            margin-right: 32px;
+
+            // background-image: url('../img/part2/part2_swiper_img\ \(1\).jpg');
+            // background-size: cover;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            overflow:hidden;
+            box-shadow: var(--shadow);
+
+            .mySlides{
+                display: none;
+                height: 100%;
+            }
+
+            @media (max-width :900px) {
+                @include wh(250px, 250px);
+                min-height: 250px;
+                min-width: 250px;
+                margin-right: 0px;
+                margin-bottom: 32px;
+
+            }
+        }
+
+        .text_area {
+            border-radius: var(--radius);
+            background-color: rgba(255, 255, 255, 0.2);     
+            padding: 16px;
+            .title {
+                display: flex;
+                    align-items: center;
+                @include t-title;
+                color: var(--color-liz-dark);
+                @media (max-width:650px) {
+                    @include t-title-sm                    
+                }
+
+                .logo{
+                    display: flex;
+                    align-items: center;
+                    svg{
+                        width: 50px;
+                        margin-right: 12px;
+                    }
+                }
+            }
+
+            .second {
+                @include t-inner;
+                font-weight: bold;
+                color: var(--color-main-dark);
+                @media (max-width:650px) {
+                    @include t-inner-sm                    
+                }
+            }
+
+            .inner {
+                @include t-inner;
+                color: var(--color-liz-dark);
+            }
+        }
+    }
+
+
+
+
+}
