@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <!-- 驗證碼 -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
         integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Animate.css v4.1.1 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link rel="stylesheet" href="./css/sheet.css">
     <link rel="stylesheet" href="./css/part6.css">
@@ -29,7 +32,7 @@
                 <h3>加盟專區</h3>
             </div>
         </div>
-        <p class="text">乾和栗子秉持著與加盟主攜手前進的初衷，在把關品質的同時也提供技術上設備上的支援。</p>
+        <p class="text animate__animated animate__slideInDown">乾和栗子秉持著與加盟主攜手前進的初衷，在把關品質的同時也提供技術上設備上的支援。</p>
         <div class="card-area">
             <div class="square">
                 <div>
@@ -77,7 +80,7 @@
         <h1>加盟專區</h1>
         <div class="low-cost">
             <div>
-                <h3>低成本</h3>
+                <h3 class="low-cost-text">低成本</h3>
                 <p>無須任何形式的加盟金、簽約金，只要一人即可出攤做生意。</p>
                 <p>且無須店面與裝潢成本，早市、黄昏市、夜市、檔期、定點、店面均適合。</p>
             </div>
@@ -121,86 +124,152 @@
     </section>
 
     <section class="part_8">
+
         <h3>加盟流程</h3>
         <p class="text">簡單三步驟，加入乾和這個大家庭<br>開始您的創業體驗</p>
-        <!-- 加盟諮詢 -->
-        <div class="square">
-            <div class="icon-group">
-                <div class="circle">
-                    <img class="icon" src="./img/part6/8/1_步驟1_icon.svg " alt="">
-                </div>
-            </div>
-            <div class="content">
-                <h3>加盟諮詢</h3>
-                <p>填寫表單或撥打加盟專線</p>
-            </div>
-        </div>
-        <!-- 箭頭 -->
-        <div class="arrow"></div>
-        <!-- 洽談簽約 -->
-        <div class="square">
-            <div class="icon-group">
-                <div class="circle">
-                    <img class="icon" src="./img/part6/8/步驟2_合約洽談_icon.svg " alt="">
-                </div>
-            </div>
-            <div class="content">
-                <h3>洽談簽約</h3>
-                <p>雙方面談討論開店地點、<br>
-                    加盟合約並確認加盟規範</p>
-            </div>
-        </div>
-        <!-- 箭頭 -->
-        <div class="arrow"></div>
-        <!-- 技術轉移 -->
-        <div class="square">
-            <div class="icon-group">
-                <div class="circle">
-                    <img class="icon" src="./img/part6/8/步驟3_技術轉移_icon.svg " alt="">
-                </div>
-            </div>
-            <div class="content">
-                <h3>技術轉移</h3>
-                <p>乾和將提供炒栗子設備，<br>
-                    與完整不限期的現場技術<br>
-                    教學和後續的諮詢服務。</p>
-            </div>
-        </div>
-        <!-- 箭頭 -->
-        <div class="arrow"></div>
-        <!-- 完成開店 -->
-        <div class="square">
-            <div class="icon-group">
-                <div class="circle">
-                    <img class="icon" src="./img/part6/8/3_步驟4完成_icon.svg" alt="">
-                </div>
-            </div>
-            <div class="content content-finish">
-                <h3>完成開店</h3>
-                <p>歡迎加入乾和!</p>
-            </div>
-        </div>
-        <!-- line -->
-        <div class="line"></div>
 
-        <div>
-            <div class="join-icon-group">
-                <div class="join-circle">
-                    <img class="join-icon" src="./img/part6/8/1_步驟1_icon.svg" alt="">
-                </div>
-               <div class="step-line"></div>
-            </div>
-            <h4>步驟1</h4>
+        <div class="step-group">
 
-            <div class="contract-icon-group">
-                <div class="contract-circle">
-                    <img class="contract-icon" src="./img/part6/8/步驟2_合約洽談_icon.svg" alt="">
+            <div class="step-1">
+                <!-- 加盟諮詢 -->
+                <div class="square">
+                    <div class="content">
+                        <h3>加盟諮詢</h3>
+                        <p>填寫表單或撥打加盟專線</p>
+                    </div>
                 </div>
-               <div class="step-line"></div>
+
+                <div class="join-icon-group">
+                    <div class="circle">
+                        <img class="join-icon" src="./img/part6/8/1_步驟1_icon.svg" alt="">
+                    </div>
+                    <div class="join-step-line"></div>
+                </div>
+
+                <h4>步驟1</h4>
             </div>
-            <h4>步驟2</h4>
+
+            <div class="step-2">
+                <h4>步驟2</h4>
+
+                <div class="contract-icon-group">
+                    <div class="circle">
+                        <img class="join-icon" src="./img/part6/8/步驟2_合約洽談_icon.svg" alt="">
+                    </div>
+                    <div class="contract-step-line"></div>
+                </div>
+
+                <!-- 洽談簽約 -->
+                <div class="square">
+                    <div class="content">
+                        <h3>洽談簽約</h3>
+                        <p>雙方面談討論開店地點、 <br>
+                            加盟合約並確認加盟規範</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-3">
+                <!-- 技術轉移 -->
+                <div class="square">
+                    <div class="content">
+                        <h3>技術轉移</h3>
+                        <p>乾和將提供炒栗子設備，<br>
+                            與完整不限期的現場技術 <br>
+                            教學和後續的諮詢服務。</p>
+                    </div>
+                </div>
+
+                <div class="tec-icon-group">
+                    <div class="circle">
+                        <img class="tec-join-icon" src="./img/part6/8/步驟3_技術轉移_icon.svg" alt="">
+                    </div>
+                    <div class="tec-step-line"></div>
+                </div>
+
+                <h4>步驟3</h4>
+            </div>
+
+            <div class="step-4">
+
+                <div class="finish-icon-group">
+                    <div class="circle">
+                        <img class="finish-icon" src="./img/part6/8/3_步驟4完成_icon.svg" alt="">
+                    </div>
+                    <div class="finish-step-line"></div>
+                </div>
+
+                <!-- 完成開店 -->
+                <div class="square">
+                    <div class="content">
+                        <h3>完成開店</h3>
+                        <p>歡迎加入乾和!</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="square-group">
+            <!-- 加盟諮詢 -->
+            <div class="square">
+                <div class="icon-group">
+                    <div class="circle">
+                        <img class="icon" src="./img/part6/8/1_步驟1_icon.svg " alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>加盟諮詢</h3>
+                    <p>填寫表單或撥打加盟專線</p>
+                </div>
+            </div>
+            <!-- 箭頭 -->
+            <div class="arrow"></div>
+            <!-- 洽談簽約 -->
+            <div class="square">
+                <div class="icon-group">
+                    <div class="circle">
+                        <img class="icon" src="./img/part6/8/步驟2_合約洽談_icon.svg " alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>洽談簽約</h3>
+                    <p>雙方面談討論開店地點、<br>
+                        加盟合約並確認加盟規範</p>
+                </div>
+            </div>
+            <!-- 箭頭 -->
+            <div class="arrow"></div>
+            <!-- 技術轉移 -->
+            <div class="square">
+                <div class="icon-group">
+                    <div class="circle">
+                        <img class="icon" src="./img/part6/8/步驟3_技術轉移_icon.svg " alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>技術轉移</h3>
+                    <p>乾和將提供炒栗子設備，<br>
+                        與完整不限期的現場技術<br>
+                        教學和後續的諮詢服務。</p>
+                </div>
+            </div>
+            <!-- 箭頭 -->
+            <div class="arrow"></div>
+            <!-- 完成開店 -->
+            <div class="square">
+                <div class="icon-group">
+                    <div class="circle">
+                        <img class="icon" src="./img/part6/8/3_步驟4完成_icon.svg" alt="">
+                    </div>
+                </div>
+                <div class="content content-finish">
+                    <h3>完成開店</h3>
+                    <p>歡迎加入乾和!</p>
+                </div>
+            </div>
+            <!-- line -->
+            <div class="line"></div>
+        </div>
     </section>
 
     <section class="part_9">
@@ -238,7 +307,7 @@
 
                 <!-- line -->
                 <div class="age-line"></div>
-                
+
                 <p>3.年齡層</p>
                 <div class="form-group form-check">
                     <div class="age-area1">
@@ -342,109 +411,7 @@
         crossorigin="anonymous"></script>
 
     <!-- 驗證碼 -->
-    <script>
-
-        var cxt = mycanvas.getContext('2d');//canvas getContext 渲染環境
-        var validate = "";
-        var baseColor = ["#0000ff", "#CE0000", "#7E3D76", "#46A3FF"];//底色
-        var sColor = ["#B22222", "#F9F900", "#82D900", "#FFAF60"];   //干擾點顏色
-        var fColor = ["#FFA07A", "#00BB00", "#EAC100", "#F75000"];   //文字顏色
-        var indexColor = ""; //顏色組序號
-
-        /*生成隨機顏色組合序號*/
-        function randColor() {
-            indexColor = "";
-            indexColor = Math.floor(Math.random() * baseColor.length); //亂數取得 0~顏色陣列長度
-            return indexColor;
-        }
-
-        /*生成6位隨機數*/
-        function rand() {
-            validate = "";
-            // 大小寫英文 數字 排除 I l o O 0  ,並重複數字 增加出現機率
-            var str = "123456789abcdefghijkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ123456789";
-            var arr = str.split("");
-            var ranNum;
-            for (var i = 0; i < 6; i++) {
-                ranNum = Math.floor(Math.random() * 66);   //隨機數在[0,65]之間
-                validate += arr[ranNum];
-            }
-            //alert("rand() "+validate);
-            //alert("rand() "+typeof(validate));
-            return validate;
-        }
-
-        /*干擾線的隨機x坐標值*/
-        function lineX() {
-            var ranLineX = Math.floor(Math.random() * 150);
-            return ranLineX;
-        }
-
-        /*干擾線的隨機y坐標值*/
-        function lineY() {
-            var ranLineY = Math.floor(Math.random() * 40);
-            return ranLineY;
-        }
-
-        /*更換內容*/
-        function clickChange() {
-            var i = randColor(); //執行randColor()取得顏色組序號
-            //alert(i);
-            cxt.beginPath();
-            cxt.fillStyle = baseColor[i];//底色
-            cxt.fillRect(0, 0, 150, 40);//(x,y,width,height)
-
-            /*生成干擾點 40*/
-            for (var j = 0; j < 40; j++) {
-
-                //產生一個新路徑，產生後再使用繪圖指令來設定路徑 
-                //若省略beginPath，則每點擊一次驗證碼會累積干擾線的條數
-                cxt.beginPath();
-                cxt.fillStyle = sColor[i];//顏色
-                var arcSize = (Math.floor(Math.random() * (50 - 5 + 1)) + 5) / 10; //亂數 取得介於0.5~5之間的值
-                cxt.arc(lineX(), lineY(), arcSize, 0, 2 * Math.PI);  //arc()產生一個圓形  context.arc(x,y,r,sAngle,eAngle,counterclockwise);
-                cxt.fill();
-
-            }
-            cxt.fillStyle = fColor[i];//隨機文字顏色
-            cxt.font = 'bold 25px Verdana';
-            cxt.fillText(rand(), 10, 30);   //把rand()生成的隨機數文本填充到canvas中      
-        }
-
-        /*點擊驗證碼更換*/
-        mycanvas.onclick = function (e) {
-            e.preventDefault();   //阻止滑鼠點擊發生預設的行為
-            clickChange();
-        }
-
-        /*輸入驗證碼與核對*/
-        var myform = document.getElementById('myform');
-        myform.addEventListener("submit", function (e) {
-            var vad = myform.vad.value;
-            //alert("myform "+vad.toUpperCase());
-            //alert("myform "+validate.toUpperCase());
-            //將字串利用toUpperCase()將小寫英文轉成大寫英文 進行比較
-            if (vad.toUpperCase() === validate.toUpperCase()) {
-                alert("通過");
-                myform.vad.value = "";
-                clickChange();
-            }
-            else {
-                alert("請確認")
-                myform.vad.value = "請重新輸入驗證碼";
-            }
-            e.preventDefault();
-
-        });
-
-        /*輸入文字框清空*/ //改用placeholder設定預設內容
-        /*var myvad=document.getElementById('myvad');
-        myvad.addEventListener("focus",function(e){
-            myform.vad.value="";
-        });*/
-
-        clickChange();
-    </script>
+    <script src="./js/part6.js"></script>
 </body>
 
 </html>
