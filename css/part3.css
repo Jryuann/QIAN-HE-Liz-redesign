@@ -236,6 +236,12 @@ body {
           transform: rotate(5deg);
 }
 
+.circle-carousel .slide .title_pics .decorate.booth {
+  margin-top: -50px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
 .circle-carousel .slide .title_pics .stores {
   display: -webkit-box;
   display: -ms-flexbox;

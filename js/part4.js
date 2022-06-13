@@ -13,12 +13,12 @@ ScrollTrigger.matchMedia({
           start: "top+=1900 top",
           pin: true,
           scrub: true,
-          end: "bottom-=2550 center",
+          end: "bottom-=2600 center",
           markers: true,
       }
   });
     tl2.to("#card1", { x: 0, duration: 2 })
-    .to("#card2", { x: 0, duration: 2 })
+    .to("#card2", { x: 0, duration: 2  })
     .to("#card3", { x: 0, duration: 2 })
   },
   "(min-width: 300px)": () => {
