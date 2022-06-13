@@ -30,6 +30,9 @@ html {
 html body {
   margin: 0px;
   padding: 0px;
+  overflow: hidden;
+  background-image: url("../img/metrila.svg");
+  background-size: cover;
   background-color: var(--color-main);
 }
 
@@ -49,6 +52,12 @@ section.part_2 {
       grid-template-columns: 5% 11fr 5%;
   -ms-grid-rows: 4fr 7fr 4fr;
       grid-template-rows: 4fr 7fr 4fr;
+}
+
+@media (max-width: 1280px) {
+  section.part_2 {
+    padding-top: 100px;
+  }
 }
 
 section.part_2 content {

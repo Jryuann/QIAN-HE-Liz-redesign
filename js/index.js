@@ -23,9 +23,9 @@ function update() {
 
 
 
-  gsap.to("#container dec", 1, {x:-tilty*50, y:-tiltx*50  , rotation:360});
-  gsap.to("#container liz", 1, {x:tiltx*-50, y:tilty*50, rotation:360});
-  gsap.to("#container bg", 1, {x:-tilty*50, y:-tiltx*50, rotation:360});
+  gsap.to("#container dec", 2, {x:-tilty*20, y:-tiltx*20  , rotation:360});
+  gsap.to("#container liz", 2, {x:tiltx*-25, y:tilty*-15, rotation:360});
+  gsap.to("#container bg", 2, {x:-tilty*20, y:-tiltx*20, rotation:360});
 
 }
 
