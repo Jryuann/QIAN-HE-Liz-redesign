@@ -78,11 +78,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 });
-
+var burger =  document.querySelector('#burger')
 
 document.querySelectorAll("nav li").forEach((btn, index) => {
+    
     btn.addEventListener("click", () => {
-      gsap.to(window, {duration: 1, scrollTo:{y:".part_" + (index + 1), offsetY:70}});
+      gsap.to(window, {duration: 1, scrollTo:{y:".part_" + (index + 1), offsetY:0}});
+      burger.checked = false;
     });
   });
 

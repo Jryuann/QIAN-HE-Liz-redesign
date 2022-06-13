@@ -456,6 +456,12 @@ header {
             grid-row: 6/7;
             grid-column: 14/15;
             transform: translate(-10%, -5%);
+            @media (max-width:1340px){
+                transform: translate(-10%, -5%) scale(0.8);
+            }
+            @media (max-width:700px){
+                transform: translate(-10%, -5%) scale(0.5);
+            }
         }
 
         .r4 {
@@ -602,7 +608,9 @@ header {
             @media (max-width:1300px) {
                 transform: scale(0.8);
             }
-
+            @media (max-width:700px){
+                display: none;
+            }
         }
     }
 

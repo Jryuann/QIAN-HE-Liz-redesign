@@ -21,7 +21,7 @@ function update() {
     let tiltx = (dy / cy );
     let tilty = - (dx / cx);
 
-TweenMax.to("#container dec", 0.5, {x:-tilty*-100   , y:-tiltx*-100  , rotation:360, ease:Power0.easeNone});
+TweenMax.to("#container dec",1, {x:-tilty*-100   , y:-tiltx*-100  , rotation:360, ease:Power0.easeNone});
 TweenMax.to("#container liz", 1, {x:-tilty*-100, y:-tiltx*-100, rotation:360, ease:Power0.easeNone});
 TweenMax.to("#container bg", 1, {x:-tilty*-100, y:-tiltx*-100, rotation:360, ease:Power0.easeNone});
 
