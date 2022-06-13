@@ -65,8 +65,11 @@ section.part_2 {
                     align-items: center;
                 @include t-title;
                 color: var(--color-liz-dark);
+                border-bottom: 1px solid #c2724a7e;
+
                 @media (max-width:650px) {
-                    @include t-title-sm                    
+                    @include t-title-sm;   
+                    padding-bottom:4px;                 
                 }
 
                 .logo{
@@ -81,8 +84,9 @@ section.part_2 {
 
             .second {
                 @include t-inner;
-                font-weight: bold;
                 color: var(--color-main-dark);
+                margin: 0px;
+                margin-top: 18px;
                 @media (max-width:650px) {
                     @include t-inner-sm                    
                 }
@@ -91,6 +95,9 @@ section.part_2 {
             .inner {
                 @include t-inner;
                 color: var(--color-liz-dark);
+                @media (max-width:650px) {
+                    @include t-inner-sm                    
+                }
             }
         }
     }

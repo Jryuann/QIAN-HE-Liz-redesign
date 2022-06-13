@@ -132,6 +132,7 @@ section.part_2 content .text_area .title {
   /* identical to box height */
   letter-spacing: 0.1em;
   color: var(--color-liz-dark);
+  border-bottom: 1px solid #c2724a7e;
 }
 
 @media (max-width: 650px) {
@@ -143,6 +144,7 @@ section.part_2 content .text_area .title {
     line-height: 46px;
     /* identical to box height */
     letter-spacing: 0.1em;
+    padding-bottom: 4px;
   }
 }
 
@@ -168,8 +170,9 @@ section.part_2 content .text_area .second {
   line-height: 147.7%;
   /* identical to box height, or 27px */
   letter-spacing: 0.2em;
-  font-weight: bold;
   color: var(--color-main-dark);
+  margin: 0px;
+  margin-top: 18px;
 }
 
 @media (max-width: 650px) {
@@ -193,5 +196,17 @@ section.part_2 content .text_area .inner {
   /* identical to box height, or 27px */
   letter-spacing: 0.2em;
   color: var(--color-liz-dark);
+}
+
+@media (max-width: 650px) {
+  section.part_2 content .text_area .inner {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--fz-inner-sm);
+    line-height: 147.7%;
+    /* identical to box height, or 27px */
+    letter-spacing: 0.2em;
+  }
 }
 /*# sourceMappingURL=part2.css.map */
