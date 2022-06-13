@@ -455,12 +455,14 @@ header bottom {
 }
 
 header bottom.mask {
+  width: 100%;
   -webkit-mask: url("../img/index/index_under_mask.svg") no-repeat center 100%/contain;
   mask: url("../img/index/index_under_mask.svg") no-repeat center 100%/contain;
 }
 
 @media (max-width: 780px) {
   header bottom.mask {
+    width: 100%;
     -webkit-mask: url("../img/index/index_under_mask_md.svg") no-repeat center 100%/contain;
     mask: url("../img/index/index_under_mask_md.svg") no-repeat center 100%/contain;
   }
