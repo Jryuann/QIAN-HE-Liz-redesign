@@ -211,7 +211,32 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: block;
   top: -500px;
+  -webkit-animation: title_pics 1s ease-in-out;
+          animation: title_pics 1s ease-in-out;
+}
+
+@-webkit-keyframes title_pics {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes title_pics {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .circle-carousel .slide .title_pics .decorate {
@@ -231,6 +256,8 @@ body {
 }
 
 .circle-carousel .slide .title_pics .decorate.ele_scale {
+  -webkit-transform: scale(2);
+          transform: scale(2);
   margin-top: 20px;
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
@@ -242,6 +269,17 @@ body {
           transform: rotate(-10deg);
 }
 
+.circle-carousel .slide .title_pics #mr_chen_machine {
+  margin-right: -50px;
+  margin-top: 25px;
+  -webkit-transform: rotate(-15deg) scaleX(-1);
+          transform: rotate(-15deg) scaleX(-1);
+}
+
+.circle-carousel .slide .title_pics #mr_dung_liz_box {
+  margin-top: -70px;
+}
+
 .circle-carousel .slide .title_pics .stores {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,31 +287,30 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  margin-top: 48px;
+  margin-top: 36px;
 }
 
 .circle-carousel .slide .title_pics .stores img {
   width: 180px;
 }
 
-.circle-carousel .slide .title_pic {
-  top: -520px;
-  left: 20px;
-  position: absolute;
-  z-index: 11;
-  width: 180px;
-  height: 200px;
-  background-size: cover;
+.circle-carousel .slide .title_pics .stores.ms_chang_store {
+  margin-top: 98px;
 }
 
-.circle-carousel .slide .title_pic_store {
-  top: -240px;
-  right: 40px;
-  position: absolute;
-  z-index: 9;
-  width: 180px;
-  height: 180px;
-  background-size: cover;
+.circle-carousel .slide .title_pics .stores.mr_huang_store {
+  margin-top: 120px;
+}
+
+.circle-carousel .slide .title_pics .stores.mr_chen_store {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 10px;
+}
+
+.circle-carousel .slide .title_pics .stores.mr_dung_store {
+  margin-top: 170px;
 }
 
 .circle-carousel .slide .title_names {
@@ -472,6 +509,12 @@ body {
   width: 200px;
   height: 50px;
   background-color: black;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  display: none;
+}
+
+.title_pics {
   -webkit-transform: scale(1);
           transform: scale(1);
   display: none;
