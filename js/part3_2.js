@@ -5,15 +5,15 @@ arr.forEach((e) => {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: e,
-      scrub:0,
+      scrub: 0,
       end: '+=3800',
-      start: "top bottom"
+      start: "top bottom",
+      // markers: true // 顯示標記
     }
   })
   
     tl.to(e.children[0], {
     scale: 18,
-
     })
 
     tl.to(e.children[0], {
