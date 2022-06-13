@@ -11,5 +11,5 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}
     x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 3500); // Change image every 3.5 seconds
 }
