@@ -136,10 +136,10 @@
 
         padding: 50px 0px;
 
-        animation-name: square;
-        animation-duration: 6s;
-        animation-delay: 1s;
-        animation-timing-function: ease;
+        // animation-name: square;
+        // animation-duration: 6s;
+        // animation-delay: 1s;
+        // animation-timing-function: ease;
         // animation-iteration-count: infinite;
         // animation-direction: alternate;
 
@@ -162,17 +162,17 @@
         }
     }
 
-    @keyframes square {
-        from {
-            padding-left: 100%;
-            width: 300%;
-        }
+    // @keyframes square {
+    //     from {
+    //         padding-left: 100%;
+    //         width: 300%;
+    //     }
 
-        to {
-            padding-left: 0%;
-            width: 100%;
-        }
-    }
+    //     to {
+    //         padding-left: 0%;
+    //         width: 100%;
+    //     }
+    // }
 
 
     .line {
@@ -428,44 +428,44 @@
         top: -4%;
         transform: translate(-50%);
 
-        animation-name: circle;
-        animation-duration: 6s;
-        animation-delay: 3s;
-        animation-timing-function: ease;
+        // animation-name: circle;
+        // animation-duration: 6s;
+        // animation-delay: 3s;
+        // animation-timing-function: ease;
         // animation-iteration-count: infinite;
     }
 
-    @keyframes circle {
-        from {
-            left: 0%;
-        }
+    // @keyframes circle {
+    //     from {
+    //         left: 0%;
+    //     }
 
-        to {
-            left: 50%;
-        }
-    }
+    //     to {
+    //         left: 50%;
+    //     }
+    // }
 
     .word {
         position: absolute;
         left: 90%;
         top: 8%;
 
-        animation-name: move;
-        animation-duration: 6s;
-        animation-delay: 3s;
-        animation-timing-function: ease;
+        // animation-name: move;
+        // animation-duration: 6s;
+        // animation-delay: 3s;
+        // animation-timing-function: ease;
         // animation-iteration-count: infinite;
     }
 
-    @keyframes move {
-        from {
-            top: 50%;
-        }
+    // @keyframes move {
+    //     from {
+    //         top: 50%;
+    //     }
 
-        to {
-            top: 8%;
-        }
-    }
+    //     to {
+    //         top: 8%;
+    //     }
+    // }
 
     h1 {
         @include reset();

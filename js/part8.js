@@ -1,14 +1,21 @@
-gsap.registerPlugin(ScrollTrigger);
+gsap.set("#step-1-square", { x: 200, y: 0 , opacity:0, scale:0.2})
+gsap.set("#step-2-square", { x: -200, y: 0, opacity:0, scale:0.2 })
+gsap.set("#step-3-square", { x: 200, y: 0, opacity:0, scale:0.2 })
+gsap.set("#step-4-square", { x:-200, y: 0, opacity:0, scale:0.2 })
 
-gsap.to("#step-1-square", {
-  x: 100,
-  duration: 2,
+
+let tl = gsap.timeline({
   scrollTrigger: {
-    trigger: ".part_8", //觸發得物件
-    start: "top top", // (物件開始位置, 卷軸開始位置) top center bottom px
-    end: "bottom bottom ", //(物件結束位置, 卷軸結束位置) , 也可以設卷軸捲動多少結束動畫(+=300)
-    pin: true, // 物件執行完動畫會跟著卷軸走，類似 fixed-top
-    scrub: 0.3, // 物件動畫根據卷軸捲動程度跑
-    markers: true // 顯示標記
+      trigger: ".part_8 "+".part_9",
+      start: "+=2000px top",
+      pin: true,
+      scrub: true,
+      end : "100%-=1500px bottom" ,
+      markers: true,
+      // stagger: 0.5,
   }
 });
+tl.to("#step-1-square", { x: 0, duration: 6, opacity:1, scale:1})
+.to("#step-2-square", { x: 0, duration: 6, opacity:1, scale:1 })
+.to("#step-3-square", { x: 0, duration: 6, opacity:1, scale:1 })
+.to("#step-4-square", { x: 0, duration: 6, opacity:1, scale:1 })
