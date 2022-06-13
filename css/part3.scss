@@ -112,10 +112,10 @@ body {
         position: absolute;
         flex-direction: column;
 
-        width: 32%;
+        width: 34%;
 
         top: 668px;
-        left: 34%;
+        left: 33%;
 
         z-index: 0;
         opacity: 0;
@@ -124,7 +124,7 @@ body {
         color: var(--color-white);
 
         @media (max-width: 992px) {
-            width:60%;
+            width: 64%;
             left: 20%;
 
         }
@@ -133,6 +133,89 @@ body {
             z-index: 1;
             opacity: 1;
 
+        }
+
+        .title_pics{
+            width: 500px;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+
+            top: -500px;
+            .decorate {
+                img {
+                    width: 180px;
+                }
+
+            }
+            .stores {
+                img {
+                    width: 180px;
+                }
+
+            }
+        }
+
+        .title_pic {
+            top: -520px;
+            left: 20px;
+            position: absolute;
+            z-index: 11;
+            width: 180px;
+            height: 200px;
+
+            background-size: cover;
+        }
+
+        .title_pic_store {
+            top: -240px;
+            right: 40px;
+            position: absolute;
+            z-index: 9;
+            width: 180px;
+            height: 180px;
+
+            background-size: cover;
+        }
+
+        .title_names {
+            position: absolute;
+            z-index: 10;
+
+            top: -60%;
+            width: auto;
+            height: auto;
+
+            text-align: center;
+            padding: 0 18px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            display: block;
+
+            font-size: 40px;
+
+
+            animation: title_names 1s ease-in-out;
+
+            @media (max-width: 1260px) {
+                font-size: 28px;
+
+            }
+
+            @media (max-width: 992px) {
+                font-size: 24px;
+
+            }
+
+            @keyframes title_names {
+                from {
+                    transform: scale(0);
+                }
+
+                to {
+                    transform: scale(1);
+                }
+            }
         }
 
         h2 {
@@ -166,7 +249,7 @@ body {
 
             @media (max-width: 992px) {
                 @include t-inner-sm;
-                
+
             }
 
         }
@@ -247,6 +330,17 @@ body {
     }
 }
 
+.title_names {
+    position: absolute;
+    z-index: 1500;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+
+    transform: scale(1);
+    display: none;
+
+}
 
 .no_content {
     width: 100%;

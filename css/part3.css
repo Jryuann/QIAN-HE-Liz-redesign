@@ -174,9 +174,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 32%;
+  width: 34%;
   top: 668px;
-  left: 34%;
+  left: 33%;
   z-index: 0;
   opacity: 0;
   color: var(--color-white);
@@ -184,7 +184,7 @@ body {
 
 @media (max-width: 992px) {
   .circle-carousel .slide {
-    width: 60%;
+    width: 64%;
     left: 20%;
   }
 }
@@ -192,6 +192,96 @@ body {
 .circle-carousel .slide.active {
   z-index: 1;
   opacity: 1;
+}
+
+.circle-carousel .slide .title_pics {
+  width: 500px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: -500px;
+}
+
+.circle-carousel .slide .title_pics .decorate img {
+  width: 180px;
+}
+
+.circle-carousel .slide .title_pics .stores img {
+  width: 180px;
+}
+
+.circle-carousel .slide .title_pic {
+  top: -520px;
+  left: 20px;
+  position: absolute;
+  z-index: 11;
+  width: 180px;
+  height: 200px;
+  background-size: cover;
+}
+
+.circle-carousel .slide .title_pic_store {
+  top: -240px;
+  right: 40px;
+  position: absolute;
+  z-index: 9;
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+}
+
+.circle-carousel .slide .title_names {
+  position: absolute;
+  z-index: 10;
+  top: -60%;
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 0 18px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  display: block;
+  font-size: 40px;
+  -webkit-animation: title_names 1s ease-in-out;
+          animation: title_names 1s ease-in-out;
+}
+
+@media (max-width: 1260px) {
+  .circle-carousel .slide .title_names {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .circle-carousel .slide .title_names {
+    font-size: 24px;
+  }
+}
+
+@-webkit-keyframes title_names {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes title_names {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .circle-carousel .slide h2 {
@@ -332,6 +422,17 @@ body {
           filter: none;
   -webkit-transform: translate(-50%, -50%) scale(1.05);
           transform: translate(-50%, -50%) scale(1.05);
+}
+
+.title_names {
+  position: absolute;
+  z-index: 1500;
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  display: none;
 }
 
 .no_content {
