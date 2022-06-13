@@ -30,7 +30,7 @@ html {
 html body {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  background-color: var(--color-main);
 }
 
 a {
@@ -43,7 +43,57 @@ a {
 }
 
 body {
-  background: #020304;
+  overflow: hidden;
+}
+
+.index_start {
+  position: absolute;
+  opacity: .9;
+  top: 40%;
+  left: 40%;
+  width: 40vh;
+  height: 40vh;
+  -webkit-transform: scale(1) rotate(0deg);
+          transform: scale(1) rotate(0deg);
+  z-index: 11;
+  /* animation: index_loadin 3s 1 linear; */
+}
+
+.index_start .o_all {
+  background-image: url("../img/index/liz.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.index_start .o {
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -20%;
+  left: -20%;
+}
+
+.index_start .o1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  position: absolute;
+  top: -10%;
+  right: -20%;
+  -webkit-transform: rotate(0.2turn);
+          transform: rotate(0.2turn);
+}
+
+.index_start .o2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-transform: rotate(0.5turn);
+          transform: rotate(0.5turn);
 }
 
 body h1 {
@@ -56,6 +106,11 @@ body h1 {
   font-family: Noto Serif TC;
   letter-spacing: 4px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+body h1 a {
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +121,6 @@ body h1 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  cursor: pointer;
 }
 
 body h1 svg {
@@ -94,7 +148,7 @@ body input + label span {
   margin-top: -1px;
   left: 0;
   display: block;
-  background: #020304;
+  background: var(--color-liz-dark);
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -163,15 +217,22 @@ body input ~ nav > ul > li {
 body input ~ nav > ul > li > a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #020304;
+  color: var(--color-liz-dark);
+  font-family: 'Noto Serif TC';
+  font-style: normal;
   font-weight: 700;
-  font-family: Noto Serif TC;
+  font-size: var(--fz-title-sm);
+  line-height: 46px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
   display: block;
   padding: 30px;
 }
 
 body input:checked ~ nav {
   background-color: #f1cd56ee;
+  background-image: url("../img/metrila.svg");
+  background-size: cover;
   height: 100%;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
@@ -205,6 +266,68 @@ header {
   z-index: 0;
 }
 
+header .main_liz {
+  width: 9rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 5;
+  -webkit-animation: main_liz 10s infinite linear;
+          animation: main_liz 10s infinite linear;
+  cursor: pointer;
+}
+
+header .main_liz:hover {
+  width: 9.5rem;
+}
+
+@media (max-width: 1550px) {
+  header .main_liz {
+    width: 8rem;
+  }
+  header .main_liz:hover {
+    width: 8.5rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  header .main_liz {
+    width: 7rem;
+  }
+}
+
+@-webkit-keyframes main_liz {
+  0% {
+    -webkit-transform: scale(1) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
+  }
+  50% {
+    -webkit-transform: scale(1.1) translate(-50%, -50%);
+            transform: scale(1.1) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
+  }
+}
+
+@keyframes main_liz {
+  0% {
+    -webkit-transform: scale(1) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
+  }
+  50% {
+    -webkit-transform: scale(1.1) translate(-50%, -50%);
+            transform: scale(1.1) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
+  }
+}
+
 header .inner {
   -ms-grid-row: 1;
   -ms-grid-row-span: 13;
@@ -227,6 +350,9 @@ header .inner {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 6%;
+  opacity: 0;
+  -webkit-transform: scale(0.1) rotate(180deg);
+          transform: scale(0.1) rotate(180deg);
 }
 
 header .inner .main_title {
@@ -301,27 +427,6 @@ header .inner .second {
     line-height: 147.7%;
     /* identical to box height, or 27px */
     letter-spacing: 0.2em;
-  }
-}
-
-header .inner .main-liz {
-  width: 9rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-@media (max-width: 1550px) {
-  header .inner .main-liz {
-    width: 8rem;
-  }
-}
-
-@media (max-width: 1440px) {
-  header .inner .main-liz {
-    width: 7rem;
   }
 }
 
@@ -507,6 +612,9 @@ header .liz_dec {
       grid-template-rows: repeat(15, 1fr);
   -ms-grid-columns: (1fr)[15];
       grid-template-columns: repeat(15, 1fr);
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+  opacity: 0;
 }
 
 header .liz_dec img {
@@ -675,21 +783,12 @@ header .bg .img_insurance {
   -ms-grid-column: 11;
   -ms-grid-column-span: 1;
   grid-column: 11/12;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
 }
 
 @media (max-width: 1300px) {
   header .bg .img_insurance {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-}
-
-@media (max-width: 1300px) {
-  header .bg .img_insurance {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 
@@ -699,6 +798,16 @@ header .index_bg_round {
   left: 50%;
   -webkit-animation: index_bg_round 80s infinite linear;
           animation: index_bg_round 80s infinite linear;
+}
+
+header .load_animate {
+  opacity: 0;
+  -webkit-transform: scale(0.1) rotate(0deg);
+          transform: scale(0.1) rotate(0deg);
+}
+
+header .load_animate_opacity {
+  opacity: 0;
 }
 
 @-webkit-keyframes index_bg_round {

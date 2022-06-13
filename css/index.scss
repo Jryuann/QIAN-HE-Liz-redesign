@@ -5,41 +5,73 @@
     transition-duration: 0.5s;
 }
 
-// .nav {
-//     @include wh(100%, 90px);
-//     @include t-inner();
-//     color: var(--color-liz);
-//     position: fixed;
-//     z-index: 4;
-//     // background-color: var(--color-main-dark);
 
-//     // 內部元件對齊
-//     padding-left: 24px;
-//     display: flex;
-//     align-items: center;
-
-//     logo {
-//         display: flex;
-//         align-items: center;
-//         margin-right: 32px;
-//     }
-
-//     .nav_btns {
-//         label {
-//             // background-color: #fff;
-//             padding: 2px 4px;
-
-//             border-radius: var(--radius-sm);
-//         }
-//     }
-// }
-
-// 以上nav
-
-$blackColor: #020304;
 
 body {
-    background: $blackColor;
+    overflow: hidden;
+}
+
+// 開頭動畫 栗子三兄弟
+.index_start {
+    position: absolute;
+    opacity: .9;
+    // background-color: #333;
+    top: 40%;
+    left: 40%;
+    width: 40vh;
+    height: 40vh;
+    transform: scale(1) rotate(0deg);
+    z-index: 11;
+
+    // display: none;
+    /* animation: index_loadin 3s 1 linear; */
+    .o_all {
+        // background-color: red;
+        background-image: url("../img/index/liz.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .o {
+        width: 50%;
+        height: 50%;
+
+        border-radius: 100%;
+        position: absolute;
+        bottom: -20%;
+        left: -20%;
+
+    }
+
+    .o1 {
+        width: 200px;
+        height: 200px;
+
+        border-radius: 100%;
+        position: absolute;
+        top: -10%;
+        right: -20%;
+        transform: rotate(0.2turn);
+    }
+
+    .o2 {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        transform: rotate(0.5turn);
+    }
+}
+
+
+
+// 開頭動畫
+
+body {
 
     h1 {
         position: fixed;
@@ -53,11 +85,16 @@ body {
         letter-spacing: 4px;
         text-transform: uppercase;
 
-        display: flex;
-        align-items: center;
-        user-select: none;
+
         // 不能反白
         cursor: pointer;
+
+        a {
+            color: #000;
+            display: flex;
+            align-items: center;
+            user-select: none;
+        }
 
         svg {
             margin-right: 8px;
@@ -85,7 +122,7 @@ body {
             margin-top: -1px;
             left: 0;
             display: block;
-            background: $blackColor;
+            background: var(--color-liz-dark);
             transition: .5s;
         }
 
@@ -149,9 +186,8 @@ body {
                 >a {
                     text-decoration: none;
                     text-transform: uppercase;
-                    color: $blackColor;
-                    font-weight: 700;
-                    font-family: Noto Serif TC;
+                    color: var(--color-liz-dark);
+                    @include t-title-sm;
                     display: block;
                     padding: 30px;
                 }
@@ -162,6 +198,7 @@ body {
     input:checked~nav {
         //   background-color: var(--color-main);
         background-color: #f1cd56ee;
+        @include material;
 
         height: 100%;
         transition-delay: 0s;
@@ -170,6 +207,7 @@ body {
             >li {
                 opacity: 1;
                 transition-delay: .5s;
+
             }
         }
     }
@@ -193,6 +231,49 @@ header {
     overflow: hidden;
     z-index: 0;
 
+    .main_liz {
+        width: 9rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+
+        animation: main_liz 10s infinite linear;
+
+        cursor: pointer;
+
+        &:hover{
+            width: 9.5rem;
+        }
+        @media (max-width:1550px) {
+            width: 8rem;
+            &:hover{
+                width: 8.5rem;
+            }
+        }
+
+        @media(max-width:1440px) {
+            width: 7rem;
+        }
+        @keyframes main_liz {
+            0% {
+                transform: scale(1) translate(-50%, -50%);
+                
+            }
+    
+            50% {
+                transform: scale(1.1)
+                translate(-50%, -50%);
+            }
+
+            100% {
+                transform: scale(1) translate(-50%, -50%);
+                
+            }
+        }
+    }
+
     .inner {
         // background-color: rgba(228, 165, 165, 0.13);
         grid-row: 1/14;
@@ -204,6 +285,9 @@ header {
         justify-content: top;
         align-items: center;
         padding-top: 6%;
+
+        opacity: 0;
+        transform: scale(0.1) rotate(180deg);
 
         .main_title {
             display: flex;
@@ -260,21 +344,7 @@ header {
             }
         }
 
-        .main-liz {
-            width: 9rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
 
-            @media (max-width:1550px) {
-                width: 8rem;
-            }
-
-            @media(max-width:1440px) {
-                width: 7rem;
-            }
-        }
 
     }
 
@@ -305,7 +375,6 @@ header {
                 mask: url("../img/index/index_under_mask_md.svg") no-repeat center 100% / contain;
             }
         }
-
 
     }
 
@@ -411,6 +480,12 @@ header {
         display: grid;
         grid-template-rows: repeat(15, 1fr);
         grid-template-columns: repeat(15, 1fr);
+
+
+        // 動畫
+        transform: scale(0.1);
+        opacity: 0;
+        // overflow: hidden;
 
         img {
             opacity: 0.7;
@@ -522,15 +597,12 @@ header {
             border-radius: 12px;
             grid-row: 10/11;
             grid-column: 11/12;
-            transform: scale(0.8);
+            // transform: scale(0.8);
 
             @media (max-width:1300px) {
-                transform: scale(0.6);
+                transform: scale(0.8);
             }
 
-            @media (max-width:1300px) {
-                transform: scale(0.6);
-            }
         }
     }
 
@@ -538,8 +610,17 @@ header {
         position: absolute;
         top: 50%;
         left: 50%;
-        
+
         animation: index_bg_round 80s infinite linear;
+    }
+
+    .load_animate {
+        opacity: 0;
+        transform: scale(0.1) rotate(0deg);
+    }
+
+    .load_animate_opacity {
+        opacity: 0;
     }
 
     // 動畫背景圓形旋轉
@@ -548,7 +629,7 @@ header {
             transform: translate(-50%, -50%) rotate(0deg);
         }
 
-        to {    
+        to {
             transform: translate(-50%, -50%) rotate(359deg);
         }
     }

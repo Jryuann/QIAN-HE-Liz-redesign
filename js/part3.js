@@ -44,18 +44,6 @@ function initCarousel(options) {
     CustomCarousel.prototype.addListeners = function () {
         var slider = this;
 
-        if (this.next) {
-            this.next.addEventListener('click', function () {
-                slider.setSlide(slider.activeN + 1);
-            });
-        }
-
-        if (this.prev) {
-            this.prev.addEventListener('click', function () {
-                slider.setSlide(slider.activeN - 1);
-            });
-        }
-
         for (var i = 0; i < this.dots.length; i++) {
             this.dots[i].addEventListener('click', function (i) {
                 return function () { slider.setSlide(i); }
