@@ -2,7 +2,7 @@ window.onbeforeunload = function () {
   window.scrollTo(0,0);
 }
 
-let wrap = document.getElementById('part_index');
+let wrap = document.querySelector('.part_index');
 let request = null;
 let mouse = { x: 0, y: 0 };
 let cx = window.innerWidth / 2;
