@@ -11,13 +11,14 @@ arr.forEach((e) => {
       // markers: true // 顯示標記
     }
   })
-  
-    tl.to(e.children[0], {
+
+  tl.to(e.children[0], {
     scale: 18,
-    })
+  })
 
-    tl.to(e.children[0], {
-      scale: 2,
+  tl.to(e.children[0], {
+    scale: 2,
 
-    })
+  })
 })
+

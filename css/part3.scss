@@ -147,8 +147,23 @@ body {
 
 
             flex-direction: column;
+            display: block;
 
             top: -500px;
+
+            animation: title_pics 1s ease-in-out;
+            
+
+            @keyframes title_pics {
+                from {
+                    transform: scale(0);
+                }
+
+                to {
+                    transform: scale(1);
+                }
+            }
+
             .decorate {
                 
                 display: flex;
@@ -161,6 +176,7 @@ body {
                 }
 
                 &.ele_scale {
+                    transform: scale(2);
                     margin-top: 20px;
                     transform: rotate(5deg);
                 }
@@ -170,40 +186,49 @@ body {
                     transform: rotate(-10deg);
                 }
 
+
+
             }
+
+            #mr_chen_machine {
+                margin-right: -50px;
+                margin-top: 25px;
+                transform:rotate(-15deg) scaleX(-1);
+            }
+
+            #mr_dung_liz_box {
+                margin-top: -70px;
+            }
+
+
             .stores {
                 display: flex;
                 justify-content: end;
 
-                margin-top: 48px;
+                margin-top: 36px;
 
                 img {
                     width: 180px;
                 }
 
+                &.ms_chang_store {
+                    margin-top: 98px;
+                }
+
+                &.mr_huang_store {
+                    margin-top: 120px;
+                }
+
+                &.mr_chen_store {
+                    justify-content: start;
+                    margin-top: 10px;
+                }
+
+                &.mr_dung_store {
+                    margin-top: 170px;
+                }
+
             }
-        }
-
-        .title_pic {
-            top: -520px;
-            left: 20px;
-            position: absolute;
-            z-index: 11;
-            width: 180px;
-            height: 200px;
-
-            background-size: cover;
-        }
-
-        .title_pic_store {
-            top: -240px;
-            right: 40px;
-            position: absolute;
-            z-index: 9;
-            width: 180px;
-            height: 180px;
-
-            background-size: cover;
         }
 
         .title_names {
@@ -368,6 +393,11 @@ body {
     transform: scale(1);
     display: none;
 
+}
+
+.title_pics {
+    transform: scale(1);
+    display: none;
 }
 
 .no_content {
