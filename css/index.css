@@ -547,14 +547,19 @@ header .decs .img_machine {
 }
 
 header .decs .liz_dec_4 {
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 1;
-  grid-row: 5/6;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  -webkit-transform: translate(-30%, 12%);
-          transform: translate(-30%, 12%);
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 8rem;
+  -webkit-transform: rotate(-0.2turn);
+          transform: rotate(-0.2turn);
+}
+
+@media (max-width: 900px) {
+  header .decs .liz_dec_4 {
+    -webkit-transform: scale(0.6) rotate(0.1turn);
+            transform: scale(0.6) rotate(0.1turn);
+  }
 }
 
 header .decs .r1 {
@@ -747,13 +752,10 @@ header .liz_dec .liz_dec_3 {
 }
 
 header .liz_dec .liz_dec_5 {
-  -ms-grid-row: 6;
-  -ms-grid-row-span: 1;
-  grid-row: 6/7;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4/5;
-  width: 40px;
+  position: absolute;
+  top: 26%;
+  left: 20%;
+  width: 2.2rem;
   -webkit-transform: rotate(-0.1turn);
           transform: rotate(-0.1turn);
 }
