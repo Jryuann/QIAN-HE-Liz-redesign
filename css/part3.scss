@@ -128,6 +128,8 @@ body {
 
         color: var(--color-white);
 
+
+
         @media (max-width: 992px) {
             width: 64%;
             left: 18%;
@@ -138,31 +140,52 @@ body {
             z-index: 1;
             opacity: 1;
 
-        }
-
-        .title_pics{
-            width: 500px;
-            position: absolute;
-            display: flex;
-
-
-            flex-direction: column;
-            display: block;
-
-            top: -500px;
-
-            animation: title_pics 1s ease-in-out;
-            
-
-            @keyframes title_pics {
-                from {
-                    transform: scale(0);
-                }
-
-                to {
-                    transform: scale(1);
+            h2,p {
+                animation: slides 0.4s ease-in-out;
+                
+    
+                @keyframes slides {
+                    from {
+                        opacity: 0;
+                    }
+        
+                    to {
+                        opacity: 100;
+                    }
                 }
             }
+
+
+
+            .title_names,.title_pics {
+    
+                animation: title_names 0.4s ease-in-out;
+    
+                @keyframes title_names {
+                    from {
+                        transform: scale(0);
+                    }
+    
+                    to {
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            .title_pics{
+                width: 500px;
+                position: absolute;
+                display: flex;
+    
+    
+                flex-direction: column;
+                display: block;
+    
+                top: -500px;
+
+        }
+
+
 
             .decorate {
                 
@@ -186,6 +209,10 @@ body {
                     transform: rotate(-10deg);
                 }
 
+                &.liz_box {
+                    margin-top: -70px;
+                }
+
 
 
             }
@@ -194,10 +221,6 @@ body {
                 margin-right: -50px;
                 margin-top: 25px;
                 transform:rotate(-15deg) scaleX(-1);
-            }
-
-            #mr_dung_liz_box {
-                margin-top: -70px;
             }
 
 
@@ -246,10 +269,6 @@ body {
             display: block;
 
             font-size: 40px;
-
-
-            animation: title_names 1s ease-in-out;
-
             @media (max-width: 1260px) {
                 font-size: 28px;
 
@@ -260,15 +279,7 @@ body {
 
             }
 
-            @keyframes title_names {
-                from {
-                    transform: scale(0);
-                }
 
-                to {
-                    transform: scale(1);
-                }
-            }
         }
 
         h2 {
