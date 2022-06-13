@@ -3,6 +3,7 @@
 * {
     // border: 1px solid rgba(0, 0, 0, 0.2);
     transition-duration: 0.5s;
+    user-select: none;
 }
 
 
@@ -86,7 +87,7 @@ body {
         text-transform: uppercase;
 
 
-        // 不能反白
+        
         cursor: pointer;
 
         a {
@@ -94,6 +95,7 @@ body {
             display: flex;
             align-items: center;
             user-select: none;
+            // 不能反白
         }
 
         svg {
@@ -652,6 +654,7 @@ section.part_2 {
     grid-template-columns: 5% 11fr 5%;
     grid-template-rows: 4fr 7fr 4fr;
 
+
     content {
         grid-row: 2;
         grid-column: 2;
@@ -671,10 +674,18 @@ section.part_2 {
             background-color: #333;
             margin-right: 32px;
 
-            background-image: url('../img/part2/part2_swiper_img\ \(1\).jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            // background-image: url('../img/part2/part2_swiper_img\ \(1\).jpg');
+            // background-size: cover;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            overflow:hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .mySlides{
+                display: none;
+            }
 
             @media (max-width :900px) {
                 @include wh(250px, 250px);

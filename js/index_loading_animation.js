@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         duration: 1.5,
         delay: 2,
     });
-    gsap.to("#container .load_animate", {
+    gsap.to(".load_animate", {
         rotation: 360,
         opacity: 1,
         scale: 1,
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     });
 
-    gsap.to("#container .load_animate_opacity", {
+    gsap.to(".load_animate_opacity", {
         opacity: 1,
         duration: 1,
         delay: 2.5 ,
