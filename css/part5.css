@@ -31,6 +31,9 @@ html {
 html body {
   margin: 0px;
   padding: 0px;
+  background-image: url("../img/metrila.svg");
+  background-size: cover;
+  background-color: var(--color-main);
 }
 
 a {
@@ -186,16 +189,19 @@ a {
   position: absolute;
   margin-left: -140px;
   margin-top: -180px;
-  width: 24px;
-  height: 81px;
+  width: 30px;
+  height: 100px;
   content: " ";
   background-image: url(../img/part5/1_糖炒栗子日文標.svg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   z-index: 10;
 }
 
 @media (max-width: 1300px) {
   .part_5 .product_list .product_content .product_name::after {
+    width: 20px;
+    height: 80px;
     margin-left: -100px;
     margin-top: -90px;
   }
@@ -203,6 +209,8 @@ a {
 
 @media (max-width: 1062px) {
   .part_5 .product_list .product_content .product_name::after {
+    width: 25px;
+    height: 100px;
     margin-left: 0px;
     margin-top: 0px;
     left: 30%;
@@ -212,15 +220,9 @@ a {
 
 @media (max-width: 600px) {
   .part_5 .product_list .product_content .product_name::after {
-    width: 18px;
-    height: 61px;
+    width: 20px;
+    height: 80px;
   }
-}
-
-.part_5 .product_list .product_content .product_name img {
-  position: absolute;
-  top: 184px;
-  right: 450px;
 }
 
 @media (max-width: 1300px) {

@@ -114,22 +114,27 @@
                     position: absolute;
                     margin-left: -140px;
                     margin-top: -180px;
-                    width: 24px;
-                    height: 81px;
+
+                    width: 30px;
+                    height: 100px;
                     content: " ";
                     background-image: url(../img/part5/1_糖炒栗子日文標.svg);
-                    background-size: cover;
+                    background-size: contain;
+                    background-repeat: no-repeat;
 
 
                     z-index: 10;
 
                     @media (max-width: 1300px) {
+                        width: 20px;
+                        height: 80px;
                         margin-left: -100px;
                         margin-top: -90px;
                     }
 
                     @media (max-width: 1062px) {
-
+                        width: 25px;
+                        height: 100px;
                         margin-left: 0px;
                         margin-top: 0px;
                         left: 30%;
@@ -137,19 +142,14 @@
                     }
 
                     @media (max-width: 600px) {
-                        width: 18px;
-                        height: 61px;
+                        width: 20px;
+                        height: 80px;
                     }
 
 
                 }
 
 
-                img {
-                    position: absolute;
-                    top: 184px;
-                    right: 450px;
-                }
 
 
                 @media (max-width: 1300px) {
