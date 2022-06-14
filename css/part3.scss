@@ -20,6 +20,7 @@
 
     @media (max-width: 600px) {
         height: auto;
+        display: none;
     }
 }
 
@@ -51,6 +52,8 @@
         position: unset;
 
         background-color: var(--color-main-dark);
+
+
     }
 }
 
