@@ -3480,7 +3480,7 @@ section.part_2 content .text_area .inner {
     /* identical to box height, or 27px */
     letter-spacing: 0.2em;
     width: 100%;
-    margin: 0px;
+    margin-left: 0px;
   }
   .part_9 .line-1 {
     display: none;

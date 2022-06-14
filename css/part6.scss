@@ -1381,7 +1381,7 @@
             .pure-button {
                 @include t-inner-sm();
                 width: 100%;
-                margin: 0px;
+                margin-left: 0px;
             }
         }
 
@@ -1446,9 +1446,9 @@
     .part_9 {
         padding: 60px 5%;
 
-        // #mycanvas {
-        //     width: 50%;
-        // }
+        .ver-code {
+            width: 50%;
+        }
     }
 }
 
