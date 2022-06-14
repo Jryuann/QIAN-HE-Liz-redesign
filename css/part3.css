@@ -84,11 +84,6 @@ body {
   z-index: 10;
 }
 
-.circle {
-  -webkit-transform-origin: center;
-          transform-origin: center;
-}
-
 .back {
   position: absolute;
   width: 3000px;
@@ -96,6 +91,13 @@ body {
   background-color: var(--color-main-dark);
   border-radius: 100%;
   z-index: 1;
+}
+
+@media (max-width: 780px) {
+  .back {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
 }
 
 .part_3 {

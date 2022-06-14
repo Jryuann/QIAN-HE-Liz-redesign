@@ -37,10 +37,6 @@ body {
     }
 }
 
-.circle {
-    transform-origin: center;
-}
-
 .back {
     position: absolute;
     width: 3000px;
@@ -48,6 +44,10 @@ body {
     background-color: var(--color-main-dark);
     border-radius: 100%;
     z-index: 1;
+
+    @media (max-width:780px) {
+        transform: translateY(-10%);
+    }
 
 }
 
