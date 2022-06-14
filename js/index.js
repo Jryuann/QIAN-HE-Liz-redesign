@@ -8,7 +8,7 @@ let mouse = { x: 0, y: 0 };
 let cx = window.innerWidth / 2;
 let cy = window.innerHeight / 2;
 
-document.querySelector('.part_index').addEventListener('mousemove', function(event) {
+wrap.addEventListener('mousemove', function(event) {
     mouse.x = event.pageX;
     mouse.y = event.pageY;
 cancelAnimationFrame(request);
