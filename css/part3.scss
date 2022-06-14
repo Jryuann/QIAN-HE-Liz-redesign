@@ -28,7 +28,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: hidden;
     color: var(--color-white);
     background-color: var(--color-main);
     @include material;
@@ -36,6 +35,10 @@ body {
     &.part_3 {
         z-index: 10;
     }
+}
+
+.circle {
+    transform-origin: center;
 }
 
 .back {
