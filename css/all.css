@@ -1198,8 +1198,6 @@ a {
           align-items: center;
   color: var(--color-white);
   background-color: var(--color-main);
-  background-image: url("../img/metrila.svg");
-  background-size: cover;
 }
 
 .wrapper.part_3 {
@@ -1300,7 +1298,7 @@ a {
           flex-direction: column;
   width: 34%;
   top: 668px;
-  left: 33%;
+  left: 32%;
   z-index: 0;
   opacity: 0;
   color: var(--color-white);
@@ -1459,8 +1457,8 @@ a {
 .circle-carousel .slide .title_names {
   position: absolute;
   z-index: 10;
-  top: -60%;
-  width: auto;
+  top: -45%;
+  width: 170%;
   height: auto;
   text-align: center;
   padding: 0 18px;
@@ -1473,12 +1471,14 @@ a {
 @media (max-width: 1260px) {
   .circle-carousel .slide .title_names {
     font-size: 28px;
+    width: 150%;
   }
 }
 
 @media (max-width: 992px) {
   .circle-carousel .slide .title_names {
     font-size: 24px;
+    width: auto;
   }
 }
 
@@ -1508,7 +1508,7 @@ a {
 }
 
 .circle-carousel .slide p {
-  margin-top: -5px;
+  margin-top: 15px;
   font-family: 'Noto Serif TC';
   font-style: normal;
   font-weight: 500;
