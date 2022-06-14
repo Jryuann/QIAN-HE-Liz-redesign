@@ -140,24 +140,40 @@ squares.forEach(square => {
   const squareTimeline = gsap.timeline({
     scrollTrigger: {
       trigger: square,
-      start: "top center",
-      end: "bottom center",
+      start: "top+=100 center",
+      end: "bottom+=150 center",
       toggleActions: "play reverse play reverse",
       markers: true
+
+
     }
   })
 
   // Animate the content items
   const squ = square.querySelectorAll(".squ");
   squareTimeline.from(squ, {
-    duration: 1,
-    y: 100,
+    duration: 0.1,
+    y: 20,
     opacity: 0,
     stagger: 0.2,
+    delay: 0,
   }, 0)
 
 });
+// gsap.set(".squ", { y: 100, opacity: 0 })
+// gsap.registerPlugin(ScrollTrigger);
+// let part_8_tl2 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".part_8",
+//     start: 8500,
+//     end: "bottom bottom",
+//     scrub: true,
+//     markers: true,
 
+//     duration: 5,
+//   },
+// });
+// part_8_tl2.to(".squ", { y: 0, duration: 1, opacity: 1 })
 
 // 1920px
 // gsap.registerPlugin(ScrollTrigger);

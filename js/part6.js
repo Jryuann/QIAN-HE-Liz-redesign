@@ -49,7 +49,7 @@ let part6_t1 = gsap.timeline({
   scrollTrigger: {
     trigger: ".part_6",
     start: 6500,
-    end: "bottom-=200 bottom",
+    end: "bottom-=500 bottom",
     scrub: true,
     markers: true,
 
