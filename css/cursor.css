@@ -20,6 +20,8 @@
   font-family: 'Noto Serif TC', serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 html {
@@ -67,7 +69,6 @@ a {
   height: 20px;
   border-radius: 100%;
   background-color: var(--color-liz-dark);
-  opacity: .3;
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
