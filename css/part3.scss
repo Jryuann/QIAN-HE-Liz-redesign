@@ -43,17 +43,12 @@ body {
 
 .back {
     position: absolute;
-    top: calc(100% + 600px);
-    width: 190px;
-    height: 190px;
+    width: 3000px;
+    height: 3000px;
     background-color: var(--color-main-dark);
-    border-radius: 500px;
+    border-radius: 100%;
     z-index: 1;
 
-    @media (max-width:1200px) {
-        width: 160px;
-        height: 160px;
-    }
 }
 
 .part_3 {
