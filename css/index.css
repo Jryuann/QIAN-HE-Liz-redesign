@@ -98,10 +98,13 @@ a {
           transform: rotate(0.5turn);
 }
 
-body {
-  overflow: hidden;
+section {
   background-image: url("../img/metrila.svg");
   background-size: cover;
+}
+
+body {
+  overflow: hidden;
 }
 
 body h1 {
@@ -278,6 +281,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url("../img/metrila.svg");
+  background-size: cover;
   position: relative;
   overflow: hidden;
   z-index: 0;
