@@ -16,7 +16,7 @@ arr.forEach((e) => {
   })
   tl.to(e.children[0], {
     scale: 1,
-
+    display : "block",
   })
 
   tl.to(e.children[0], {
