@@ -104,7 +104,7 @@ body {
 
     }
 
-    input {
+    input.burger_input {
         display: none;
     }
 
@@ -141,7 +141,7 @@ body {
         cursor: pointer;
     }
 
-    input:checked+label {
+    input:checked+.burger_label {
         span {
             opacity: 0;
             top: 50%;
