@@ -1,15 +1,15 @@
 
-let wrap = document.querySelector('.part_index');
-let request = null;
+let part6_wrap = document.querySelector('.part_6');
+let part6_request = null;
 let mouse = { x: 0, y: 0 };
 let cx = window.innerWidth / 2;
 let cy = window.innerHeight / 2;
 
-document.querySelector('.part_index').addEventListener('mousemove', function(event) {
+part6_wrap.addEventListener('mousemove', function(event) {
     mouse.x = event.pageX;
     mouse.y = event.pageY;
-cancelAnimationFrame(request);
-request = requestAnimationFrame(update);
+cancelAnimationFrame(part6_request);
+part6_request = requestAnimationFrame(update);
 });
 
 function update() {
@@ -20,9 +20,9 @@ function update() {
 
 
 
-  gsap.to("#container dec", 2, {x:-tilty*20, y:-tiltx*20  , rotation:360});
-  gsap.to("#container liz", 2, {x:tiltx*-25, y:tilty*-15, rotation:360});
-  gsap.to("#container bg", 2, {x:-tilty*20, y:-tiltx*20, rotation:360});
+  gsap.to(".part_6-chestnut ", 2, {x:-tilty*10, y:-tiltx*10});
+//   gsap.to(".circle-behind liz", 2, {x:tiltx*-25, y:tilty*-15, rotation:360});
+//   gsap.to(".circle-behind bg", 2, {x:-tilty*20, y:-tiltx*20, rotation:360});
 
 }
 

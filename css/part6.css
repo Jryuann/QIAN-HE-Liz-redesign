@@ -70,6 +70,14 @@ a {
           transform: translate(-50%, 0%);
 }
 
+.part_6 .circle-behind .part_6-chestnut {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 .part_6 .circle-behind .circle-chestnut-1 {
   width: 270px;
   opacity: 0.9;
