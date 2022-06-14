@@ -31,8 +31,6 @@ html {
 html body {
   margin: 0px;
   padding: 0px;
-  background-image: url("../img/metrila.svg");
-  background-size: cover;
   background-color: var(--color-main);
 }
 

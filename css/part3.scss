@@ -40,6 +40,7 @@ body {
 
 .back {
     position: absolute;
+    top: calc(100% + 600px);
     width: 190px;
     height: 190px;
     background-color: var(--color-main-dark);

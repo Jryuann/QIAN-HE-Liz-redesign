@@ -30,6 +30,7 @@ html {
 html body {
   margin: 0px;
   padding: 0px;
+  background-color: var(--color-main);
 }
 
 a {
@@ -86,6 +87,7 @@ body {
 
 .back {
   position: absolute;
+  top: calc(100% + 600px);
   width: 190px;
   height: 190px;
   background-color: var(--color-main-dark);
