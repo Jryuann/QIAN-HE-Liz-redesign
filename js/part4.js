@@ -9,56 +9,35 @@ ScrollTrigger.matchMedia({
   "(min-width: 1200px)": () => {
     let tl2 = gsap.timeline({
       scrollTrigger: {
-          trigger: ".part_4" + ".part_5",
-          start: "top+=1900 top",
-          pin: true,
-          scrub: true,
-          end: "bottom-=2600 center",
+        trigger: ".part_4" + ".part_5",
+        start: "top+=1900 top",
+        pin: true,
+        scrub: true,
+        end: "bottom-=2600 center",
 
       }
-  });
+    });
     tl2.to("#card1", { x: 0, duration: 2 })
-    .to("#card2", { x: 0, duration: 2  })
-    .to("#card3", { x: 0, duration: 2 })
+      .to("#card2", { x: 0, duration: 2 })
+      .to("#card3", { x: 0, duration: 2 })
   },
   "(min-width: 300px)": () => {
     let tl2 = gsap.timeline({
       scrollTrigger: {
-          trigger: ".part_4" + ".part_5",
-          start: "top+=1900 top",
-          pin: true,
-          scrub: true,
-          end: "bottom-=2200 center",
+        trigger: ".part_4" + ".part_5",
+        start: "top+=1900 top",
+        pin: true,
+        scrub: true,
+        end: "bottom-=2200 center",
 
       }
-  });
+    });
     tl2.to("#card1", { x: 0, duration: 1.2 })
-    .to("#card2", { x: 0, duration: 2 })
-    .to("#card3", { x: 0, duration: 2 })
+      .to("#card2", { x: 0, duration: 2 })
+      .to("#card3", { x: 0, duration: 2 })
   }
 
 })
-
-
-
-
-
-
-//     let tl3 = gsap.timeline({
-//       scrollTrigger: {
-//           trigger: ".part_5"+".part_4",
-//           start: "center+100 center",
-//           pin: true,
-//           scrub: true,
-//           end: "bottom bottom",
-//           markers: true,
-
-        
-//       }
-//   });
-//     tl3.to(".info", { opacity:  1 , scale : 1 , display:"block" , duration: 0.01})
- 
-
 
 
 
