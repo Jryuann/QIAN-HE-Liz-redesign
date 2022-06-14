@@ -3434,7 +3434,7 @@ a {
   margin-left: 12px;
 }
 
-.part_9 form .form-check .age-area1 {
+.part_9 form .age-area1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3442,7 +3442,7 @@ a {
   margin-bottom: 15px;
 }
 
-.part_9 form .form-check .age-area1 .age-area1-1 {
+.part_9 form .age-area1 .age-area1-1 {
   margin-right: 69px;
   position: unset;
 }
