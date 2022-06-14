@@ -44,9 +44,10 @@ body {
     background-color: var(--color-main-dark);
     border-radius: 100%;
     z-index: 1;
+    transform: translateY(0%);
 
     @media (max-width:780px) {
-        transform: translateY(-17%);
+        transform: translateY(-17.5%);
     }
 
 }

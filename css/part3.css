@@ -91,12 +91,14 @@ body {
   background-color: var(--color-main-dark);
   border-radius: 100%;
   z-index: 1;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 @media (max-width: 780px) {
   .back {
-    -webkit-transform: translateY(-17%);
-            transform: translateY(-17%);
+    -webkit-transform: translateY(-17.5%);
+            transform: translateY(-17.5%);
   }
 }
 

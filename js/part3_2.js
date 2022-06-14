@@ -9,7 +9,7 @@ arr.forEach((e) => {
     scrollTrigger: {
       trigger: e,
       scrub: 0,
-      end: '+=3800',
+      end: '+=3400',
       start: "top-=1000 top",
       markers: true // 顯示標記
     }
