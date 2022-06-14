@@ -34,34 +34,3 @@ window.addEventListener('resize', function(event){
  window.innerWidth / 2;
    window.innerHeight / 2;
 });
-// 下面新作法 
-// function touches(e){
-// 	var x = e.touches ? e.touches[0].clientX : e.clientX, 
-// 			y = e.touches ? e.touches[0].clientY : e.clientY;
-//   var w = window.innerWidth / 2;
-//   var h = window.innerHeight / 2;
-  
-//   var l = -(x - w) / (w / 10) - 10;
-//   var t = -(y - h) / (h / 10) - 10;
-//       //10 / (y - (h / 2)) * 100;             
-//   console.log(y + ' | ' + h + ' | ' + t);
-  
-// 	TweenMax.to($('.decs'),0.1, {
-// 		top: t/2 + "%",
-// 		left: l/2 + "%"
-// 	});
-
-//     TweenMax.to($('.liz_dec'), 3, {
-// 		top: -t + "%",
-// 		left: -l + "%"
-// 	});
-//     TweenMax.to($('.bg'), 3, {
-// 		top: t + "%",
-// 		left: l + "%"
-// 	});
-	
-// }
-
-// window.addEventListener("mousemove", touches);
-// window.addEventListener("touchstart", touches);
-// window.addEventListener("touchmove", touches);
