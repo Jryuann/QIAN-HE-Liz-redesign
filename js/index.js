@@ -1,6 +1,16 @@
 window.onbeforeunload = function () {
   window.scrollTo(0,0);
 }
+window.onload = function() {
+  if(document.body.scrollTop > 0) {
+      console.log(1);
+      window.scrollTo(0, -1);
+      document.body.scrollTop = 0;
+  }
+  window.scrollTo(0, -1);
+  document.body.scrollTop = 0;
+}
+// 上面是重新整理還有仔入會回頂部
 
 let wrap = document.querySelector('.part_index');
 let request = null;
