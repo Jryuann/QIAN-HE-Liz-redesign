@@ -10,17 +10,17 @@ arr.forEach((e) => {
       trigger: e,
       scrub: 0,
       end: '+=3400',
-      start: "top-=1200 top",
+      start: "top-=1000 top",
       markers: true // 顯示標記
     }
   })
   tl.to(e.children[0], {
     scale: 1,
-    display : "block",
+    display : "block"
   })
 
   tl.to(e.children[0], {
-    scale: 0.4,
+    scale: 0.1,
 
   })
 })
