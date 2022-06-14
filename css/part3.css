@@ -95,8 +95,8 @@ body {
 
 @media (max-width: 780px) {
   .back {
-    -webkit-transform: translateY(-15%);
-            transform: translateY(-15%);
+    -webkit-transform: translateY(-17%);
+            transform: translateY(-17%);
   }
 }
 
