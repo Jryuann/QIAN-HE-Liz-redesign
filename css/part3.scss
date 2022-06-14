@@ -1,5 +1,3 @@
-@import 'sheet';
-
 .spacer {
     width: 100%;
     height: 100vh;
@@ -102,7 +100,7 @@
         width: 34%;
 
         top: 668px;
-        left: 33%;
+        left: 32%;
 
         z-index: 0;
         opacity: 0;
@@ -236,8 +234,8 @@
             position: absolute;
             z-index: 10;
 
-            top: -60%;
-            width: auto;
+            top: -45%;
+            width: 170%;
             height: auto;
 
             text-align: center;
@@ -249,12 +247,12 @@
             font-size: 40px;
             @media (max-width: 1260px) {
                 font-size: 28px;
-
+                width: 150%;
             }
 
             @media (max-width: 992px) {
                 font-size: 24px;
-
+                width: auto;
             }
 
 
@@ -278,7 +276,7 @@
         }
 
         p {
-            margin-top: -5px;
+            margin-top: 15px;
             @include t-inner;
 
             color: var(--color-white);

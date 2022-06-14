@@ -68,11 +68,11 @@
 
 
 // 開頭動畫
-section{
+section {
     @include material;
 }
-body {
-    overflow: hidden;
+
+.nav_bar {
 
     h1 {
         position: fixed;
@@ -87,7 +87,7 @@ body {
         text-transform: uppercase;
 
 
-        
+
         cursor: pointer;
 
         a {
@@ -104,11 +104,11 @@ body {
 
     }
 
-    input.burger_input {
+    input{
         display: none;
     }
 
-    .burger_input+.burger_label {
+    input+label {
         position: fixed;
         top: 40px;
         right: 40px;
@@ -141,7 +141,7 @@ body {
         cursor: pointer;
     }
 
-    input:checked+.burger_label {
+    input:checked+label {
         span {
             opacity: 0;
             top: 50%;
@@ -192,7 +192,8 @@ body {
                     @include t-title-sm;
                     display: block;
                     padding: 30px;
-                    &:focus{
+
+                    &:focus {
                         background-color: var(--color-main-liz);
                         color: var(--color-white);
                     }
@@ -217,6 +218,7 @@ body {
             }
         }
     }
+
 }
 
 // nav/
@@ -253,12 +255,14 @@ header {
 
         cursor: pointer;
 
-        &:hover{
+        &:hover {
             width: 9.5rem;
         }
+
         @media (max-width:1550px) {
             width: 8rem;
-            &:hover{
+
+            &:hover {
                 width: 8.5rem;
             }
         }
@@ -266,20 +270,20 @@ header {
         @media(max-width:1440px) {
             width: 7rem;
         }
+
         @keyframes main_liz {
             0% {
                 transform: scale(1) translate(-50%, -50%);
-                
+
             }
-    
+
             50% {
-                transform: scale(1.1)
-                translate(-50%, -50%);
+                transform: scale(1.1) translate(-50%, -50%);
             }
 
             100% {
                 transform: scale(1) translate(-50%, -50%);
-                
+
             }
         }
     }
@@ -451,6 +455,7 @@ header {
             left: 5%;
             width: 8rem;
             transform: rotate(-0.2turn);
+
             @media (max-width:900px) {
                 transform: scale(0.6) rotate(0.1turn);
             }
@@ -472,10 +477,12 @@ header {
             grid-row: 6/7;
             grid-column: 14/15;
             transform: translate(-10%, -5%);
-            @media (max-width:1340px){
+
+            @media (max-width:1340px) {
                 transform: translate(-10%, -5%) scale(0.8);
             }
-            @media (max-width:700px){
+
+            @media (max-width:700px) {
                 transform: translate(-10%, -5%) scale(0.5);
             }
         }
@@ -520,24 +527,28 @@ header {
             position: absolute;
             width: 48rem;
             bottom: -24%;
-            @media (max-width:1340px){
-                width:38rem;
-                bottom:-10%;
+
+            @media (max-width:1340px) {
+                width: 38rem;
+                bottom: -10%;
 
             }
+
             @media (max-width:1150px) {
-                left:-10%;
+                left: -10%;
                 transform: rotate(0.01turn);
             }
+
             @media (max-width:765px) {
-                left:-10%;
-                bottom:0%;
-                width:28rem;
+                left: -10%;
+                bottom: 0%;
+                width: 28rem;
             }
+
             @media (max-width:650px) {
-                left:-20%;
-                bottom:0%;
-                width:26rem;
+                left: -20%;
+                bottom: 0%;
+                width: 26rem;
             }
 
             // @media (max-width:650px) {
@@ -552,8 +563,8 @@ header {
             // top:0px;
             width: 25rem;
             position: absolute;
-            right:0%;
-            top:0%;
+            right: 0%;
+            top: 0%;
             transform: rotate(0.44turn);
             transform: scale(0.9) translate(-10%, -12%) rotate(0.44turn);
 
@@ -565,9 +576,9 @@ header {
                 transform: scale(1.1) translate(10%, 15%) rotate(0.53turn);
             }
 
-            @media (max-width:800px){
+            @media (max-width:800px) {
                 transform: scale(0.9) translate(28%, 15%) rotate(0.53turn);
-            } 
+            }
 
             @media (max-width:600px) {
                 transform: scale(0.8) translate(40%, -30%) rotate(0.53turn);
@@ -579,18 +590,19 @@ header {
         }
 
         .liz_dec_3 {
-            
+
             position: absolute;
-            top:50%;
-            right:10%;
-            width:16rem;
+            top: 50%;
+            right: 10%;
+            width: 16rem;
             transform: scale(0.9) translate(50%, -10%) rotate(-0.1turn);
 
             @media (max-width:1300px) {
                 transform: scale(0.6) translate(40%, 10%) rotate(-0.1turn);
             }
+
             @media (max-width:900px) {
-                right:0%;
+                right: 0%;
                 transform: scale(0.4) translate(60%, 10%) rotate(-0.1turn);
             }
 
@@ -603,7 +615,7 @@ header {
             left: 20%;
             width: 2.1rem;
             transform: rotate(-0.1turn);
-            opacity:0.3;
+            opacity: 0.3;
         }
 
         // .img_prize{
@@ -649,7 +661,8 @@ header {
             @media (max-width:1300px) {
                 transform: scale(0.8);
             }
-            @media (max-width:700px){
+
+            @media (max-width:700px) {
                 display: none;
             }
         }
