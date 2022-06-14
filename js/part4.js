@@ -65,5 +65,5 @@ let part3_t1 = gsap.timeline({
 });
 
 part3_t1.to("#card1", {x: 0})
-part3_t1.to("#card2", {x: 0 , delay: 1  })
-part3_t1.to("#card3", {x: 0 , delay: 1 })
+part3_t1.to("#card2", {x: 0 , delay: 2  })
+part3_t1.to("#card3", {x: 0 , delay: 2 })
