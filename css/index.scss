@@ -68,10 +68,12 @@
 
 
 // 開頭動畫
-
+section{
+    @include material;
+}
 body {
     overflow: hidden;
-    @include material;
+
     h1 {
         position: fixed;
         top: 20px;
@@ -230,8 +232,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-    // @include material;
+    @include material;
     // background-color: var(--color-main);
     // 以下測試
     position: relative;
