@@ -13,7 +13,7 @@ ScrollTrigger.matchMedia({
         start: "top+=1900 top",
         pin: true,
         scrub: true,
-        end: "bottom-=2600 center",
+        end: "bottom-=2700 center",
 
       }
     });
