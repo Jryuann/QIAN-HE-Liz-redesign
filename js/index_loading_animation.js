@@ -74,20 +74,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
         duration: 1,
         delay: 2.5 ,
     });
-
-
-
 });
+
+// 以下漢堡選單的按鈕功能
 var burger =  document.querySelector('#burger')
 
-document.querySelectorAll("nav li").forEach((btn, index) => {
+// document.querySelectorAll("nav li").forEach((btn, index) => {
     
-    btn.addEventListener("click", () => {
-      gsap.to(window, {duration: 1, scrollTo:{y:".part_" + (index + 1), offsetY:0}});
-      burger.checked = false;
-    });
-  });
+//     btn.addEventListener("click", () => {
+//       gsap.to(window, {duration: 1, scrollTo:{y:".part_" + (index + 1), offsetY:0}});
+//       burger.checked = false;
+//     });
+//   });
 
+document.querySelector(".navbtn_1").addEventListener("click", () => {
+    gsap.to(window, {duration: 1, scrollTo: "#part_2"})
+})
+
+// 點這顆栗子會到第二頁面
 const main_liz = document.querySelector(".main_liz")
 
 main_liz.addEventListener("click", () => {

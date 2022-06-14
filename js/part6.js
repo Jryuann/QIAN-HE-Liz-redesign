@@ -30,7 +30,7 @@ squares6.forEach(square6 => {
   const squareTimeline = gsap.timeline({
     scrollTrigger: {
       trigger: square6,
-      start: "top-=50 center",
+      start: "top-=-50 center",
       end: "bottom+=150 bottom",
       toggleActions: "play reverse play reverse",
       markers: true

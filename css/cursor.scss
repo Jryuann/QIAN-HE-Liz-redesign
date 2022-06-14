@@ -1,3 +1,9 @@
+body{
+    cursor: none;
+    @media (max-width:600px){
+        cursor: unset;
+    }
+}
 .cursor {
     z-index: 1000;
     width: 50px;
@@ -10,6 +16,9 @@
     left: 0;
     top: 0;
     transform: translate(calc(-50% + 15px), -50%);
+    @media (max-width:600px) {
+        display: none;
+    }
 }
 
 .cursor2 {
@@ -23,6 +32,9 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: width .3s, height .3s, opacity .3s;
+    @media (max-width:600px) {
+        display: none;
+    }
 }
 
 .hover {

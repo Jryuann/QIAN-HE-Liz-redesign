@@ -1,3 +1,13 @@
+body {
+  cursor: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    cursor: unset;
+  }
+}
+
 .cursor {
   z-index: 1000;
   width: 50px;
@@ -14,6 +24,12 @@
           transform: translate(calc(-50% + 15px), -50%);
 }
 
+@media (max-width: 600px) {
+  .cursor {
+    display: none;
+  }
+}
+
 .cursor2 {
   z-index: 1000;
   width: 20px;
@@ -26,6 +42,12 @@
   pointer-events: none;
   -webkit-transition: width .3s, height .3s, opacity .3s;
   transition: width .3s, height .3s, opacity .3s;
+}
+
+@media (max-width: 600px) {
+  .cursor2 {
+    display: none;
+  }
 }
 
 .hover {

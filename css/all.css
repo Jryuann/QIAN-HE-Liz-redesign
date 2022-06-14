@@ -3541,9 +3541,6 @@ section.part_2 content .text_area .inner {
   .part_9 {
     padding: 60px 5%;
   }
-  .part_9 .ver-code {
-    width: 50%;
-  }
 }
 
 footer {
@@ -3602,6 +3599,16 @@ footer .maker {
   margin-top: 60px;
 }
 
+body {
+  cursor: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    cursor: unset;
+  }
+}
+
 .cursor {
   z-index: 1000;
   width: 50px;
@@ -3618,6 +3625,12 @@ footer .maker {
           transform: translate(calc(-50% + 15px), -50%);
 }
 
+@media (max-width: 600px) {
+  .cursor {
+    display: none;
+  }
+}
+
 .cursor2 {
   z-index: 1000;
   width: 20px;
@@ -3630,6 +3643,12 @@ footer .maker {
   pointer-events: none;
   -webkit-transition: width .3s, height .3s, opacity .3s;
   transition: width .3s, height .3s, opacity .3s;
+}
+
+@media (max-width: 600px) {
+  .cursor2 {
+    display: none;
+  }
 }
 
 .hover {
