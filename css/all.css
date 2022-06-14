@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
 :root {
   --body-padding: 5%;
   --section-height:100vh;
@@ -3541,6 +3540,9 @@ section.part_2 content .text_area .inner {
 @media (max-width: 650px) {
   .part_9 {
     padding: 60px 5%;
+  }
+  .part_9 .ver-code {
+    width: 50%;
   }
 }
 
