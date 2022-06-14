@@ -1,12 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
 :root {
   --body-padding: 5%;
   --section-height:100vh;
@@ -47,6 +41,10 @@ body a {
   text-decoration: none;
 }
 
+body a:hover {
+  text-decoration: none;
+}
+
 :root {
   --body-padding: 5%;
   --section-height:100vh;
@@ -84,6 +82,10 @@ html body {
 }
 
 body a {
+  text-decoration: none;
+}
+
+body a:hover {
   text-decoration: none;
 }
 
@@ -922,46 +924,6 @@ header .load_animate_opacity {
   }
 }
 
-:root {
-  --body-padding: 5%;
-  --section-height:100vh;
-  --radius: 24px;
-  --radius-sm: 8px;
-  --color-main: #F1CE56;
-  --color-main-dark: #333;
-  --color-white: #fff;
-  --color-liz: #C2724A;
-  --color-liz-dark: #B04B19;
-  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  --fz-title: 48px;
-  --fz-title-sm:32px;
-  --fz-inner: 18px;
-  --fz-inner-sm: 16px;
-}
-
-* {
-  font-family: 'Noto Serif TC', serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-html {
-  margin: 0px;
-  padding: 0px;
-}
-
-html body {
-  margin: 0px;
-  padding: 0px;
-  background-color: var(--color-main);
-}
-
-body a {
-  text-decoration: none;
-}
-
 section.part_2 {
   width: 100%;
   height: 100vh;
@@ -1130,46 +1092,6 @@ section.part_2 content .text_area .inner {
     /* identical to box height, or 27px */
     letter-spacing: 0.2em;
   }
-}
-
-:root {
-  --body-padding: 5%;
-  --section-height:100vh;
-  --radius: 24px;
-  --radius-sm: 8px;
-  --color-main: #F1CE56;
-  --color-main-dark: #333;
-  --color-white: #fff;
-  --color-liz: #C2724A;
-  --color-liz-dark: #B04B19;
-  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  --fz-title: 48px;
-  --fz-title-sm:32px;
-  --fz-inner: 18px;
-  --fz-inner-sm: 16px;
-}
-
-* {
-  font-family: 'Noto Serif TC', serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-html {
-  margin: 0px;
-  padding: 0px;
-}
-
-html body {
-  margin: 0px;
-  padding: 0px;
-  background-color: var(--color-main);
-}
-
-body a {
-  text-decoration: none;
 }
 
 .spacer {
@@ -1641,46 +1563,6 @@ body a {
   background-color: aqua;
 }
 
-:root {
-  --body-padding: 5%;
-  --section-height:100vh;
-  --radius: 24px;
-  --radius-sm: 8px;
-  --color-main: #F1CE56;
-  --color-main-dark: #333;
-  --color-white: #fff;
-  --color-liz: #C2724A;
-  --color-liz-dark: #B04B19;
-  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  --fz-title: 48px;
-  --fz-title-sm:32px;
-  --fz-inner: 18px;
-  --fz-inner-sm: 16px;
-}
-
-* {
-  font-family: 'Noto Serif TC', serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-html {
-  margin: 0px;
-  padding: 0px;
-}
-
-html body {
-  margin: 0px;
-  padding: 0px;
-  background-color: var(--color-main);
-}
-
-body a {
-  text-decoration: none;
-}
-
 .part_4 {
   height: var(--section-height);
   background-color: var(--color-main);
@@ -1897,46 +1779,6 @@ body a {
   .part_4 .brandInsist .brandInsist_card .content {
     padding: 0px 0px;
   }
-}
-
-:root {
-  --body-padding: 5%;
-  --section-height:100vh;
-  --radius: 24px;
-  --radius-sm: 8px;
-  --color-main: #F1CE56;
-  --color-main-dark: #333;
-  --color-white: #fff;
-  --color-liz: #C2724A;
-  --color-liz-dark: #B04B19;
-  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  --fz-title: 48px;
-  --fz-title-sm:32px;
-  --fz-inner: 18px;
-  --fz-inner-sm: 16px;
-}
-
-* {
-  font-family: 'Noto Serif TC', serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-html {
-  margin: 0px;
-  padding: 0px;
-}
-
-html body {
-  margin: 0px;
-  padding: 0px;
-  background-color: var(--color-main);
-}
-
-body a {
-  text-decoration: none;
 }
 
 @media (max-width: 1062px) {
@@ -2188,46 +2030,6 @@ body a {
     width: 30%;
     top: 0px;
   }
-}
-
-:root {
-  --body-padding: 5%;
-  --section-height:100vh;
-  --radius: 24px;
-  --radius-sm: 8px;
-  --color-main: #F1CE56;
-  --color-main-dark: #333;
-  --color-white: #fff;
-  --color-liz: #C2724A;
-  --color-liz-dark: #B04B19;
-  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  --fz-title: 48px;
-  --fz-title-sm:32px;
-  --fz-inner: 18px;
-  --fz-inner-sm: 16px;
-}
-
-* {
-  font-family: 'Noto Serif TC', serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-html {
-  margin: 0px;
-  padding: 0px;
-}
-
-html body {
-  margin: 0px;
-  padding: 0px;
-  background-color: var(--color-main);
-}
-
-body a {
-  text-decoration: none;
 }
 
 .part_6 {
@@ -3787,54 +3589,6 @@ footer p {
 footer .maker {
   font-size: 8px;
   margin-top: 60px;
-}
-
-:root {
-  --body-padding: 5%;
-  --section-height:100vh;
-  --radius: 24px;
-  --radius-sm: 8px;
-  --color-main: #F1CE56;
-  --color-main-dark: #333;
-  --color-white: #fff;
-  --color-liz: #C2724A;
-  --color-liz-dark: #B04B19;
-  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  --fz-title: 48px;
-  --fz-title-sm:32px;
-  --fz-inner: 18px;
-  --fz-inner-sm: 16px;
-}
-
-* {
-  font-family: 'Noto Serif TC', serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-html {
-  margin: 0px;
-  padding: 0px;
-}
-
-html body {
-  margin: 0px;
-  padding: 0px;
-  background-color: var(--color-main);
-}
-
-body a {
-  text-decoration: none;
-}
-
-* {
-  cursor: none;
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .cursor {
