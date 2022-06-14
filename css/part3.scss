@@ -17,6 +17,10 @@
     &.part_3 {
         z-index: 5;
     }
+
+    @media (max-width: 600px) {
+        height: auto;
+    }
 }
 
 .back {
@@ -29,7 +33,9 @@
     transform: translateY(0%);
 
     display: none;
-
+    @media (max-width: 600px) {
+        display: none;
+    }
 }
 
 .part_3 {
@@ -39,6 +45,13 @@
 
     position: absolute;
     z-index: 3;
+
+    @media (max-width: 600px) {
+        height: 100%;
+        position: unset;
+
+        background-color: var(--color-main-dark);
+    }
 }
 
 .partner_title {

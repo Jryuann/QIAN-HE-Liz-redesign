@@ -33,7 +33,7 @@ ScrollTrigger.matchMedia({
 
   },
 
-  "(min-width: 200px)": () => {
+  "(min-width: 600px)": () => {
 
     arr.forEach((e) => {
 
