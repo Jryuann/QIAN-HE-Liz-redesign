@@ -24,8 +24,7 @@ body{
 .cursor2 {
     z-index: 1000;
 
-    width: 20px;
-    height: 20px;
+    @include wh(20px,20px);
     border-radius: 100%;
     background-color: var(--color-liz-dark);
     position: fixed;
