@@ -155,7 +155,7 @@ squares.forEach(square => {
     duration: 0.1,
     y: 20,
     opacity: 0,
-    stagger: 0.2,
+    stagger: 0.1,
     delay: 0,
   }, 0)
 
