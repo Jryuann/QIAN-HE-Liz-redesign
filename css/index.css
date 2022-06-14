@@ -142,7 +142,7 @@ body input {
   display: none;
 }
 
-body input + label {
+body .burger_input + .burger_label {
   position: fixed;
   top: 40px;
   right: 40px;
@@ -151,7 +151,7 @@ body input + label {
   z-index: 5;
 }
 
-body input + label span {
+body .burger_input + .burger_label span {
   position: absolute;
   width: 100%;
   height: 2px;
@@ -164,11 +164,11 @@ body input + label span {
   transition: .5s;
 }
 
-body input + label span:first-child {
+body .burger_input + .burger_label span:first-child {
   top: 3px;
 }
 
-body input + label span:last-child {
+body .burger_input + .burger_label span:last-child {
   top: 16px;
 }
 

@@ -436,7 +436,7 @@ a {
   top: 8%;
 }
 
-.part_7 .part_7_title {
+.part_7 #part_7_title {
   margin: 0px;
   padding: 0px;
   /* Title */
@@ -448,6 +448,7 @@ a {
   /* identical to box height */
   letter-spacing: 0.1em;
   text-align: center;
+  position: unset;
 }
 
 .part_7 h3 {
@@ -1239,21 +1240,24 @@ a {
   margin-left: 12px;
 }
 
-.part_9 form .age-area1 {
+.part_9 form .form-check .age-area1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: unset;
   margin-bottom: 15px;
 }
 
-.part_9 form .age-area1 .age-area1-1 {
+.part_9 form .form-check .age-area1 .age-area1-1 {
   margin-right: 69px;
+  position: unset;
 }
 
 .part_9 form .age-area2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: unset;
 }
 
 .part_9 form .age-area2 .age-area2-1 {
