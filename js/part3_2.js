@@ -13,7 +13,7 @@ arr.forEach((e) => {
   })
 
   tl.to(e.children[0], {
-    scale: 18,
+    scale: 15,
   })
 
   tl.to(e.children[0], {
