@@ -67,27 +67,45 @@
 
 
 
-// gsap.set("#step-1-square", { x: 200, y: 0 , opacity:0, scale:0.2})
-// gsap.set("#step-2-square", { x: -200, y: 0, opacity:0, scale:0.2 })
-// gsap.set("#step-3-square", { x: 200, y: 0, opacity:0, scale:0.2 })
-// gsap.set("#step-4-square", { x:-200, y: 0, opacity:0, scale:0.2 })
+// 文字方塊
+gsap.set("#step-1-square", { x: 200, y: 0, opacity: 0, scale: 0.2 })
+gsap.set("#step-2-square", { x: -200, y: 0, opacity: 0, scale: 0.2 })
+gsap.set("#step-3-square", { x: 200, y: 0, opacity: 0, scale: 0.2 })
+gsap.set("#step-4-square", { x: -200, y: 0, opacity: 0, scale: 0.2 })
+// line 
+gsap.set(".join-step-line", { x: 0, y: -100, opacity: 0, scale: 0.1 })
+gsap.set(".contract-step-line", { x: 0, y: -100, opacity: 0, scale: 0.1 })
+gsap.set(".tec-step-line", { x: 0, y: -100, opacity: 0, scale: 0.1 })
 
 
-// let tl = gsap.timeline({
-//   scrollTrigger: {
-//       trigger: ".part_8 " + " .part_9 ",
-//       start: "top top",
-//       pin: true,
-//       scrub: true,
-//       end : "bottom bottom+=1500" ,
-//       markers: true,
-//   }
-// });
-// tl.to("#step-1-square", { x: 0, duration: 6, opacity:1, scale:1})
-// .to("#step-2-square", { x: 0, duration: 6, opacity:1, scale:1 })
-// .to("#step-3-square", { x: 0, duration: 6, opacity:1, scale:1 })
-// .to("#step-4-square", { x: 0, duration: 6, opacity:1, scale:1 })
+let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".part_8 " + ".part_9",
+          start: "+=2200px top",
+          pin: true,
+          scrub: true,
+          end: "100%-=1500px bottom",
+          markers: true,
+        }
+      });
+      tl.to("#step-1-square", { x: 0, duration: 100, opacity: 1, scale: 1 })
+        // line
+        .to(".join-step-line", { y: 0, duration: 100, opacity: 1, scale: 1 })
+  
+        .to("#step-2-square", { x: 0, duration: 100, opacity: 1, scale: 1 })
+        // line
+        .to(".contract-step-line", { y: 0, duration: 100, opacity: 1, scale: 1 })
+  
+        .to("#step-3-square", { x: 0, duration: 100, opacity: 1, scale: 1 })
+        // line
+        .to(".tec-step-line", { y: 0, duration: 100, opacity: 1, scale: 1 })
+  
+        .to("#step-4-square", { x: 0, duration: 100, opacity: 1, scale: 1 })
+      
 
+
+
+// 930px
 gsap.registerPlugin(ScrollTrigger);
 
 const squares = document.querySelectorAll(".part_8");
@@ -96,9 +114,9 @@ squares.forEach(square => {
   const squareTimeline = gsap.timeline({
     scrollTrigger: {
       trigger: square,
-      start: "top top",
-      end: "bottom bottom",
-      toggleActions: "reverse play reverse play reverse",
+      start: "top center",
+      end: "bottom center",
+      toggleActions: "play reverse play reverse",
       markers: true
     }
   })
@@ -113,3 +131,31 @@ squares.forEach(square => {
   }, 0)
 
 });
+
+
+// 1920px
+// gsap.registerPlugin(ScrollTrigger);
+
+// const steps = document.querySelectorAll(".part_8");
+
+// steps.forEach(step => {
+//   const stepTimeline = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: step,
+//       start: "top top",
+//       end: "bottom bottom",
+//       toggleActions: "reverse play reverse play reverse",
+//       markers: true
+//     }
+//   })
+
+//   // Animate the content items
+//   const squ = square.querySelectorAll(".squ");
+//   squareTimeline.from(squ, {
+//     duration: 1,
+//     y: 100,
+//     opacity: 0,
+//     stagger: 0.3,
+//   }, 0)
+
+// });
