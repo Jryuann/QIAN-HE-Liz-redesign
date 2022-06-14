@@ -3264,7 +3264,7 @@ section.part_2 content .text_area .inner {
   margin-left: 12px;
 }
 
-.part_9 .square .ver {
+.part_9 .ver {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3273,7 +3273,7 @@ section.part_2 content .text_area .inner {
           align-items: center;
 }
 
-.part_9 .square .ver .pure-control {
+.part_9 .ver .pure-control {
   width: 265px;
   height: 50px;
   background-color: #ecb99c;
@@ -3288,7 +3288,7 @@ section.part_2 content .text_area .inner {
       justify-content: space-around;
 }
 
-.part_9 .square .ver .pure-control .ver-input {
+.part_9 .ver .pure-control .ver-input {
   width: 100px;
   height: 35px;
   border: 1px solid #C4C4C4;
@@ -3296,13 +3296,13 @@ section.part_2 content .text_area .inner {
   padding: 0px;
 }
 
-.part_9 .square .ver .pure-control .ver-code {
+.part_9 .ver .pure-control .ver-code {
   cursor: pointer;
   text-align: center;
   border-radius: 4px;
 }
 
-.part_9 .square .ver .pure-button {
+.part_9 .ver .pure-button {
   font-family: 'Noto Serif TC';
   font-style: normal;
   font-weight: 500;
@@ -3479,7 +3479,7 @@ section.part_2 content .text_area .inner {
     /* identical to box height, or 27px */
     letter-spacing: 0.2em;
     width: 100%;
-    margin: 0px;
+    margin-left: 0px;
   }
   .part_9 .line-1 {
     display: none;
@@ -3500,16 +3500,6 @@ section.part_2 content .text_area .inner {
   .part_9 .phone a p {
     width: 100%;
     font-size: 20px;
-  }
-}
-
-@media (max-width: 790px) {
-  form .form-check .age-area1 .age-area1-1 {
-    margin-right: 30px;
-    position: unset;
-  }
-  form .form-check .age-area2 .age-area2-1 {
-    margin-right: 30px;
   }
 }
 
@@ -3550,9 +3540,6 @@ section.part_2 content .text_area .inner {
 @media (max-width: 650px) {
   .part_9 {
     padding: 60px 5%;
-  }
-  .part_9 #mycanvas {
-    width: 50%;
   }
 }
 
