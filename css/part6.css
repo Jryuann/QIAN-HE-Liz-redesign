@@ -21,6 +21,8 @@
   font-family: 'Noto Serif TC', serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 html {
@@ -434,7 +436,7 @@ a {
   top: 8%;
 }
 
-.part_7 h1 {
+.part_7 .part_7_title {
   margin: 0px;
   padding: 0px;
   /* Title */

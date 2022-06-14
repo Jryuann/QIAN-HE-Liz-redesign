@@ -453,7 +453,7 @@
     //     }
     // }
 
-    h1 {
+    .part_7_title {
         @include reset();
         @include t-title();
         text-align: center;
