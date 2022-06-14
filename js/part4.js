@@ -26,7 +26,7 @@ ScrollTrigger.matchMedia({
     let part3_t1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".part_4",
-        start: "top-=100 top",
+        start: "top-=800 top",
         end: "bottom-=100 bottom",
         scrub: true,
         markers: true,
