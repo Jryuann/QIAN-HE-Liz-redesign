@@ -189,6 +189,10 @@ body {
                     @include t-title-sm;
                     display: block;
                     padding: 30px;
+                    &:focus{
+                        background-color: var(--color-main-liz);
+                        color: var(--color-white);
+                    }
                 }
             }
         }
