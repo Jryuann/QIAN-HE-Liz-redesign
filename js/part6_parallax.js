@@ -1,9 +1,9 @@
 
 let part6_wrap = document.querySelector('.part_6');
 let part6_request = null;
-let mouse = { x: 0, y: 0 };
-let cx = window.innerWidth / 2;
-let cy = window.innerHeight / 2;
+let p6_mouse = { x: 0, y: 0 };
+let p6_cx = window.innerWidth / 2;
+let p6_cy = window.innerHeight / 2;
 
 part6_wrap.addEventListener('mousemove', function(event) {
     mouse.x = event.pageX;
@@ -13,10 +13,10 @@ part6_request = requestAnimationFrame(update);
 });
 
 function update() {
-    dx = mouse.x - cx;
-    dy = mouse.y - cy;
-    let tiltx = (dy / cy );
-    let tilty = - (dx / cx);
+    dx = p6_mouse.x - p6_cx;
+    dy = p6_mouse.y - p6_cy;
+    let tiltx = (dy / p6_cy );
+    let tilty = - (dx / p6_cx);
 
 
 
