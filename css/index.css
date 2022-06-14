@@ -229,6 +229,11 @@ body input ~ nav > ul > li > a {
   padding: 30px;
 }
 
+body input ~ nav > ul > li > a:focus {
+  background-color: var(--color-main-liz);
+  color: var(--color-white);
+}
+
 body input:checked ~ nav {
   background-color: #f1cd56ee;
   background-image: url("../img/metrila.svg");
