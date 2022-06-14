@@ -1,0 +1,293 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+:root {
+  --body-padding: 5%;
+  --section-height:100vh;
+  --radius: 24px;
+  --radius-sm: 8px;
+  --color-main: #F1CE56;
+  --color-main-dark: #333;
+  --color-white: #fff;
+  --color-liz: #C2724A;
+  --color-liz-dark: #B04B19;
+  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --fz-title: 48px;
+  --fz-title-sm:32px;
+  --fz-inner: 18px;
+  --fz-inner-sm: 16px;
+}
+
+* {
+  font-family: 'Noto Serif TC', serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+html body {
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--color-main);
+}
+
+body a {
+  text-decoration: none;
+}
+
+@media (max-width: 1062px) {
+  .part_5 {
+    position: relative;
+  }
+}
+
+.part_5 picture {
+  width: 100%;
+}
+
+.part_5 img {
+  vertical-align: top;
+}
+
+.part_5 .product_list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1062px) {
+  .part_5 .product_list {
+    display: block;
+  }
+}
+
+.part_5 .product_list .product_content {
+  padding: 0 5%;
+  width: 1045px;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1062px) {
+  .part_5 .product_list .product_content {
+    position: unset;
+    padding: 0 0;
+    width: 100%;
+    height: 200px;
+    background-color: var(--color-main-dark);
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .part_5 .product_list .product_content.content2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.part_5 .product_list .product_content .info {
+  width: 33.33%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Noto Serif TC';
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fz-inner);
+  line-height: 147.7%;
+  /* identical to box height, or 27px */
+  letter-spacing: 0.2em;
+  color: var(--color-white);
+  width: 348px;
+  height: 102px;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1300px) {
+  .part_5 .product_list .product_content .info {
+    font-size: var(--fz-inner-sm);
+  }
+}
+
+@media (max-width: 576px) {
+  .part_5 .product_list .product_content .info {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--fz-inner-sm);
+    line-height: 147.7%;
+    /* identical to box height, or 27px */
+    letter-spacing: 0.2em;
+    text-shadow: var(--shadow);
+  }
+}
+
+.part_5 .product_list .product_content .product_name {
+  width: 33.33%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  /* Title */
+  font-family: 'Noto Serif TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--fz-title);
+  line-height: 69px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  color: var(--color-white);
+  text-shadow: var(--shadow);
+  line-height: 69px;
+  font-weight: 700;
+  letter-spacing: 0.4em;
+}
+
+.part_5 .product_list .product_content .product_name::after {
+  position: absolute;
+  margin-left: -140px;
+  margin-top: -180px;
+  width: 30px;
+  height: 100px;
+  content: " ";
+  background-image: url(../img/part5/1_糖炒栗子日文標.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+@media (max-width: 1300px) {
+  .part_5 .product_list .product_content .product_name::after {
+    width: 20px;
+    height: 80px;
+    margin-left: -100px;
+    margin-top: -90px;
+  }
+}
+
+@media (max-width: 1062px) {
+  .part_5 .product_list .product_content .product_name::after {
+    width: 25px;
+    height: 100px;
+    margin-left: 0px;
+    margin-top: 0px;
+    left: 30%;
+    top: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .part_5 .product_list .product_content .product_name::after {
+    width: 20px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .part_5 .product_list .product_content .product_name {
+    font-size: var(--fz-title-sm);
+  }
+}
+
+@media (max-width: 1062px) {
+  .part_5 .product_list .product_content .product_name {
+    height: auto;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    letter-spacing: 0.1em;
+  }
+}
+
+@media (max-width: 576px) {
+  .part_5 .product_list .product_content .product_name {
+    width: 100%;
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--fz-title-sm);
+    line-height: 46px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+  }
+}
+
+.part_5 .product_list .product_content .product_pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33.33%;
+}
+
+@media (max-width: 1300px) {
+  .part_5 .product_list .product_content .product_pic img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1062px) {
+  .part_5 .product_list .product_content .product_pic {
+    position: absolute;
+    top: 30px;
+  }
+  .part_5 .product_list .product_content .product_pic.pic3 {
+    width: 30%;
+    top: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .part_5 .product_list .product_content .product_pic.pic3 {
+    width: 30%;
+    top: 0px;
+  }
+}
+/*# sourceMappingURL=part5.css.map */

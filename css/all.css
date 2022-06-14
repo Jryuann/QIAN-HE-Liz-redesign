@@ -151,11 +151,7 @@ section {
   background-size: cover;
 }
 
-body {
-  overflow: hidden;
-}
-
-body h1 {
+.nav_bar h1 {
   position: fixed;
   top: 20px;
   left: 40px;
@@ -168,7 +164,7 @@ body h1 {
   cursor: pointer;
 }
 
-body h1 a {
+.nav_bar h1 a {
   color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,15 +178,15 @@ body h1 a {
           user-select: none;
 }
 
-body h1 svg {
+.nav_bar h1 svg {
   margin-right: 8px;
 }
 
-body input.burger_input {
+.nav_bar input {
   display: none;
 }
 
-body .burger_input + .burger_label {
+.nav_bar input + label {
   position: fixed;
   top: 40px;
   right: 40px;
@@ -199,7 +195,7 @@ body .burger_input + .burger_label {
   z-index: 5;
 }
 
-body .burger_input + .burger_label span {
+.nav_bar input + label span {
   position: absolute;
   width: 100%;
   height: 2px;
@@ -212,36 +208,36 @@ body .burger_input + .burger_label span {
   transition: .5s;
 }
 
-body .burger_input + .burger_label span:first-child {
+.nav_bar input + label span:first-child {
   top: 3px;
 }
 
-body .burger_input + .burger_label span:last-child {
+.nav_bar input + label span:last-child {
   top: 16px;
 }
 
-body label:hover {
+.nav_bar label:hover {
   cursor: pointer;
 }
 
-body input:checked + label span {
+.nav_bar input:checked + label span {
   opacity: 0;
   top: 50%;
 }
 
-body input:checked + label span:first-child {
+.nav_bar input:checked + label span:first-child {
   opacity: 1;
   -webkit-transform: rotate(405deg);
           transform: rotate(405deg);
 }
 
-body input:checked + label span:last-child {
+.nav_bar input:checked + label span:last-child {
   opacity: 1;
   -webkit-transform: rotate(-405deg);
           transform: rotate(-405deg);
 }
 
-body input ~ nav {
+.nav_bar input ~ nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -255,7 +251,7 @@ body input ~ nav {
   overflow: hidden;
 }
 
-body input ~ nav > ul {
+.nav_bar input ~ nav > ul {
   list-style: none;
   text-align: center;
   position: absolute;
@@ -265,7 +261,7 @@ body input ~ nav > ul {
   padding: 0px;
 }
 
-body input ~ nav > ul > li {
+.nav_bar input ~ nav > ul > li {
   opacity: 0;
   -webkit-transition: .5s;
   transition: .5s;
@@ -273,7 +269,7 @@ body input ~ nav > ul > li {
           transition-delay: 0s;
 }
 
-body input ~ nav > ul > li > a {
+.nav_bar input ~ nav > ul > li > a {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--color-liz-dark);
@@ -288,12 +284,12 @@ body input ~ nav > ul > li > a {
   padding: 30px;
 }
 
-body input ~ nav > ul > li > a:focus {
+.nav_bar input ~ nav > ul > li > a:focus {
   background-color: var(--color-main-liz);
   color: var(--color-white);
 }
 
-body input:checked ~ nav {
+.nav_bar input:checked ~ nav {
   background-color: #f1cd56ee;
   background-image: url("../img/metrila.svg");
   background-size: cover;
@@ -302,7 +298,7 @@ body input:checked ~ nav {
           transition-delay: 0s;
 }
 
-body input:checked ~ nav > ul > li {
+.nav_bar input:checked ~ nav > ul > li {
   opacity: 1;
   -webkit-transition-delay: .5s;
           transition-delay: .5s;
