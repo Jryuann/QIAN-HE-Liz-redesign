@@ -235,10 +235,14 @@ section {
   letter-spacing: 0.1em;
   display: block;
   padding: 30px;
+  border-radius: var(--radius);
+}
+
+.nav_bar input ~ nav > ul > li > a:hover {
+  border: 2px solid rgba(51, 51, 51, 0.185);
 }
 
 .nav_bar input ~ nav > ul > li > a:focus {
-  background-color: var(--color-main-liz);
   color: var(--color-white);
 }
 
