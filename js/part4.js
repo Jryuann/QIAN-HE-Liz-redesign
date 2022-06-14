@@ -29,7 +29,7 @@ ScrollTrigger.matchMedia({
         start: "top-=800 top",
         end: "bottom-=100 bottom",
         scrub: true,
-        markers: true,
+        // markers: true,
 
         duration: 5,
       },
