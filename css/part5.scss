@@ -14,7 +14,7 @@
 
     img {
         vertical-align: top;
-        
+
     }
 
     .product_list {
@@ -45,7 +45,7 @@
             justify-content: center;
             align-items: center;
 
-            background-image: url(./);
+
 
             @media (max-width: 1062px) {
                 position: unset;
@@ -58,6 +58,7 @@
 
                 background-color: var(--color-main-dark);
 
+                text-align: center;
                 display: flex;
                 flex-direction: column-reverse;
 
@@ -99,7 +100,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                
 
                 writing-mode: vertical-lr;
 
@@ -110,11 +110,47 @@
                 font-weight: 700;
                 letter-spacing: 0.4em;
 
+                &::after {
+                    position: absolute;
+                    margin-left: -140px;
+                    margin-top: -180px;
+                    width: 24px;
+                    height: 81px;
+                    content: " ";
+                    background-image: url(../img/part5/1_糖炒栗子日文標.svg);
+                    background-size: cover;
+
+
+                    z-index: 10;
+
+                    @media (max-width: 1300px) {
+                        margin-left: -100px;
+                        margin-top: -90px;
+                    }
+
+                    @media (max-width: 1062px) {
+
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        left: 30%;
+                        top: 10%;
+                    }
+
+                    @media (max-width: 600px) {
+                        width: 18px;
+                        height: 61px;
+                    }
+
+
+                }
+
+
                 img {
                     position: absolute;
-                    top: 200px;
+                    top: 184px;
                     right: 450px;
                 }
+
 
                 @media (max-width: 1300px) {
                     font-size: var(--fz-title-sm);
@@ -148,6 +184,7 @@
                 @media (max-width: 1062px) {
                     position: absolute;
                     top: 30px;
+
                     // 還要調整
                     &.pic3 {
                         width: 30%;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
 :root {
   --body-padding: 5%;
@@ -30,7 +31,6 @@ html {
 html body {
   margin: 0px;
   padding: 0px;
-  background-color: var(--color-main);
 }
 
 a {
@@ -85,7 +85,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(./);
 }
 
 @media (max-width: 1062px) {
@@ -95,6 +94,7 @@ a {
     width: 100%;
     height: 200px;
     background-color: var(--color-main-dark);
+    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -182,9 +182,44 @@ a {
   letter-spacing: 0.4em;
 }
 
+.part_5 .product_list .product_content .product_name::after {
+  position: absolute;
+  margin-left: -140px;
+  margin-top: -180px;
+  width: 24px;
+  height: 81px;
+  content: " ";
+  background-image: url(../img/part5/1_糖炒栗子日文標.svg);
+  background-size: cover;
+  z-index: 10;
+}
+
+@media (max-width: 1300px) {
+  .part_5 .product_list .product_content .product_name::after {
+    margin-left: -100px;
+    margin-top: -90px;
+  }
+}
+
+@media (max-width: 1062px) {
+  .part_5 .product_list .product_content .product_name::after {
+    margin-left: 0px;
+    margin-top: 0px;
+    left: 30%;
+    top: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .part_5 .product_list .product_content .product_name::after {
+    width: 18px;
+    height: 61px;
+  }
+}
+
 .part_5 .product_list .product_content .product_name img {
   position: absolute;
-  top: 200px;
+  top: 184px;
   right: 450px;
 }
 
