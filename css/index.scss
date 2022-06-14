@@ -374,6 +374,7 @@ header {
 
         @media (max-width: 480px) {
             background-image: url("../img/index/index_under_pic_sm.jpg");
+            display: none;
         }
 
         &.mask {

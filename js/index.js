@@ -1,3 +1,6 @@
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 window.onload = function () {
   gsap.to("body", {
     style: "overflow:hidden;"
@@ -11,7 +14,7 @@ window.onload = function () {
   document.body.scrollTop = 0;
 
 }
-// 上面是重新整理還有載入時會回頂部，然後把滾動條鎖住
+// 上面是重新整理還有載入強制從頂部
 
 let wrap = document.querySelector('.part_index');
 let request = null;
