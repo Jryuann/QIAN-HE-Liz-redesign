@@ -70,7 +70,8 @@
 // 開頭動畫
 
 body {
-
+    overflow: hidden;
+    @include material;
     h1 {
         position: fixed;
         top: 20px;

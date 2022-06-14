@@ -20,6 +20,8 @@
   font-family: 'Noto Serif TC', serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 html {
@@ -94,6 +96,12 @@ a {
   left: 0px;
   -webkit-transform: rotate(0.5turn);
           transform: rotate(0.5turn);
+}
+
+body {
+  overflow: hidden;
+  background-image: url("../img/metrila.svg");
+  background-size: cover;
 }
 
 body h1 {

@@ -78,7 +78,7 @@ gsap.set(".contract-step-line", { x: 0, y: -100, opacity: 0, scale: 0.1 })
 gsap.set(".tec-step-line", { x: 0, y: -100, opacity: 0, scale: 0.1 })
 
 
-let tl = gsap.timeline({
+let part_8_tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".part_8 " + ".part_9",
           start: "+=2200px top",
@@ -88,7 +88,7 @@ let tl = gsap.timeline({
           markers: true,
         }
       });
-      tl.to("#step-1-square", { x: 0, duration: 100, opacity: 1, scale: 1 })
+      part_8_tl.to("#step-1-square", { x: 0, duration: 100, opacity: 1, scale: 1 })
         // line
         .to(".join-step-line", { y: 0, duration: 100, opacity: 1, scale: 1 })
   
