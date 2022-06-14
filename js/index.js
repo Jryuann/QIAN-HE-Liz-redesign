@@ -2,7 +2,7 @@ window.onbeforeunload = function () {
   window.scrollTo(0,0);
 }
 
-let wrap = document.getElementById('part_index');
+let wrap = document.querySelector('.part_index');
 let request = null;
 let mouse = { x: 0, y: 0 };
 let cx = window.innerWidth / 2;
@@ -21,9 +21,11 @@ function update() {
     let tiltx = (dy / cy );
     let tilty = - (dx / cx);
 
-TweenMax.to("#container dec",1, {x:-tilty*-100   , y:-tiltx*-100  , rotation:360, ease:Power0.easeNone});
-TweenMax.to("#container liz", 1, {x:-tilty*-100, y:-tiltx*-100, rotation:360, ease:Power0.easeNone});
-TweenMax.to("#container bg", 1, {x:-tilty*-100, y:-tiltx*-100, rotation:360, ease:Power0.easeNone});
+
+
+  gsap.to("#container dec", 2, {x:-tilty*20, y:-tiltx*20  , rotation:360});
+  gsap.to("#container liz", 2, {x:tiltx*-25, y:tilty*-15, rotation:360});
+  gsap.to("#container bg", 2, {x:-tilty*20, y:-tiltx*20, rotation:360});
 
 }
 

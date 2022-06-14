@@ -28,7 +28,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: hidden;
     color: var(--color-white);
     background-color: var(--color-main);
     @include material;
@@ -40,21 +39,21 @@ body {
 
 .back {
     position: absolute;
-    width: 190px;
-    height: 190px;
+    width: 3000px;
+    height: 3000px;
     background-color: var(--color-main-dark);
-    border-radius: 500px;
+    border-radius: 100%;
     z-index: 1;
 
-    @media (max-width:1200px) {
-        width: 160px;
-        height: 160px;
+    @media (max-width:780px) {
+        transform: translateY(-10%);
     }
+
 }
 
 .part_3 {
     width: 100%;
-    height: 120vh;
+    height: 150vh;
     overflow: hidden;
 
     position: absolute;
@@ -128,6 +127,8 @@ body {
 
         color: var(--color-white);
 
+
+
         @media (max-width: 992px) {
             width: 64%;
             left: 18%;
@@ -138,18 +139,55 @@ body {
             z-index: 1;
             opacity: 1;
 
+            h2,p {
+                animation: slides 0.4s ease-in-out;
+                
+    
+                @keyframes slides {
+                    from {
+                        opacity: 0;
+                    }
+        
+                    to {
+                        opacity: 100;
+                    }
+                }
+            }
+
+
+
+            .title_names,.title_pics {
+    
+                animation: title_names 0.4s ease-in-out;
+    
+                @keyframes title_names {
+                    from {
+                        transform: scale(0);
+                    }
+    
+                    to {
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            .title_pics{
+                width: 500px;
+                position: absolute;
+                display: flex;
+    
+    
+                flex-direction: column;
+                display: block;
+    
+                top: -500px;
+
         }
 
-        .title_pics{
-            width: 500px;
-            position: absolute;
-            display: flex;
 
 
-            flex-direction: column;
-
-            top: -500px;
             .decorate {
+                
                 display: flex;
                 justify-content: start;
                 margin-left: -40px;
@@ -160,44 +198,59 @@ body {
                 }
 
                 &.ele_scale {
+                    transform: scale(2);
                     margin-top: 20px;
                     transform: rotate(5deg);
                 }
 
+                &.booth {
+                    margin-top: -50px;
+                    transform: rotate(-10deg);
+                }
+
+                &.liz_box {
+                    margin-top: -70px;
+                }
+
+
+
             }
+
+            #mr_chen_machine {
+                margin-right: -50px;
+                margin-top: 25px;
+                transform:rotate(-15deg) scaleX(-1);
+            }
+
+
             .stores {
                 display: flex;
                 justify-content: end;
 
-                margin-top: 48px;
+                margin-top: 36px;
 
                 img {
                     width: 180px;
                 }
 
+                &.ms_chang_store {
+                    margin-top: 98px;
+                }
+
+                &.mr_huang_store {
+                    margin-top: 120px;
+                }
+
+                &.mr_chen_store {
+                    justify-content: start;
+                    margin-top: 10px;
+                }
+
+                &.mr_dung_store {
+                    margin-top: 170px;
+                }
+
             }
-        }
-
-        .title_pic {
-            top: -520px;
-            left: 20px;
-            position: absolute;
-            z-index: 11;
-            width: 180px;
-            height: 200px;
-
-            background-size: cover;
-        }
-
-        .title_pic_store {
-            top: -240px;
-            right: 40px;
-            position: absolute;
-            z-index: 9;
-            width: 180px;
-            height: 180px;
-
-            background-size: cover;
         }
 
         .title_names {
@@ -215,10 +268,6 @@ body {
             display: block;
 
             font-size: 40px;
-
-
-            animation: title_names 1s ease-in-out;
-
             @media (max-width: 1260px) {
                 font-size: 28px;
 
@@ -229,15 +278,7 @@ body {
 
             }
 
-            @keyframes title_names {
-                from {
-                    transform: scale(0);
-                }
 
-                to {
-                    transform: scale(1);
-                }
-            }
         }
 
         h2 {
@@ -362,6 +403,11 @@ body {
     transform: scale(1);
     display: none;
 
+}
+
+.title_pics {
+    transform: scale(1);
+    display: none;
 }
 
 .no_content {
