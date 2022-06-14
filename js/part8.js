@@ -80,25 +80,25 @@ gsap.set(".tec-step-line", { x: 0, y: -100, opacity: 0, scale: 0.1 })
 
 let part_8_tl = gsap.timeline({
         scrollTrigger: {
-          trigger: ".part_8 " + ".part_9",
-          start: "+=2200px top",
+          trigger: ".part_8 ",
+          start: "top top",
           pin: true,
           scrub: true,
-          end: "100%-=1500px bottom",
+          end: "bottom-200px bottom",
           markers: true,
         }
       });
-      part_8_tl.to("#step-1-square", { x: 0, duration: 100, opacity: 1, scale: 1 })
+      part_8_tl.to("#step-1-square", { x: 0, duration: 20, opacity: 1, scale: 1 })
         // line
-        .to(".join-step-line", { y: 0, duration: 100, opacity: 1, scale: 1 })
+        .to(".join-step-line", { y: 0, duration: 20, opacity: 1, scale: 1 })
   
-        .to("#step-2-square", { x: 0, duration: 100, opacity: 1, scale: 1 })
+        .to("#step-2-square", { x: 0, duration: 20, opacity: 1, scale: 1 })
         // line
-        .to(".contract-step-line", { y: 0, duration: 100, opacity: 1, scale: 1 })
+        .to(".contract-step-line", { y: 0, duration: 20, opacity: 1, scale: 1 })
   
-        .to("#step-3-square", { x: 0, duration: 100, opacity: 1, scale: 1 })
+        .to("#step-3-square", { x: 0, duration: 20, opacity: 1, scale: 1 })
         // line
-        .to(".tec-step-line", { y: 0, duration: 100, opacity: 1, scale: 1 })
+        .to(".tec-step-line", { y: 0, duration: 20, opacity: 1, scale: 1 })
   
         .to("#step-4-square", { x: 0, duration: 100, opacity: 1, scale: 1 })
       
@@ -127,7 +127,7 @@ squares.forEach(square => {
     duration: 1,
     y: 100,
     opacity: 0,
-    stagger: 0.3,
+    stagger: 0.2,
   }, 0)
 
 });

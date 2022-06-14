@@ -1,4 +1,3 @@
-@import 'sheet';
 section.part_2 {
     @include wh(100%, 100vh);
     @include material;

@@ -13,7 +13,7 @@ blocks.forEach(block => {
   const blockTimeline = gsap.timeline({
     scrollTrigger: {
       trigger: block,
-      start: "top-5% top",
+      start: "top-50% top",
       end: "bottom center",
       toggleActions: "play reverse play reverse",
       markers: true
