@@ -20,7 +20,7 @@ ScrollTrigger.matchMedia({
         }
       })
       tl.to(e.children[0], {
-        scale: 1.2,
+        scale: 1.3,
         display : "block"
       })
     

@@ -55,15 +55,15 @@ gsap.registerPlugin(ScrollTrigger);
 let part3_t1 = gsap.timeline({
   scrollTrigger: {
     trigger: ".part_4",
-    start: 3000,
-    end: "bottom bottom",
+    start: 2800,
+    end: "bottom-=100 bottom",
     scrub: true,
     markers: true,
 
-    duration: 2,
+    duration: 5,
   },
 });
 
 part3_t1.to("#card1", {x: 0})
-part3_t1.to("#card2", {x: 0 })
-part3_t1.to("#card3", {x: 0})
+part3_t1.to("#card2", {x: 0 , delay: 1  })
+part3_t1.to("#card3", {x: 0 , delay: 1 })
