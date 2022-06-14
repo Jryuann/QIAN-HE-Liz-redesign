@@ -453,10 +453,11 @@
     //     }
     // }
 
-    .part_7_title {
+    #part_7_title {
         @include reset();
         @include t-title();
         text-align: center;
+        position: unset;
         // margin-top: 58px;
         // margin-bottom: 40px
     }
@@ -1147,20 +1148,26 @@
             margin-left: 12px;
         }
 
-        .age-area1 {
-            display: flex;
-            // align-items: center;
-
-            margin-bottom: 15px;
-            // margin-right: 69px;
-
-            .age-area1-1 {
-                margin-right: 69px;
+        .form-check{
+            .age-area1 {
+                display: flex;
+                position: unset;
+                // align-items: center;
+    
+                margin-bottom: 15px;
+                // margin-right: 69px;
+    
+                .age-area1-1 {
+                    margin-right: 69px;
+                    position: unset;
+                }
             }
+    
         }
-
+        
         .age-area2 {
             display: flex;
+            position: unset;
             // align-items: center;
 
             .age-area2-1 {
