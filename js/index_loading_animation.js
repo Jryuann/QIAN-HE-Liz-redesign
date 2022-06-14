@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             style: "display:none;"
         });
         gsap.to("body", {
-            style: "overflow: scroll; overflow-x: hidden"
+            style: "overflow: scroll; overflow-x: hidden;"
         });
     }, 4000);
 
