@@ -23,7 +23,7 @@ ScrollTrigger.matchMedia({
       });
       tl2.to("#card1", { x: 0, duration: 2 })
         .to("#card2", { x: 0, delay : 8 ,duration: 8})
-        .to("#card3", { x: 0, delay : 16 , duration: 16 })
+        .to("#card3", { x: 0, delay : 24 , duration: 16 })
     });
 
   },
@@ -42,7 +42,7 @@ ScrollTrigger.matchMedia({
       });
       tl2.to("#card1", { x: 0, duration: 1.2 })
         .to("#card2", { x: 0, delay : 8, duration:8 })
-        .to("#card3", { x: 0,delay : 16, duration: 16 })
+        .to("#card3", { x: 0,delay : 24, duration: 16 })
     });
 
   },
