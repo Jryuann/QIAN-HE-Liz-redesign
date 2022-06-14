@@ -43,7 +43,7 @@ html body {
   background-color: var(--color-main);
 }
 
-a {
+body a {
   text-decoration: none;
 }
 
@@ -83,7 +83,7 @@ html body {
   background-color: var(--color-main);
 }
 
-a {
+body a {
   text-decoration: none;
 }
 
@@ -186,7 +186,7 @@ body h1 svg {
   margin-right: 8px;
 }
 
-body input {
+body input.burger_input {
   display: none;
 }
 
@@ -962,7 +962,7 @@ html body {
   background-color: var(--color-main);
 }
 
-a {
+body a {
   text-decoration: none;
 }
 
@@ -1172,7 +1172,7 @@ html body {
   background-color: var(--color-main);
 }
 
-a {
+body a {
   text-decoration: none;
 }
 
@@ -1681,7 +1681,7 @@ html body {
   background-color: var(--color-main);
 }
 
-a {
+body a {
   text-decoration: none;
 }
 
@@ -1939,7 +1939,7 @@ html body {
   background-color: var(--color-main);
 }
 
-a {
+body a {
   text-decoration: none;
 }
 
@@ -2230,7 +2230,7 @@ html body {
   background-color: var(--color-main);
 }
 
-a {
+body a {
   text-decoration: none;
 }
 
@@ -3829,7 +3829,7 @@ html body {
   background-color: var(--color-main);
 }
 
-a {
+body a {
   text-decoration: none;
 }
 
