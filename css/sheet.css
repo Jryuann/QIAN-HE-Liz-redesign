@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
 :root {
   --body-padding: 5%;
   --section-height:100vh;
@@ -20,6 +19,10 @@
   font-family: 'Noto Serif TC', serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -27,6 +30,7 @@
 html {
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
 }
 
 html body {

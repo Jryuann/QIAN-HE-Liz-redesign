@@ -20,6 +20,10 @@
   font-family: 'Noto Serif TC', serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -27,6 +31,7 @@
 html {
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
 }
 
 html body {
@@ -41,15 +46,6 @@ body a {
 
 body a:hover {
   text-decoration: none;
-}
-
-* {
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .index_start {
