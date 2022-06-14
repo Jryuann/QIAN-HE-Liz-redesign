@@ -15,7 +15,6 @@
     align-items: center;
     color: var(--color-white);
     background-color: var(--color-main);
-    @include material;
 
     &.part_3 {
         z-index: 10;
