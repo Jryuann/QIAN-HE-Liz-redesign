@@ -32,13 +32,16 @@
 html {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
 }
 
 html body {
   margin: 0px;
   padding: 0px;
   background-color: var(--color-main);
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 body a {
@@ -81,13 +84,16 @@ body a:hover {
 html {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
 }
 
 html body {
   margin: 0px;
   padding: 0px;
   background-color: var(--color-main);
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 body a {
