@@ -15,7 +15,7 @@
     background-color: var(--color-main);
 
     &.part_3 {
-        z-index: 10;
+        z-index: 5;
     }
 }
 
@@ -232,7 +232,7 @@
 
         .title_names {
             position: absolute;
-            z-index: 10;
+            z-index: 5;
 
             top: -45%;
             width: 170%;
@@ -372,7 +372,7 @@
 
 .title_names {
     position: absolute;
-    z-index: 1500;
+    z-index: 6;
     width: 200px;
     height: 50px;
     background-color: black;

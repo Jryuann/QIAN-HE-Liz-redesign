@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         x: 0,
         y: -1000,
         duration: 3,
-        ease:Power0.easeNone,
+        ease: Power0.easeNone,
         // ease: "back",
         // stagger: {
         //     each: 0.3,
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         // top: -10,
         // left: -10   
 
-        ease:Power0.easeNone,
+        ease: Power0.easeNone,
         // stagger: {
         //     each: 0.3,
         //     from: "end",
@@ -72,29 +72,43 @@ document.addEventListener("DOMContentLoaded", function (event) {
     gsap.to(".load_animate_opacity", {
         opacity: 1,
         duration: 1,
-        delay: 2.5 ,
+        delay: 2.5,
     });
 });
 
 // 以下漢堡選單的按鈕功能
-var burger =  document.querySelector('#burger')
+var burger = document.querySelector('#burger')
 
-// document.querySelectorAll("nav li").forEach((btn, index) => {
-    
-//     btn.addEventListener("click", () => {
-//       gsap.to(window, {duration: 1, scrollTo:{y:".part_" + (index + 1), offsetY:0}});
-//       burger.checked = false;
-//     });
-//   });
+// document.querySelector("nav li").addEventListener("click", () => {
+//     burger.checked = false;
+// });
 
 document.querySelector(".navbtn_1").addEventListener("click", () => {
-    gsap.to(window, {duration: 1, scrollTo: "#part_2"})
+    burger.checked = false;
+    gsap.to(window, { duration: 1.5, scrollTo: ".part_1" })
+})
+
+document.querySelector(".navbtn_2").addEventListener("click", () => {
+    burger.checked = false;
+    gsap.to(window, { duration: 1.5, scrollTo: ".part_2" })
+})
+
+document.querySelector(".navbtn_4").addEventListener("click", () => {
+    burger.checked = false;
+    gsap.to(window, { duration: 1.5, scrollTo: ".part_4" })
+})
+document.querySelector(".navbtn_6").addEventListener("click", () => {
+    burger.checked = false;
+    gsap.to(window, { duration: 1.5, scrollTo: ".part_6" })
+})
+document.querySelector(".navbtn_9").addEventListener("click", () => {
+    burger.checked = false;
+    gsap.to(window, { duration: 1.5, scrollTo: ".part_9" })
 })
 
 // 點這顆栗子會到第二頁面
 const main_liz = document.querySelector(".main_liz")
 
 main_liz.addEventListener("click", () => {
-    gsap.to(window, {duration: 1, scrollTo: "#part_2"})
+    gsap.to(window, { duration: 1, scrollTo: ".part_2" })
 })
-  

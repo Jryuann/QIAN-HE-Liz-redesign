@@ -49,55 +49,6 @@ body a:hover {
   text-decoration: none;
 }
 
-:root {
-  --body-padding: 5%;
-  --section-height:100vh;
-  --radius: 24px;
-  --radius-sm: 8px;
-  --color-main: #F1CE56;
-  --color-main-dark: #333;
-  --color-white: #fff;
-  --color-liz: #C2724A;
-  --color-liz-dark: #B04B19;
-  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  --fz-title: 48px;
-  --fz-title-sm:32px;
-  --fz-inner: 18px;
-  --fz-inner-sm: 16px;
-}
-
-* {
-  font-family: 'Noto Serif TC', serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-html {
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-}
-
-html body {
-  margin: 0px;
-  padding: 0px;
-  background-color: var(--color-main);
-}
-
-body a {
-  text-decoration: none;
-}
-
-body a:hover {
-  text-decoration: none;
-}
-
 .index_start {
   position: absolute;
   opacity: .9;
@@ -157,7 +108,7 @@ section {
   position: fixed;
   top: 20px;
   left: 40px;
-  z-index: 6;
+  z-index: 10;
   font-size: 20px;
   font-weight: 900;
   font-family: Noto Serif TC;
@@ -194,7 +145,7 @@ section {
   right: 40px;
   height: 20px;
   width: 15px;
-  z-index: 5;
+  z-index: 11;
 }
 
 .nav_bar input + label span {
@@ -245,7 +196,7 @@ section {
   left: 0;
   width: 100%;
   height: 90px;
-  z-index: 3;
+  z-index: 9;
   -webkit-transition: .5s;
   transition: .5s;
   -webkit-transition-delay: .5s;
@@ -1119,7 +1070,7 @@ section.part_2 content .text_area .inner {
 }
 
 .wrapper.part_3 {
-  z-index: 10;
+  z-index: 5;
 }
 
 .back {
@@ -1374,7 +1325,7 @@ section.part_2 content .text_area .inner {
 
 .circle-carousel .slide .title_names {
   position: absolute;
-  z-index: 10;
+  z-index: 5;
   top: -45%;
   width: 170%;
   height: auto;
@@ -1542,7 +1493,7 @@ section.part_2 content .text_area .inner {
 
 .title_names {
   position: absolute;
-  z-index: 1500;
+  z-index: 6;
   width: 200px;
   height: 50px;
   background-color: black;
