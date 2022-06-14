@@ -42,7 +42,7 @@ a {
   transition: 0.4s;
 }
 
-body {
+html, body {
   overflow-x: hidden;
 }
 
@@ -93,6 +93,7 @@ body {
   z-index: 1;
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
+  display: none;
 }
 
 @media (max-width: 780px) {
