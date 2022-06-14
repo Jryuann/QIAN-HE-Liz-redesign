@@ -9,7 +9,7 @@ ScrollTrigger.matchMedia({
   "(min-width: 1200px)": () => {
 
     arr.forEach((e) => {
-      console.log(e.children[0])
+
       let tl = gsap.timeline({
         scrollTrigger: {
           trigger: e,
@@ -36,7 +36,7 @@ ScrollTrigger.matchMedia({
   "(min-width: 200px)": () => {
 
     arr.forEach((e) => {
-      console.log(e.children[0])
+
       let tl = gsap.timeline({
         scrollTrigger: {
           trigger: e,
