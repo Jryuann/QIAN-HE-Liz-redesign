@@ -33,6 +33,7 @@ html {
   margin: 0px;
   padding: 0px;
   max-width: 100vw;
+  overflow-x: hidden;
 }
 
 html body {
@@ -40,6 +41,10 @@ html body {
   padding: 0px;
   background-color: var(--color-main);
   max-width: 100vw;
+}
+
+html ::-webkit-scrollbar {
+  display: none;
 }
 
 body a {
@@ -1551,6 +1556,7 @@ section.part_2 content .text_area .inner {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 10%;
+  overflow-x: hidden;
 }
 
 @media (max-width: 1200px) {
