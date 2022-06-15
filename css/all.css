@@ -1168,8 +1168,8 @@ section.part_2 content .text_area .inner {
 
 @media (max-width: 600px) {
   .container {
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
 }
 
