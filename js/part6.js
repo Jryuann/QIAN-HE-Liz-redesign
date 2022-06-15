@@ -40,19 +40,19 @@ squares6.forEach(square6 => {
   // Animate the content items
   const sq = square6.querySelectorAll(".sq");
   squareTimeline.from(sq, {
-    duration: 0.3,
+    duration: 0.2,
     x: 40,
     opacity: 0,
-    stagger: 0.5,
+    stagger: 0.3,
     delay: 0,
   }, 0)
   
   const cardAreaText = square6.querySelectorAll(".card-area-text");
   squareTimeline.from(cardAreaText, {
-    duration: 0.3,
+    duration: 0.2,
     y: 40,
     opacity: 0,
-    stagger: 0.5,
+    stagger: 0.3,
     delay: 0,
   }, 0)
 
