@@ -66,6 +66,10 @@
 
     position: absolute;
 
+    img {
+        overflow: hidden;
+    }
+
 
 
     @media (max-width: 780px) {
