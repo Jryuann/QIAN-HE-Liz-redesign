@@ -31,7 +31,7 @@ squares6.forEach(square6 => {
     scrollTrigger: {
       trigger: square6,
       start: "top-=-50 center",
-      end: "bottom+=150 bottom",
+      end: "bottom+=500 bottom",
       toggleActions: "play reverse play reverse",
       // markers: true
     }
@@ -40,19 +40,19 @@ squares6.forEach(square6 => {
   // Animate the content items
   const sq = square6.querySelectorAll(".sq");
   squareTimeline.from(sq, {
-    duration: 0.2,
+    duration: 0.3,
     x: 40,
     opacity: 0,
-    stagger: 0.2,
+    stagger: 0.5,
     delay: 0,
   }, 0)
   
   const cardAreaText = square6.querySelectorAll(".card-area-text");
   squareTimeline.from(cardAreaText, {
-    duration: 0.1,
+    duration: 0.3,
     y: 40,
     opacity: 0,
-    stagger: 0.1,
+    stagger: 0.5,
     delay: 0,
   }, 0)
 
