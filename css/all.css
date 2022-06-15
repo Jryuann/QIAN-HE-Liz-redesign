@@ -110,6 +110,11 @@ section {
   background-size: cover;
 }
 
+.nav_bar {
+  width: 100%;
+  height: 90px;
+}
+
 .nav_bar h1 {
   position: fixed;
   top: 20px;
@@ -1130,6 +1135,10 @@ section.part_2 content .text_area .inner {
   position: absolute;
 }
 
+.partner_title img {
+  overflow: hidden;
+}
+
 @media (max-width: 780px) {
   .partner_title {
     -webkit-transform: scale(0.8);
@@ -1143,6 +1152,9 @@ section.part_2 content .text_area .inner {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
     margin-top: 15%;
+  }
+  .partner_title img {
+    width: 100%;
   }
 }
 
