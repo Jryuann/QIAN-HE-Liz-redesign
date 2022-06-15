@@ -113,9 +113,9 @@ window.onresize = reportWindowSize;
 function reportWindowSize() {
     console.log('you resize now!');
     // window.innerHeight = ma;
-    if (window.screen.availWidth > 576) {
+    // if (window.screen.availWidth > 576) {
         let t = window.devicePixelRatio;
         document.body.style.zoom = 1 / t;
-    }
+    // }
 
 }
