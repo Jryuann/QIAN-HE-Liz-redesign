@@ -1212,7 +1212,7 @@ section.part_2 content .text_area .inner {
 
 @media (max-width: 992px) {
   .circle-carousel .slide {
-    width: 64%;
+    width: 66%;
     left: 18%;
   }
 }
@@ -1520,8 +1520,8 @@ section.part_2 content .text_area .inner {
   transition: .3s;
   border-radius: var(--radius);
   background-color: white;
-  -webkit-filter: grayscale(100%) contrast(70%);
-          filter: grayscale(100%) contrast(70%);
+  -webkit-filter: blur(5px) contrast(40%);
+          filter: blur(5px) contrast(40%);
 }
 
 .pagination .dot:hover {
