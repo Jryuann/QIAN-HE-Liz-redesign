@@ -1413,6 +1413,19 @@ section.part_2 content .text_area .inner {
   }
 }
 
+@media (max-width: 600px) {
+  .circle-carousel .slide h2 {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--fz-inner);
+    line-height: 147.7%;
+    /* identical to box height, or 27px */
+    letter-spacing: 0.2em;
+    font-size: 20px;
+  }
+}
+
 .circle-carousel .slide p {
   margin-top: 15px;
   font-family: 'Noto Serif TC';
@@ -1438,6 +1451,19 @@ section.part_2 content .text_area .inner {
     line-height: 147.7%;
     /* identical to box height, or 27px */
     letter-spacing: 0.2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .circle-carousel .slide p {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--fz-inner);
+    line-height: 147.7%;
+    /* identical to box height, or 27px */
+    letter-spacing: 0.2em;
+    font-size: 20px;
   }
 }
 
