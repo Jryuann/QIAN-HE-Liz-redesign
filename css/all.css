@@ -1149,8 +1149,8 @@ section.part_2 content .text_area .inner {
 
 @media (max-width: 600px) {
   .partner_title {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
     margin-top: 15%;
   }
   .partner_title img {
@@ -1168,8 +1168,8 @@ section.part_2 content .text_area .inner {
 
 @media (max-width: 600px) {
   .container {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
 }
 
