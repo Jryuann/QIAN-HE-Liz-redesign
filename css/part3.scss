@@ -18,10 +18,9 @@
         z-index: 5;
     }
 
-    // @media (max-width: 600px) {
-    //     height: auto;
-    //     display: none;
-    // }
+    @media (max-width: 600px) {
+        height: 130vh;
+    }
 }
 
 .back {

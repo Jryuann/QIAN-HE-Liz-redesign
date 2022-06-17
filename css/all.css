@@ -1089,6 +1089,12 @@ section.part_2 content .text_area .inner {
   z-index: 5;
 }
 
+@media (max-width: 600px) {
+  .wrapper {
+    height: 130vh;
+  }
+}
+
 .back {
   position: absolute;
   width: 2600px;
