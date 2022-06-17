@@ -369,7 +369,8 @@
         border-radius: var(--radius);
         background-color: white;
 
-        filter: blur(5px) contrast(40%);
+        filter: contrast(40%);
+        opacity: 50%;
 
         &:hover {
             transform: translate(-50%, -50%) scale(1.02);
@@ -397,6 +398,7 @@
             .dot {
                 filter: none;
                 transform: translate(-50%, -50%) scale(1.05);
+                opacity: 100%;
             }
         }
     }

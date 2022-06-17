@@ -1525,8 +1525,9 @@ section.part_2 content .text_area .inner {
   transition: .3s;
   border-radius: var(--radius);
   background-color: white;
-  -webkit-filter: blur(5px) contrast(40%);
-          filter: blur(5px) contrast(40%);
+  -webkit-filter: contrast(40%);
+          filter: contrast(40%);
+  opacity: 50%;
 }
 
 .pagination .dot:hover {
@@ -1557,6 +1558,7 @@ section.part_2 content .text_area .inner {
           filter: none;
   -webkit-transform: translate(-50%, -50%) scale(1.05);
           transform: translate(-50%, -50%) scale(1.05);
+  opacity: 100%;
 }
 
 .title_names {
@@ -1858,6 +1860,8 @@ section.part_2 content .text_area .inner {
     width: 100%;
     height: 200px;
     background-color: var(--color-main-dark);
+    background-image: url("../img/metrila.svg");
+    background-size: cover;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
