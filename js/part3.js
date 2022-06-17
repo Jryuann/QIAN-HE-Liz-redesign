@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
 window.onresize = reportWindowSize;
 
 function reportWindowSize() {
-    console.log('you resize now!');
+    console.log('you resize now!'); 
     // window.innerHeight = ma;
     if (window.screen.availWidth > 576) {
         let t = window.devicePixelRatio;
