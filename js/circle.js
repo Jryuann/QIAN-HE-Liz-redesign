@@ -1,11 +1,9 @@
-
-
 /**
-* @module       Carousel with orbital pagination
-* @author       ATOM
-* @license      MIT
-* @version      v1.0.1
-*/
+ * @module       Carousel with orbital pagination
+ * @author       ATOM
+ * @license      MIT
+ * @version      v1.0.1
+ */
 
 console.clear();
 
@@ -39,15 +37,38 @@ function initCarousel(options) {
         this.setSlide(this.activeN);
         this.arrangeDots();
         this.pagination.style.transitionDuration = this.speed + 'ms';
+        if (this.autoplay) this.startAutoplay();
     }
 
     CustomCarousel.prototype.addListeners = function () {
         var slider = this;
 
+        if (this.next) {
+            this.next.addEventListener('click', function () {
+                slider.setSlide(slider.activeN + 1);
+            });
+        }
+
+        if (this.prev) {
+            this.prev.addEventListener('click', function () {
+                slider.setSlide(slider.activeN - 1);
+            });
+        }
+
         for (var i = 0; i < this.dots.length; i++) {
             this.dots[i].addEventListener('click', function (i) {
                 return function () { slider.setSlide(i); }
             }(i));
+        }
+
+        if (this.autoplay) {
+            this.node.addEventListener('mouseenter', function () {
+                slider.stopAutoplay();
+            });
+
+            this.node.addEventListener('mouseleave', function () {
+                slider.startAutoplay();
+            });
         }
     };
 
@@ -80,7 +101,17 @@ function initCarousel(options) {
         }
     };
 
+    CustomCarousel.prototype.startAutoplay = function () {
+        var slider = this;
 
+        this.autoplayId = setInterval(function () {
+            slider.setSlide(slider.activeN + 1);
+        }, this.autoplay);
+    };
+
+    CustomCarousel.prototype.stopAutoplay = function () {
+        clearInterval(this.autoplayId);
+    };
 
     CustomCarousel.prototype.arrangeDots = function () {
         for (var i = 0; i < this.dotsN; i++) {
@@ -103,19 +134,8 @@ document.addEventListener('DOMContentLoaded', function () {
             var carousel = initCarousel({
                 node: plugins.customCarousel[i],
                 speed: plugins.customCarousel[i].getAttribute('data-speed'),
+                autoplay: plugins.customCarousel[i].getAttribute('data-autoplay')
             });
         }
     }
 });
-
-// window.onresize = reportWindowSize;
-
-// function reportWindowSize() {
-//     console.log('you resize now!');
-//     // window.innerHeight = ma;
-//     if (window.screen.availWidth > 576) {
-//         let t = window.devicePixelRatio;
-//         document.body.style.zoom = 1 / t;
-//     }
-
-// }
