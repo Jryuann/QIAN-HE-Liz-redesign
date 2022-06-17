@@ -44,19 +44,19 @@ function initCarousel(options) {
         var slider = this;
 
         if (this.next) {
-            this.next.addEventListener('click', function () {
+            this.next.addEventListener('pointerdown', function () {
                 slider.setSlide(slider.activeN + 1);
             });
         }
 
         if (this.prev) {
-            this.prev.addEventListener('click', function () {
+            this.prev.addEventListener('pointerdown', function () {
                 slider.setSlide(slider.activeN - 1);
             });
         }
 
         for (var i = 0; i < this.dots.length; i++) {
-            this.dots[i].addEventListener('click', function (i) {
+            this.dots[i].addEventListener('pointerdown', function (i) {
                 return function () { slider.setSlide(i); }
             }(i));
         }
