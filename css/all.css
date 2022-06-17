@@ -1131,7 +1131,6 @@ section.part_2 content .text_area .inner {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 1.5%;
   position: absolute;
 }
 
