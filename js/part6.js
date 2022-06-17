@@ -43,7 +43,7 @@ squares6.forEach(square6 => {
     duration: 0.2,
     x: 40,
     opacity: 0,
-    stagger: 0.3,
+    stagger: 0.2,
     delay: 0,
   }, 0)
   
@@ -52,7 +52,7 @@ squares6.forEach(square6 => {
     duration: 0.2,
     y: 40,
     opacity: 0,
-    stagger: 0.3,
+    stagger: 0.2,
     delay: 0,
   }, 0)
 

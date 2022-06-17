@@ -18,7 +18,7 @@ gsap.registerPlugin(ScrollTrigger);
 let part_8_tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".part_8",
-    start: 8500,
+    start: 8000,
     end: "bottom bottom",
     scrub: true,
     // markers: true,

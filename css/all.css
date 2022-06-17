@@ -1151,7 +1151,7 @@ section.part_2 content .text_area .inner {
   .partner_title {
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
-    margin-top: 15%;
+    margin-top: 25%;
   }
   .partner_title img {
     width: 100%;
