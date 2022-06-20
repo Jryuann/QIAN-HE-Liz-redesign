@@ -944,11 +944,21 @@ section.part_2 content .pic_area {
   overflow: hidden;
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.part_2 content .pic_area .mySlides {
   display: none;
-  height: 100%;
+  width: 100%;
+  margin: 0px;
 }
 
 @media (max-width: 900px) {
@@ -3299,6 +3309,14 @@ section.part_2 content .text_area .inner {
   border-bottom: 1px var(--color-liz-dark) solid;
   padding-bottom: 3px;
   margin-left: 15px;
+}
+
+.part_9 .mail:hover, .part_9 .mail:focus, .part_9 .mail:active,
+.part_9 .phone:hover,
+.part_9 .phone:focus,
+.part_9 .phone:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .part_9 .word-2 {
