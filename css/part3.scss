@@ -182,6 +182,8 @@
                 display: flex;
     
                 flex-direction: column;
+                justify-content: end;
+                align-items: end;
                 display: block;
     
                 top: -500px;
@@ -228,27 +230,10 @@
                 display: flex;
                 justify-content: end;
 
-                margin-top: 36px;
+                margin-top: 264px;
 
                 img {
                     width: 180px;
-                }
-
-                &.ms_chang_store {
-                    margin-top: 98px;
-                }
-
-                &.mr_huang_store {
-                    margin-top: 120px;
-                }
-
-                &.mr_chen_store {
-                    justify-content: start;
-                    margin-top: 10px;
-                }
-
-                &.mr_dung_store {
-                    margin-top: 170px;
                 }
 
             }
@@ -259,7 +244,7 @@
             z-index: 5;
 
             top: -45%;
-            width: 170%;
+            width: 130%;
             height: auto;
 
             text-align: center;
