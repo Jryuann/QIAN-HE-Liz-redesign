@@ -1125,6 +1125,9 @@
             padding-bottom: 3px;
             margin-left: 15px;
         }
+        &:hover, &:focus ,&:active{
+            transform: scale(1.05);
+        }
     }
 
     .word-2 {
