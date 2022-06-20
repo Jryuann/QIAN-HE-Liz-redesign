@@ -489,13 +489,14 @@
     }
 
     .low-cost-circle,
-    .tec-transfer-circle {
+    .tec-transfer-circle,
+    .son_foozi {
         border-radius: 100%;
+    }
 
-        &.son_foozi {
-            width: 310px;
-            height: 310px;
-        }
+    .son_foozi {
+        width: 310px;
+        height: 310px;
     }
 
     .tec-transfer-line {
@@ -553,7 +554,9 @@
         }
 
         .low-cost,
-        .tec-transfer {
+        .tec-transfer,
+        .son_foozi
+         {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -563,7 +566,7 @@
         }
 
         .low-cost-circle,
-        .tec-transfer-circle {
+        .tec-transfer-circle,.son_foozi {
             display: none;
         }
 
@@ -587,6 +590,17 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+        }
+
+        .son_foozi-square {
+            width: 100%;
+            height: 160px;
+            border-radius: var(--radius-sm);
+
+            background-image: url(../img/part6/7/子女獎學金.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0% 18%;
         }
 
         .low-cost-line {
