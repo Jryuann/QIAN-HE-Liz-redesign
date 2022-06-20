@@ -300,69 +300,8 @@ header {
   z-index: 0;
 }
 
-header .main_liz {
-  width: 9rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 5;
-  -webkit-animation: main_liz 10s infinite linear;
-          animation: main_liz 10s infinite linear;
-  cursor: pointer;
-}
-
-header .main_liz:hover {
-  width: 9.5rem;
-}
-
-@media (max-width: 1550px) {
-  header .main_liz {
-    width: 8rem;
-  }
-  header .main_liz:hover {
-    width: 8.5rem;
-  }
-}
-
-@media (max-width: 1440px) {
-  header .main_liz {
-    width: 7rem;
-  }
-}
-
-@-webkit-keyframes main_liz {
-  0% {
-    -webkit-transform: scale(1) translate(-50%, -50%);
-            transform: scale(1) translate(-50%, -50%);
-  }
-  50% {
-    -webkit-transform: scale(1.1) translate(-50%, -50%);
-            transform: scale(1.1) translate(-50%, -50%);
-  }
-  100% {
-    -webkit-transform: scale(1) translate(-50%, -50%);
-            transform: scale(1) translate(-50%, -50%);
-  }
-}
-
-@keyframes main_liz {
-  0% {
-    -webkit-transform: scale(1) translate(-50%, -50%);
-            transform: scale(1) translate(-50%, -50%);
-  }
-  50% {
-    -webkit-transform: scale(1.1) translate(-50%, -50%);
-            transform: scale(1.1) translate(-50%, -50%);
-  }
-  100% {
-    -webkit-transform: scale(1) translate(-50%, -50%);
-            transform: scale(1) translate(-50%, -50%);
-  }
-}
-
 header .inner {
+  margin-top: 6rem;
   z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -443,6 +382,7 @@ header .inner .second {
   color: var(--color-liz-dark);
   text-align: center;
   padding-top: 28px;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 650px) {
@@ -455,6 +395,82 @@ header .inner .second {
     /* identical to box height, or 27px */
     letter-spacing: 0.2em;
   }
+}
+
+header .inner .inner_bottom {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+}
+
+header .inner .inner_bottom .main_liz {
+  width: 9rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 5;
+  -webkit-animation: main_liz 10s infinite linear;
+          animation: main_liz 10s infinite linear;
+  cursor: pointer;
+}
+
+header .inner .inner_bottom .main_liz:hover {
+  width: 9.5rem;
+}
+
+@media (max-width: 1550px) {
+  header .inner .inner_bottom .main_liz {
+    width: 8rem;
+  }
+  header .inner .inner_bottom .main_liz:hover {
+    width: 8.5rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  header .inner .inner_bottom .main_liz {
+    width: 7rem;
+  }
+}
+
+@-webkit-keyframes main_liz {
+  0% {
+    -webkit-transform: scale(1) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
+  }
+  50% {
+    -webkit-transform: scale(1.1) translate(-50%, -50%);
+            transform: scale(1.1) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
+  }
+}
+
+@keyframes main_liz {
+  0% {
+    -webkit-transform: scale(1) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
+  }
+  50% {
+    -webkit-transform: scale(1.1) translate(-50%, -50%);
+            transform: scale(1.1) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
+  }
+}
+
+header .inner .inner_bottom .index_bg_round {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: index_bg_round 80s infinite linear;
+          animation: index_bg_round 80s infinite linear;
 }
 
 header bottom {
@@ -842,14 +858,6 @@ header .bg .img_insurance {
   header .bg .img_insurance {
     display: none;
   }
-}
-
-header .index_bg_round {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-animation: index_bg_round 80s infinite linear;
-          animation: index_bg_round 80s infinite linear;
 }
 
 header .load_animate {
