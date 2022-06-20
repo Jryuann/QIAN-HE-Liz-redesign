@@ -27,6 +27,7 @@
           user-select: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  -webkit-user-drag: none;
 }
 
 html {

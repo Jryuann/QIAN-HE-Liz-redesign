@@ -102,6 +102,7 @@
     box-sizing: border-box;
     user-select: none;
     transition: 0.4s;
+    -webkit-user-drag:none;
 }
 
 html{
