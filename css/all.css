@@ -27,6 +27,7 @@
           user-select: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  -webkit-user-drag: none;
 }
 
 html {
@@ -333,6 +334,7 @@ header .inner .main_title {
           align-items: center;
   padding-left: 16px;
   position: relative;
+  z-index: 5;
 }
 
 header .inner .main_title .text_img_liz {
@@ -383,6 +385,7 @@ header .inner .second {
   text-align: center;
   padding-top: 28px;
   margin-bottom: 24px;
+  z-index: 5;
 }
 
 @media (max-width: 650px) {
@@ -469,6 +472,7 @@ header .inner .inner_bottom .index_bg_round {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 0;
   -webkit-animation: index_bg_round 80s infinite linear;
           animation: index_bg_round 80s infinite linear;
 }
