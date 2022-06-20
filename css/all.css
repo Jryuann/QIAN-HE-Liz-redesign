@@ -1600,8 +1600,9 @@ section.part_2 content .text_area .inner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10%;
+  padding: 5% 10% 0 10%;
   overflow-x: hidden;
+  position: relative;
 }
 
 @media (max-width: 1200px) {
@@ -1615,6 +1616,29 @@ section.part_2 content .text_area .inner {
   .part_4 {
     padding: 44px 10%;
   }
+}
+
+.part_4 .part4_title {
+  /* Title */
+  font-family: 'Noto Serif TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--fz-title);
+  line-height: 69px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  color: var(--color-liz-dark);
+}
+
+.part_4 .line {
+  width: 540px;
+  height: 1px;
+  background-color: var(--color-liz-dark);
+  position: absolute;
+  top: 14%;
 }
 
 .part_4 .brandInsist {
