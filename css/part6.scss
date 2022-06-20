@@ -701,6 +701,8 @@
         flex-direction: column;
         padding-top: 60px;
 
+        
+
         .step-1 {
             // width: 1045px;
 
@@ -969,6 +971,12 @@
                         text-align: start;
                     }
                 }
+            }
+        }
+        .square{
+            &:hover , &:active ,&:focus{
+                box-sizing:content-box;
+                outline: 2.5px solid #C2724A;
             }
         }
 

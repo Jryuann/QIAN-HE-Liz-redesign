@@ -3132,6 +3132,12 @@ section.part_2 content .text_area .inner {
   text-align: start;
 }
 
+.part_8 .step-group .square:hover, .part_8 .step-group .square:active, .part_8 .step-group .square:focus {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  outline: 2.5px solid #C2724A;
+}
+
 @media (max-width: 930px) {
   .part_8 {
     padding: 60px 20%;
