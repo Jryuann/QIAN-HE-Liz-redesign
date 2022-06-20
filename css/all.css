@@ -1298,6 +1298,12 @@ section.part_2 content .text_area .inner {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   display: block;
   top: -500px;
 }
@@ -1350,37 +1356,18 @@ section.part_2 content .text_area .inner {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  margin-top: 36px;
+  margin-top: 264px;
 }
 
 .circle-carousel .slide.active .stores img {
   width: 180px;
 }
 
-.circle-carousel .slide.active .stores.ms_chang_store {
-  margin-top: 98px;
-}
-
-.circle-carousel .slide.active .stores.mr_huang_store {
-  margin-top: 120px;
-}
-
-.circle-carousel .slide.active .stores.mr_chen_store {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  margin-top: 10px;
-}
-
-.circle-carousel .slide.active .stores.mr_dung_store {
-  margin-top: 170px;
-}
-
 .circle-carousel .slide .title_names {
   position: absolute;
   z-index: 5;
   top: -45%;
-  width: 170%;
+  width: 130%;
   height: auto;
   text-align: center;
   padding: 0 18px;
