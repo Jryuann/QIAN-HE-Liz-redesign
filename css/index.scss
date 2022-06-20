@@ -260,7 +260,7 @@ header {
             align-items: center;
             padding-left: 16px;
             position: relative;
-
+            z-index: 5;
             .text_img_liz {
                 width: 20rem;
 
@@ -305,7 +305,7 @@ header {
             text-align: center;
             padding-top: 28px;
             margin-bottom: 24px;
-
+            z-index: 5;
             @media (max-width:650px) {
                 @include t-inner-sm;
             }
@@ -366,7 +366,7 @@ header {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-        
+                z-index: 0;
                 animation: index_bg_round 80s infinite linear;
             }
 
