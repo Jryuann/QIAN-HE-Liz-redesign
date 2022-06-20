@@ -491,6 +491,11 @@
     .low-cost-circle,
     .tec-transfer-circle {
         border-radius: 100%;
+
+        &.son_foozi {
+            width: 310px;
+            height: 310px;
+        }
     }
 
     .tec-transfer-line {

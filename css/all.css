@@ -1210,8 +1210,8 @@ section.part_2 content .text_area .inner {
 
 @media (max-width: 992px) {
   .circle-carousel .slide {
-    width: 66%;
-    left: 18%;
+    width: 80%;
+    left: 10%;
   }
 }
 
@@ -1645,7 +1645,7 @@ section.part_2 content .text_area .inner {
 }
 
 .part_4 .line {
-  width: 540px;
+  width: 440px;
   height: 1px;
   background-color: var(--color-liz-dark);
   position: absolute;
@@ -2564,6 +2564,12 @@ section.part_2 content .text_area .inner {
 .part_7 .low-cost-circle,
 .part_7 .tec-transfer-circle {
   border-radius: 100%;
+}
+
+.part_7 .low-cost-circle.son_foozi,
+.part_7 .tec-transfer-circle.son_foozi {
+  width: 310px;
+  height: 310px;
 }
 
 .part_7 .tec-transfer-line {
