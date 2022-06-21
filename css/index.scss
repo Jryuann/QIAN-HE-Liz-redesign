@@ -108,6 +108,7 @@ section {
         height: 20px;
         width: 15px;
         z-index: 11;
+        transform: scale(1.5);
 
         span {
             position: absolute;
@@ -162,6 +163,8 @@ section {
         transition: .5s;
         transition-delay: .5s;
         overflow: hidden;
+
+        
 
         >ul {
 
@@ -219,7 +222,38 @@ section {
     }
 
 }
+// 
+.side_btns{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    right: 1.5rem;
+    bottom: 2rem;
+    z-index: 7;
 
+    .side_btn{
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 10px;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 8px;
+        background-color: var(--color-liz-dark);
+
+        border: none;
+
+        @include shadow;
+        outline: 2.5px solid rgba(255, 255, 255, 0);
+        &:hover,&:focus,&:active{
+            outline: 2.5px solid var(--color-white);
+            background-color: #773310;
+        }
+    }
+}
 // nav/
 header {
     user-select: none;

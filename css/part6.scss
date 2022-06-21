@@ -974,6 +974,7 @@
             }
         }
         .square{
+            outline: 2.5px solid #c2724a00;
             &:hover , &:active ,&:focus{
                 box-sizing:content-box;
                 outline: 2.5px solid #C2724A;
