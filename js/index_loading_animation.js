@@ -101,6 +101,13 @@ document.querySelector(".navbtn_6").addEventListener("click", () => {
     burger.checked = false;
     gsap.to(window, { duration: 1.5, scrollTo: ".part_6" })
 })
+
+document.querySelector(".navbtn_8").addEventListener("click", () => {
+    burger.checked = false;
+    gsap.to(window, { duration: 1.5, scrollTo: ".part_8" })
+})
+
+
 document.querySelector(".navbtn_9").addEventListener("click", () => {
     burger.checked = false;
     gsap.to(window, { duration: 1.5, scrollTo: ".part_9" })
@@ -111,4 +118,17 @@ const main_liz = document.querySelector(".main_liz")
 
 main_liz.addEventListener("click", () => {
     gsap.to(window, { duration: 1, scrollTo: ".part_2" })
+})
+
+const side_top = document.querySelector("#btn_totop")
+
+side_top.addEventListener("click", () => {
+    gsap.to(window, { duration: 1, scrollTo: ".part_1" })
+})
+
+
+const side_contact = document.querySelector("#btn_contact")
+
+side_contact.addEventListener("click", () => {
+    gsap.to(window, { duration: 1, scrollTo: ".part_9" })
 })

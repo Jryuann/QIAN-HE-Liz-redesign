@@ -22,7 +22,7 @@ let part_8_tl = gsap.timeline({
     start: "top center-=50",
     end: "bottom bottom",
     scrub: true,
-    markers: true,
+    // markers: true,
 
     duration: 5,
   },

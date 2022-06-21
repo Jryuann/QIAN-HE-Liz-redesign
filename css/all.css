@@ -308,6 +308,7 @@ section {
   height: 3rem;
   border-radius: 8px;
   background-color: var(--color-liz-dark);
+  cursor: pointer;
   border: none;
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
@@ -2318,6 +2319,11 @@ section.part_2 content .text_area .inner {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0px 10px;
+}
+
+.part_6 .card-area .square:hover div img, .part_6 .card-area .square:hover div p {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .part_6 .card-area .square .title {

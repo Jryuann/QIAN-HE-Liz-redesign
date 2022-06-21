@@ -138,6 +138,9 @@
             justify-content: center;
 
             margin: 0px 10px;
+            &:hover div img , &:hover div p{
+                transform: scale(1.2);
+            }
 
             .title {
                 margin-top: 10px;
@@ -844,6 +847,7 @@
                         text-align: start;
                     }
                 }
+
             }
         }
 
