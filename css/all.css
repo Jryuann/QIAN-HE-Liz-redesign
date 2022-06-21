@@ -3626,6 +3626,13 @@ body {
 .hover {
   background-color: var(--color-main);
   opacity: 0.5;
+  display: none;
+}
+
+.innerhover {
+  opacity: 0.3;
+  width: 80px;
+  height: 80px;
 }
 
 .cursorinnerhover {

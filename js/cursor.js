@@ -3,6 +3,8 @@
 var cursor = document.querySelector('.cursor');
 var cursorinner = document.querySelector('.cursor2');
 var a = document.querySelectorAll('a');
+var label = document.querySelectorAll('label');
+
 
 document.addEventListener('mousemove', function (e) {
     var x = e.clientX;
@@ -30,8 +32,21 @@ document.addEventListener('mouseup', function () {
 a.forEach(item => {
     item.addEventListener('mouseover', () => {
         cursor.classList.add('hover');
+        cursorinner.classList.add('innerhover');
     });
     item.addEventListener('mouseleave', () => {
         cursor.classList.remove('hover');
+        cursorinner.classList.remove('innerhover');
+    });
+})
+
+label.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        cursor.classList.add('hover');
+        cursorinner.classList.add('innerhover');
+    });
+    item.addEventListener('mouseleave', () => {
+        cursor.classList.remove('hover');
+        cursorinner.classList.remove('innerhover');
     });
 })
