@@ -2650,7 +2650,7 @@ section.part_2 content .text_area .inner {
 }
 
 .part_7 .all-logo {
-  width: 817px;
+  width: 875px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2661,7 +2661,11 @@ section.part_2 content .text_area .inner {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  padding-top: 52px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding: 20px 40px 20px 40px;
+  background-color: var(--color-white);
+  border-radius: 100px;
 }
 
 @media (max-width: 1024px) {
