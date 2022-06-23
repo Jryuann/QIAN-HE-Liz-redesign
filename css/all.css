@@ -215,8 +215,8 @@ section {
   transition: .5s;
   -webkit-transition-delay: .5s;
           transition-delay: .5s;
-  overflow: hidden;
   max-height: 0px;
+  overflow: hidden;
 }
 
 .nav_bar input ~ nav > ul {
@@ -268,7 +268,7 @@ section {
   height: 100%;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
-  max-height: unset;
+  max-height: 100%;
 }
 
 .nav_bar input:checked ~ nav > ul > li {
