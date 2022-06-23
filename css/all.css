@@ -250,7 +250,15 @@ section {
   letter-spacing: 0.1em;
   display: block;
   padding: 30px;
+  border: rgba(0, 0, 0, 0);
   border-radius: var(--radius);
+}
+
+@media (max-width: 700px) {
+  .nav_bar input ~ nav > ul > li > a {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .nav_bar input ~ nav > ul > li > a:hover {
