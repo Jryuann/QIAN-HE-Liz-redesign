@@ -188,7 +188,7 @@ section {
                     @include t-title-sm;
                     display: block;
                     padding: 30px;
-                    border: rgba(0, 0, 0, 0);
+                    border: 2px solid rgba(0, 0, 0, 0);
                     border-radius: var(--radius);
                     
                     @media (max-width:700px) {
@@ -196,8 +196,8 @@ section {
                         padding-bottom: 16px;
                     }
 
-                    &:hover {
-                        border: 2px solid rgba(51, 51, 51, 0.185);
+                    &:hover, &:focus, &:active {
+                        border: 2px solid rgba(51, 51, 51, 0.5);
                     }
 
                     &:focus {
