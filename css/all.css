@@ -945,16 +945,11 @@ header .load_animate_opacity {
 
 section.part_2 {
   width: 100%;
-  height: 100vh;
   background-image: url("../img/metrila.svg");
   background-size: cover;
   background-color: var(--color-main);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 5% 11fr 5%;
-      grid-template-columns: 5% 11fr 5%;
-  -ms-grid-rows: 4fr 7fr 4fr;
-      grid-template-rows: 4fr 7fr 4fr;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 @media (max-width: 1280px) {
@@ -963,17 +958,22 @@ section.part_2 {
   }
 }
 
+@media (max-width: 700px) {
+  section.part_2 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 section.part_2 content {
-  -ms-grid-row: 2;
-  grid-row: 2;
-  -ms-grid-column: 2;
-  grid-column: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 @media (max-width: 900px) {
@@ -982,6 +982,8 @@ section.part_2 content {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 80px;
   }
 }
 
