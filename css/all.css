@@ -216,6 +216,7 @@ section {
   -webkit-transition-delay: .5s;
           transition-delay: .5s;
   overflow: hidden;
+  max-height: 0px;
 }
 
 .nav_bar input ~ nav > ul {
@@ -267,6 +268,7 @@ section {
   height: 100%;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+  max-height: unset;
 }
 
 .nav_bar input:checked ~ nav > ul > li {
@@ -1425,7 +1427,7 @@ section.part_2 content .text_area .inner {
   text-align: center;
   padding: 0 18px;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 20px;
+  border-radius: 8px;
   display: block;
   font-size: 40px;
 }

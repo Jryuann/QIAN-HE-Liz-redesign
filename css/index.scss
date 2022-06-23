@@ -163,7 +163,7 @@ section {
         transition: .5s;
         transition-delay: .5s;
         overflow: hidden;
-
+        max-height: 0px;
         
 
         >ul {
@@ -211,7 +211,8 @@ section {
 
         height: 100%;
         transition-delay: 0s;
-
+        max-height: unset;
+        
         >ul {
             >li {
                 opacity: 1;
