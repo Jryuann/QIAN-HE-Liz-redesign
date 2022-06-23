@@ -230,7 +230,7 @@
                 display: flex;
                 justify-content: end;
 
-                margin-top: 264px;
+                margin-top: 240px;
 
                 img {
                     width: 180px;
@@ -244,7 +244,7 @@
             z-index: 5;
 
             top: -45%;
-            width: 130%;
+            width: 100%;
             height: auto;
 
             text-align: center;
@@ -253,10 +253,10 @@
             border-radius: 8px;
             display: block;
 
-            font-size: 40px;
+            font-size: 36px;
             @media (max-width: 1260px) {
                 font-size: 28px;
-                width: 150%;
+                width: 130%;
             }
 
             @media (max-width: 992px) {

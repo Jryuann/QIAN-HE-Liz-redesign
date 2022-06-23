@@ -1411,7 +1411,7 @@ section.part_2 content .text_area .inner {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  margin-top: 264px;
+  margin-top: 240px;
 }
 
 .circle-carousel .slide.active .stores img {
@@ -1422,20 +1422,20 @@ section.part_2 content .text_area .inner {
   position: absolute;
   z-index: 5;
   top: -45%;
-  width: 130%;
+  width: 100%;
   height: auto;
   text-align: center;
   padding: 0 18px;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   display: block;
-  font-size: 40px;
+  font-size: 36px;
 }
 
 @media (max-width: 1260px) {
   .circle-carousel .slide .title_names {
     font-size: 28px;
-    width: 150%;
+    width: 130%;
   }
 }
 
